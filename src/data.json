@@ -1,0 +1,70 @@
+{
+  "categories": [
+    {
+      "id": "pottery",
+      "title": { "en": "Heritage Pottery", "ar": "أواني تراثية من المدينة", "fr": "Poterie du Patrimoine", "ur": "ورثہ کے برتن", "id": "Tembikar Warisan" },
+      "count": 17,
+      "image": "/images/pottery.png"
+    },
+    {
+      "id": "clothing",
+      "title": { "en": "Clothing / Fashion", "ar": "أزياء", "fr": "Vêtements / Mode", "ur": "لباس", "id": "Pakaian / Mode" },
+      "count": 17,
+      "image": "/images/clothing.png"
+    },
+    {
+      "id": "jewelry",
+      "title": { "en": "Jewelry", "ar": "حلي", "fr": "Bijoux", "ur": "زیورات", "id": "Perhiasan" },
+      "count": 17,
+      "image": "/images/jewelry.png"
+    },
+    {
+      "id": "coins",
+      "title": { "en": "Coins from the Prophetic Era", "ar": "عملات من عهد النبي", "fr": "Pièces de l'Ère Prophétique", "ur": "عہد نبوی کے سکے", "id": "Koin Peninggalan Nabi" },
+      "count": 6,
+      "image": "/images/coins.png"
+    },
+    {
+      "id": "battles",
+      "title": { "en": "Battles of the Prophet / Models", "ar": "غزوات النبي - مجسمات", "fr": "Batailles du Prophète / Modèles", "ur": "نبی کی جنگیں / ماڈل", "id": "Pertempuran Nabi / Model" },
+      "count": 35,
+      "image": "/images/swords.png"
+    },
+    {
+      "id": "manuscripts",
+      "title": { "en": "Manuscripts & Prophetic Stories", "ar": "مخطوطات وقصص النبي", "fr": "Manuscrits et Histoires Prophétiques", "ur": "مخطوطات اور نبی کی کہانیاں", "id": "Manuskrip & Kisah Nabi" },
+      "count": 8,
+      "image": "/images/scrolls.png"
+    }
+  ],
+  "featuredArtifacts": [
+    {
+      "id": "1",
+      "title": { "en": "Artifact Title 1", "ar": "اسم التحفة 1", "fr": "Titre Artefact 1", "ur": "آرٹفیکٹ کا نام 1", "id": "Nama Artefak 1" },
+      "category": "pottery",
+      "description": {
+        "en": "Description text about the artifact goes here. This historical piece...",
+        "ar": "نص الوصف للتحفة هنا. هذه القطعة التاريخية...",
+        "fr": "Le texte de description de l'artefact va ici. Cette pièce historique...",
+        "ur": "نمونہ کی تفصیل یہاں ہے۔ یہ تاریخی ٹکڑا...",
+        "id": "Teks deskripsi tentang artefak diletakkan di sini. Potongan sejarah ini..."
+      },
+      "era": { "en": "Islamic Period", "ar": "العصر الإسلامي", "fr": "Période Islamique", "ur": "دورِ اسلامی", "id": "Periode Islam" },
+      "material": { "en": "Ceramic", "ar": "خزف", "fr": "Céramique", "ur": "سیرامک", "id": "Keramik" },
+      "origin": { "en": "Medina, Saudi Arabia", "ar": "المدينة المنورة، السعودية", "fr": "Médine, Arabie Saoudite", "ur": "مدینہ، سعودی عرب", "id": "Madinah, Arab Saudi" },
+      "image": "/images/artifact-1.png",
+      "audioUrl": "/audio/artifact-1.mp3"
+    },
+    {
+      "id": "2",
+      "title": { "en": "Artifact Title 2", "ar": "اسم التحفة 2", "fr": "Titre Artefact 2", "ur": "آرٹفیکٹ کا نام 2", "id": "Nama Artefak 2" },
+      "category": "coins",
+      "description": { "en": "Description...", "ar": "وصف...", "fr": "Description...", "ur": "تفصیل...", "id": "Deskripsi..." },
+      "era": { "en": "Prophetic Era", "ar": "العهد النبوي", "fr": "Ère Prophétique", "ur": "عہد نبوی", "id": "Era Kenabian" },
+      "material": { "en": "Silver", "ar": "فضة", "fr": "Argent", "ur": "چاندی", "id": "Perak" },
+      "origin": { "en": "Medina", "ar": "المدينة", "fr": "Médine", "ur": "مدینہ", "id": "Madinah" },
+      "image": "/images/artifact-2.png",
+      "audioUrl": null
+    }
+  ]
+}

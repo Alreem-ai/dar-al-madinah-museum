@@ -1,0 +1,9 @@
+﻿
+C:\Users\WinDows\.gemini\antigravity\scratch\dar-al-madinah-museum\src\app\[locale]\artifact\[id]\page.tsx
+   8:1   warning  Prevent Client Components from being async functions. See: https://nextjs.org/docs/messages/no-async-client-component  @next/next/no-async-client-component
+  17:35  error    React Hook "useState" cannot be called in an async function                                                            react-hooks/rules-of-hooks
+  17:89  error    Unexpected any. Specify a different type                                                                               @typescript-eslint/no-explicit-any
+  81:54  error    Unexpected any. Specify a different type                                                                               @typescript-eslint/no-explicit-any
+
+Γ£û 4 problems (3 errors, 1 warning)
+
