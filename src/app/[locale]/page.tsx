@@ -34,26 +34,23 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {data.categories.map((category) => (
-            <div key={category.id} className="museum-card flex overflow-hidden group">
+            <Link key={category.id} href={`/${locale}/category/${category.id}`} className="museum-card flex overflow-hidden group cursor-pointer hover:shadow-md transition">
               <div className="w-1/3 bg-slate-50 ltr:border-r rtl:border-l border-slate-100 flex items-center justify-center p-4">
                 {/* Fallback pattern for image if image doesn't exist */}
                 <div className="w-24 h-24 bg-slate-200 rounded-full opacity-50 group-hover:scale-105 transition duration-500"></div>
               </div>
               <div className="w-2/3 p-6 flex flex-col justify-center items-start">
-                <h3 className="text-xl font-bold text-slate-800 mb-2">
+                <h3 className="text-xl font-bold text-slate-800 mb-2 group-hover:text-gold-600 transition">
                   {category.title[locale] || category.title.en}
                 </h3>
                 <span className="text-sm text-slate-500 mb-4">
                   {category.count} {isArabic ? 'عنصر' : 'Items'}
                 </span>
-                <Link 
-                  href={`/${locale}/category/${category.id}`}
-                  className="mt-auto px-4 py-1.5 bg-slate-500 text-white text-sm rounded hover:bg-slate-600 transition"
-                >
+                <span className="mt-auto px-4 py-1.5 bg-slate-500 text-white text-sm rounded group-hover:bg-slate-600 transition">
                   {isArabic ? 'المزيد' : 'Learn More'}
-                </Link>
+                </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
@@ -69,20 +66,21 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             {Array.from({ length: 6 }).map((_, i) => {
               const artifact = data.featuredArtifacts[i] || data.featuredArtifacts[0];
               return (
-                <div key={i} className="museum-card flex flex-col items-center p-4 text-center group cursor-pointer">
+                <Link 
+                  key={i} 
+                  href={`/${locale}/artifact/${artifact?.id || 1}`}
+                  className="museum-card flex flex-col items-center p-4 text-center group cursor-pointer hover:shadow-md transition"
+                >
                   <div className="w-full aspect-square bg-slate-100 rounded mb-4 flex items-center justify-center group-hover:bg-slate-200 transition">
                     <span className="text-slate-300 text-xs">Image</span>
                   </div>
-                  <h4 className="font-semibold text-slate-800 text-sm mb-3">
+                  <h4 className="font-semibold text-slate-800 text-sm mb-3 group-hover:text-gold-600 transition">
                     {artifact ? (artifact.title[locale] || artifact.title.en) : `Artifact ${i+1}`}
                   </h4>
-                  <Link 
-                    href={`/${locale}/artifact/${artifact?.id || 1}`}
-                    className="w-full py-1.5 bg-slate-500 text-white text-xs rounded hover:bg-slate-600 transition mt-auto"
-                  >
+                  <span className="w-full py-1.5 bg-slate-500 text-white text-xs rounded group-hover:bg-slate-600 transition mt-auto">
                     {isArabic ? 'المزيد' : 'Learn More'}
-                  </Link>
-                </div>
+                  </span>
+                </Link>
               );
             })}
           </div>
