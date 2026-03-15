@@ -65,7 +65,9 @@
       "origin": { "en": "Medina", "ar": "المدينة", "fr": "Médine", "ur": "مدینہ", "id": "Madinah" },
       "image": "/images/artifact-2.png",
       "audioUrl": null
-    },
+    }
+  ],
+  "artifacts": [
     {
       "id": "arrival-model",
       "title": { "en": "Arrival of the Prophet", "ar": "قدوم النبي", "fr": "L'Arrivée du Prophète", "ur": "نبی کی آمد", "id": "Kedatangan Nabi" },
