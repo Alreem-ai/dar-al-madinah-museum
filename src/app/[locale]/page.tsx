@@ -36,8 +36,11 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           {data.categories.map((category) => (
             <Link key={category.id} href={`/${locale}/category/${category.id}`} className="museum-card flex overflow-hidden group cursor-pointer hover:shadow-md transition">
               <div className="w-1/3 bg-slate-50 ltr:border-r rtl:border-l border-slate-100 flex items-center justify-center p-4">
-                {/* Fallback pattern for image if image doesn't exist */}
-                <div className="w-24 h-24 bg-slate-200 rounded-full opacity-50 group-hover:scale-105 transition duration-500"></div>
+                {category.image ? (
+                  <img src={category.image} alt={category.title.en} className="w-24 h-24 object-cover rounded-full group-hover:scale-105 transition duration-500 shadow-sm" />
+                ) : (
+                  <div className="w-24 h-24 bg-slate-200 rounded-full opacity-50 group-hover:scale-105 transition duration-500"></div>
+                )}
               </div>
               <div className="w-2/3 p-6 flex flex-col justify-center items-start">
                 <h3 className="text-xl font-bold text-slate-800 mb-2 group-hover:text-gold-600 transition">
@@ -71,8 +74,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   href={`/${locale}/artifact/${artifact?.id || 1}`}
                   className="museum-card flex flex-col items-center p-4 text-center group cursor-pointer hover:shadow-md transition"
                 >
-                  <div className="w-full aspect-square bg-slate-100 rounded mb-4 flex items-center justify-center group-hover:bg-slate-200 transition">
-                    <span className="text-slate-300 text-xs">Image</span>
+                  <div className="w-full aspect-square bg-slate-100 rounded mb-4 flex items-center justify-center group-hover:bg-slate-200 transition overflow-hidden">
+                    {artifact?.image ? (
+                      <img src={artifact.image} alt={artifact.title.en} className="w-full h-full object-cover" />
+                    ) : (
+                      <span className="text-slate-300 text-xs">Image</span>
+                    )}
                   </div>
                   <h4 className="font-semibold text-slate-800 text-sm mb-3 group-hover:text-gold-600 transition">
                     {artifact ? (artifact.title[locale] || artifact.title.en) : `Artifact ${i+1}`}

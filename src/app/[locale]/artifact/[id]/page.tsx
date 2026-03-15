@@ -16,10 +16,11 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
   const [descLang, setDescLang] = useState<keyof typeof artifact.description>(locale as keyof typeof artifact.description);
   
   const langs = [
-    { code: 'ar', label: 'AR' },
-    { code: 'en', label: 'EN' },
-    { code: 'fr', label: 'FR' },
-    { code: 'ur', label: 'UR' },
+    { code: 'ar', label: 'العربية' },
+    { code: 'en', label: 'English' },
+    { code: 'fr', label: 'Français' },
+    { code: 'ur', label: 'اردو' },
+    { code: 'id', label: 'Indonesia' },
   ];
 
   return (
@@ -34,8 +35,14 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
         <div className="flex flex-col md:flex-row">
           
           {/* Artifact Image Area */}
-          <div className="md:w-1/2 bg-slate-100 min-h-[400px] flex items-center justify-center ltr:border-r rtl:border-l border-slate-200">
-            <span className="text-slate-400 font-medium">Artifact Image</span>
+          <div className="md:w-1/2 bg-slate-100 min-h-[400px] ltr:border-r rtl:border-l border-slate-200 p-8 relative">
+            <div className="sticky top-28 flex justify-center">
+              {artifact.image ? (
+                <img src={artifact.image} alt={artifact.title.en} className="max-w-full max-h-[70vh] object-contain shadow-md rounded" />
+              ) : (
+                <span className="text-slate-400 font-medium flex items-center justify-center h-full">Artifact Image</span>
+              )}
+            </div>
           </div>
           
           {/* Artifact Details Area */}
