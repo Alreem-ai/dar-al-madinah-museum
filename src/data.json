@@ -494,6 +494,47 @@
       },
       "image": "/images/artifacts/valley-ibrahim-hill.png",
       "audioUrl": null
+    },
+    {
+      "id": "kaaba-ottoman",
+      "title": { 
+        "en": "The Building of the Holy Kaaba in the Ottoman Era", 
+        "ar": "بناء الكعبة المشرفة في العهد العثماني", 
+        "fr": "La construction de la Sainte Kaaba à l'époque ottomane", 
+        "ur": "عثمانی دور میں خانہ کعبہ کی تعمیر", 
+        "id": "Pembangunan Kembali Ka'bah di Era Utsmaniyah" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "In 1639 CE (1039 AH), a massive flood entered the Grand Mosque, filling most of its courtyard and reaching halfway up the walls of the Kaaba. This caused the collapse of the northern (Shami) wall, parts of the eastern and western walls, and the roof stairs. This catastrophic event deeply moved the Muslim world. Sultan Murad Khan initiated the reconstruction in 1630-1631 CE (1040 AH), a massive project that took six and a half months to complete. Upon its restoration, the Kaaba was draped in exquisite white silk and adorned with a meticulously embroidered belt.", 
+        "ar": "تسبب سيل عظيم دخل المسجد الحرام عام 1039 هـ (1639 م) في سقوط معظم البيت المعظم، حيث ملأ السيل المسجد ووصل إلى نصف جدار الكعبة، مما أدى لسقوط الجدار الشامي وبعض الجدارين الشرقي والغربي ودرجة السطح. فقام السلطان مراد خان عام 1040 هـ (1630 م) بإعادة بناء الكعبة المشرفة، واستغرقت عمارته ستة أشهر ونصف. ثم قام بكسائها بالحرير الأبيض ووضع لها حزاماً من القصب المطرز.", 
+        "fr": "En 1639 (1039 AH), une crue massive a envahi la Grande Mosquée, remplissant la majeure partie de la cour et atteignant la moitié de la hauteur des murs de la Kaaba. Cela a provoqué l'effondrement du mur nord (Shami), de parties des murs est et ouest, ainsi que de l'escalier du toit. Cet événement catastrophique a profondément ému le monde musulman. Le sultan Murad Khan a ordonné la reconstruction en 1630-1631 (1040 AH), un projet de grande envergure qui a duré six mois et demi. Une fois restaurée, la Kaaba a été drapée de soie blanche et ornée d'une ceinture brodée.", 
+        "ur": "1639ء (1039ھ) میں مکہ مکرمہ میں آنے والے ایک عظیم سیلاب نے مسجد الحرام کو اپنی لپیٹ میں لے لیا، جس سے کعبہ کی دیواروں کے نصف تک پانی پہنچ گیا۔ اس حادثے کے نتیجے میں شمالی (شامی) دیوار، اور مشرقی و مغربی دیواروں کے کچھ حصے گر گئے۔ اس غمزدہ واقعے کے بعد سلطان مراد خان نے 1630ء (1040ھ) میں خانہ کعبہ کی از سر نو تعمیر کا حکم دیا۔ یہ تعمیراتی کام ساڑھے چھ ماہ میں مکمل ہوا۔ تعمیر کے بعد کعبہ کو سفید ریشمی غلاف پہنایا گیا اور اس پر نہایت خوبصورت زردوزی کا بیلٹ (حزام) لگایا گیا۔", 
+        "id": "Pada tahun 1639 M (1039 H), banjir besar melanda Masjidil Haram, memenuhi sebagian besar halamannya dan mencapai setengah tinggi dinding Ka'bah. Hal ini menyebabkan runtuhnya dinding utara (Syam), sebagian dinding timur dan barat, serta tangga atap. Peristiwa bencana ini sangat menggerakkan dunia Islam. Sultan Murad Khan memulai pembangunan kembali pada tahun 1630-1631 M (1040 H), sebuah proyek besar yang memakan waktu enam setengah bulan. Setelah restorasi selesai, Ka'bah diselimuti kain sutra putih yang indah dan dihiasi dengan ikat pinggang bersulam." 
+      },
+      "era": { 
+        "en": "Ottoman Era", 
+        "ar": "العهد العثماني", 
+        "fr": "Ère Ottomane", 
+        "ur": "عثمانی دور", 
+        "id": "Era Utsmaniyah" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Mecca, Dar Al-Madinah Museum", 
+        "ar": "مكة المكرمة، متحف دار المدينة", 
+        "fr": "La Mecque, Musée Dar Al-Madinah", 
+        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
+        "id": "Mekkah, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/kaaba-ottoman.png",
+      "audioUrl": null
     }
   ]
 }
