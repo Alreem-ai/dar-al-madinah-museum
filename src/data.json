@@ -207,6 +207,47 @@
       },
       "image": "/images/artifacts/kaaba-saudi.png",
       "audioUrl": null
+    },
+    {
+      "id": "friday-prayer",
+      "title": { 
+        "en": "The Prophet's Arrival at Medina and the Friday Prayer in the Wadi", 
+        "ar": "نزول النبي إلى المدينة لصلاة الجمعة وسط الوادي", 
+        "fr": "L'arrivée du Prophète à Médine et la prière du vendredi dans la vallée", 
+        "ur": "مدینہ منورہ میں نبی کریمﷺ کی آمد اور وادی کے درمیان نماز جمعہ", 
+        "id": "Kedatangan Nabi di Madinah dan Salat Jumat di Tengah Lembah" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "The Messenger of Allah (peace be upon him) left the Banu Amr bin Auf on a Friday. As the time for Friday prayer came, he was in the dwellings of Banu Salim bin Auf. He performed the prayer in the mosque located in the heart of the valley, which was later known as the Al-Jumu'ah Mosque. This occurred during his journey to Medina after the Hijra, having first stayed in Quba with the Banu Amr bin Auf for several days. As he headed toward Medina, the time for Friday prayer reached him at this site, where he led the people in the first Friday prayer in Islam. The Muslims gathered behind him and prayed with him. Then, he continued his journey until he entered Medina, where its people welcomed him with joy and celebration, and he stayed at the house of Abu Ayyub al-Ansari.", 
+        "ar": "خرج رسول الله ﷺ من بني عمرو بن عوف يوم الجمعة فأدركته صلاة الجمعة في ديار بني سالم بن عوف، فصلاها في المسجد الذي في بطن الوادي، وهو المسجد الذي عُرف بعد ذلك بمسجد الجمعة وكان ذلك في طريقه ﷺ إلى المدينة بعد الهجرة حيث نزل أولاً في قباء عند بني عمرو بن عوف، وأقام عندهم أياماً، ثم خرج متوجهاً إلى المدينة، فأدركته صلاة الجمعة في هذا الموضع، فصلى بالناس أول صلاة جمعة في الإسلام وقد اجتمع المسلمون خلف النبي ﷺ وصلوا معه، ثم واصل ﷺ مسيره حتى دخل المدينة المنورة، حيث استقبله أهلها بالترحيب والفرح، ونزل في دار أبي أيوب الأنصاري رضي الله عنه.", 
+        "fr": "Le Messager d'Allah (paix soit sur lui) a quitté les Banu Amr bin Auf un vendredi. Alors que l'heure de la prière du vendredi arrivait, il se trouvait dans les demeures des Banu Salim bin Auf. Il a accompli la prière dans la mosquée située au cœur de la vallée, qui fut plus tard connue sous le nom de Mosquée Al-Jumu'ah. Cela s'est produit lors de son voyage vers Médine après l'Hégire, après avoir d'abord séjourné à Quba avec les Banu Amr bin Auf pendant plusieurs jours. Alors qu'il se dirigeait vers Médine, l'heure de la prière du vendredi l'a atteint sur ce site, où il a dirigé les gens pour la première prière du vendredi en Islam. Les musulmans se sont rassemblés derrière lui et ont prié avec lui. Ensuite, il a continué son voyage jusqu'à son entrée à Médine, où ses habitants l'ont accueilli avec joie et célébration, et il a séjourné dans la maison d'Abou Ayyoub al-Ansari.", 
+        "ur": "رسول اللہ ﷺ جمعہ کے دن بنی عمرو بن عوف سے روانہ ہوئے۔ جب جمعہ کی نماز کا وقت ہوا تو آپ ﷺ بنی سالم بن عوف کے گھروں میں تھے۔ آپ ﷺ نے وادی کے قلب میں واقع اس مسجد میں نماز ادا کی جسے بعد میں مسجدِ جمعہ کے نام سے جانا گیا۔ یہ ہجرت کے بعد مدینہ منورہ کے سفر کے دوران ہوا، اس سے پہلے آپ ﷺ نے کئی دن تک قباء میں بنی عمرو بن عوف کے ہاں قیام کیا تھا۔ جب آپ ﷺ مدینہ کی طرف روانہ ہوئے تو اس مقام پر جمعہ کی نماز کا وقت ہو گیا، جہاں آپ ﷺ نے لوگوں کی امامت کی اور اسلام کی پہلی نمازِ جمعہ ادا کی۔ مسلمان آپ ﷺ کے پیچھے جمع ہوئے اور آپ ﷺ کے ساتھ نماز ادا کی۔ پھر آپ ﷺ نے اپنا سفر جاری رکھا یہاں تک کہ آپ ﷺ مدینہ منورہ میں داخل ہوئے، جہاں وہاں کے لوگوں نے خوشی اور جشن کے ساتھ آپ ﷺ کا استقبال کیا، اور آپ ﷺ نے حضرت ابو ایوب انصاری رضی اللہ عنہ کے گھر قیام فرمایا۔", 
+        "id": "Rasulullah ﷺ meninggalkan Bani Amr bin Auf pada hari Jumat. Ketika waktu salat Jumat tiba, beliau berada di pemukiman Bani Salim bin Auf. Beliau melaksanakan salat di masjid yang terletak di tengah lembah, yang kemudian dikenal sebagai Masjid Al-Jumu'ah. Peristiwa ini terjadi dalam perjalanannya menuju Madinah setelah Hijrah, setelah sebelumnya tinggal di Quba bersama Bani Amr bin Auf selama beberapa hari. Saat beliau menuju Madinah, waktu salat Jumat tiba di tempat ini, di mana beliau mengimami orang-orang dalam salat Jumat pertama dalam Islam. Kaum muslimin berkumpul di belakang Nabi ﷺ dan salat bersamanya. Kemudian, beliau melanjutkan perjalanannya hingga memasuki Madinah Al-Munawwarah, di mana penduduknya menyambutnya dengan kegembiraan dan suka cita, dan beliau tinggal di rumah Abu Ayyub al-Ansari radhiyallahu 'anhu." 
+      },
+      "era": { 
+        "en": "Prophetic Era", 
+        "ar": "العهد النبوي", 
+        "fr": "Ère Prophétique", 
+        "ur": "عہدِ نبوی", 
+        "id": "Era Kenabian" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Medina, Dar Al-Madinah Museum", 
+        "ar": "المدينة المنورة، متحف دار المدينة", 
+        "fr": "Médine, Musée Dar Al-Madinah", 
+        "ur": "مدینہ، دار المدینہ میوزیم", 
+        "id": "Madinah, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/friday-prayer.jpg",
+      "audioUrl": null
     }
   ]
 }
