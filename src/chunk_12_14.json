@@ -1,0 +1,75 @@
+[
+    {
+        "id": "kaaba-ottoman",
+        "title": { 
+            "en": "The Building of the Holy Kaaba in the Ottoman Era", 
+            "ar": "بناء الكعبة المشرفة في العهد العثماني", 
+            "fr": "La reconstruction de la Sainte Kaaba à l'époque ottomane", 
+            "ur": "عثمانی دور میں خانہ کعبہ کی تعمیر", 
+            "id": "Pembangunan Kembali Ka'bah di Era Utsmaniyah" 
+        },
+        "category": "battles",
+        "description": { 
+            "en": "In 1039 AH (1630 CE), during the reign of Sultan Murad IV, a massive flood struck Mecca, reaching the middle of the Kaaba walls and causing the northern wall and parts of the eastern and western walls to collapse. The Sultan immediately ordered a comprehensive reconstruction. The work involved meticulously cataloging and reusing the original stones. The project took approximately six months to complete. This Ottoman structure remains the core of the Kaaba as it stands today, characterized by its strength and the preservation of its traditional dimensions.", 
+            "ar": "في عام 1039 هـ، في عهد السلطان مراد الرابع، اجتاح مكة سيل عظيم دخل الكعبة ووصل إلى منتصف جدرانها، مما أدى لتهدم الجدار الشامي وأجزاء من الجدارين الشرقي والغربي. أمر السلطان فوراً بإعادة بناء شاملة، حيث تم ترقيم الحجارة الأصلية وإعادة استخدامها. استغرق العمل حوالي ستة أشهر، وهذا البناء العثماني هو الأساس القائم للكعبة المشرفة حتى اليوم، ويتميز بمتانته والحفاظ على أبعادها التاريخية.", 
+            "fr": "En 1039 AH (1630 ap. J.-C.), sous le règne du sultan Mourad IV, une inondation massive a frappé La Mecque, atteignant le milieu des murs de la Kaaba et provoquant l'effondrement du mur nord et de parties des murs est et ouest. Le Sultan ordonna immédiatement une reconstruction complète. Les travaux ont consisté à répertorier méticuleusement et à réutiliser les pierres d'origine. Le projet a duré environ six mois. Cette structure ottomane reste le cœur de la Kaaba telle qu'elle se présente aujourd'hui, caractérisée par sa solidité et la préservation de ses dimensions traditionnelles.", 
+            "ur": "1039ھ (1630ء) میں سلطان مراد رابع کے دور حکومت میں مکہ مکرمہ میں ایک عظیم سیلاب آیا جو خانہ کعبہ کی دیواروں کے وسط تک پہنچ گیا، جس سے شمالی دیوار اور مشرقی و مغربی دیواروں کے کچھ حصے گر گئے۔ سلطان نے فوری طور پر مکمل تعمیر نو کا حکم دیا۔ کام میں اصل پتھروں کو احتیاط سے شمار کر کے دوبارہ استعمال کیا گیا۔ یہ منصوبہ تقریباً چھ ماہ میں مکمل ہوا۔ یہ عثمانی تعمیر آج بھی خانہ کعبہ کی بنیاد ہے، جو اپنی مضبوطی اور تاریخی ابعاد کے تحفظ کی وجہ سے نمایاں ہے۔", 
+            "id": "Pada tahun 1039 H (1630 M), pada masa pemerintahan Sultan Murad IV, banjir besar melanda Mekkah, mencapai tengah dinding Ka'bah dan menyebabkan dinding utara serta sebagian dinding timur dan barat runtuh. Sultan segera memerintahkan pembangunan kembali secara menyeluruh. Pekerjaan tersebut melibatkan pencatatan dan penggunaan kembali batu-batu asli secara cermat. Proyek ini memakan waktu sekitar enam bulan. Struktur Utsmaniyah ini tetap menjadi inti Ka'bah seperti yang berdiri saat ini, ditandai dengan kekuatannya dan pelestarian dimensi tradisionalnya." 
+        },
+        "era": { "en": "Ottoman Era", "ar": "العصر العثماني", "fr": "Ère Ottomane", "ur": "عہدِ عثمانی", "id": "Era Utsmaniyah" },
+        "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+        "origin": { "en": "Mecca, Dar Al-Madinah Museum", "ar": "مكة المكرمة، متحف دار المدينة", "fr": "La Mecque, Musée Dar Al-Madinah", "ur": "مکہ مکرمہ، دار المدینہ میوزیم", "id": "Mekkah, Museum Dar Al-Madinah" },
+        "image": "/images/artifacts/kaaba-ottoman.png",
+        "audioUrl": null
+    },
+    {
+        "id": "mosque-qibla-change",
+        "title": { 
+            "en": "Masjid al-Qiblatayn: The Change of the Qibla", 
+            "ar": "مسجد القبلتين وتغيير القبلة", 
+            "fr": "Masjid al-Qiblatayn : Le changement de la Qibla", 
+            "ur": "مسجد قبلتین: قبلہ کی تبدیلی", 
+            "id": "Masjid al-Qiblatayn: Perubahan Qiblat" 
+        },
+        "category": "battles",
+        "description": { 
+            "en": "Originally known as the Mosque of Banu Salama, this site bore witness to one of the most significant events in Islamic history: the change of the Qibla (direction of prayer). During the second year after the Hijra, while the Prophet ﷺ was leading the Dhuhr (or Asr) prayer facing Masjid al-Aqsa in Jerusalem, the revelation came: 'Turn then thy face towards the Sacred Mosque.' The Prophet ﷺ immediately turned toward the Kaaba in Mecca mid-prayer, and the congregation followed suit. This event marked the final establishment of the Kaaba as the permanent Qibla for all Muslims, symbolizing a distinct Islamic identity and unity. The mosque became known as Masjid al-Qiblatayn (The Mosque of the Two Qiblas) because it was the only place where a single prayer was offered toward two different directions.", 
+            "ar": "عُرف هذا المسجد قديماً بمسجد بني سلمة، وشهد حدثاً من أهم الأحداث في التاريخ الإسلامي وهو تحويل القبلة. في السنة الثانية للهجرة، وبينما كان النبي ﷺ يؤم المسلمين في صلاة الظهر (أو العصر) متجهاً نحو المسجد الأقصى، نزل الوحي بقوله تعالى: 'فولِّ وجهك شطر المسجد الحرام'. فاستدار النبي ﷺ وهو في صلاته نحو الكعبة، واستدار المصلون خلفه. كان هذا الحدث إعلاناً بجعل الكعبة القبلة الدائمة للمسلمين، ورمزاً للهوية الإسلامية والوحدة. سُمي بمسجد القبلتين لأنه الوحيد الذي صُليت فيه صلاة واحدة لقبلتين مختلفتين.", 
+            "fr": "Initialement connue sous le nom de Mosquée des Banu Salama, ce site a été le témoin de l'un des événements les plus importants de l'histoire islamique : le changement de la Qibla (direction de la prière). Au cours de la deuxième année après l'Hégire, alors que le Prophète ﷺ dirigeait la prière de Dhuhr (ou Asr) face à Masjid al-Aqsa à Jérusalem, la révélation est venue : 'Tourne donc ton visage vers la Mosquée Sacrée.' Le Prophète ﷺ s'est immédiatement tourné vers la Kaaba à La Mecque au milieu de la prière, et la congrégation a suivi. Cet événement a marqué l'établissement final de la Kaaba comme Qibla permanente for all Muslims, symbolisant une identité et une unité islamiques distinctes. La mosquée est devenue connue sous le nom de Masjid al-Qiblatayn (Source de la Mosquée des deux Qiblas) car c'était le seul endroit où une seule prière était offerte dans deux directions différentes.", 
+            "ur": "قدیم دور میں یہ مسجد 'بنو سلمہ کی مسجد' کے نام سے مشہور تھی اور یہ اسلام کی تاریخ کے ایک اہم ترین واقعے یعنی تحویلِ قبلہ کی شاہد رہی ہے۔ ہجرت کے دوسرے سال، جب نبی کریم ﷺ مسجدِ اقصیٰ کی طرف رخ کر کے ظهر (یا عصر) کی نماز پڑھا رہے تھے، تو وحی نازل ہوئی: 'پس اپنا رخ مسجدِ حرام کی طرف پھیر لیں۔' نبی کریم ﷺ نماز کے دوران ہی فوراً کعبہ کی طرف مڑ گئے اور صحابہ کرام نے بھی آپ کی پیروی کی۔ اس واقعے نے کعبہ کو تمام مسلمانوں کے لیے مستقل قبلہ کے طور پر قائم کر دیا، جو اسلامی تشخص اور اتحاد کی علامت بن گیا۔ اس مسجد کو 'مسجدِ قبلتین' (دو قبلوں والی مسجد) کہا جانے لگا کیونکہ یہ واحد مقام تھا جہاں ایک ہی نماز دو مختلف سمتوں میں ادا کی گئی تھی۔", 
+            "id": "Awalnya dikenal sebagai Masjid Bani Salama, situs ini menyaksikan salah satu peristiwa paling signifikan dalam sejarah Islam: perubahan Qiblat (arah salat). Pada tahun kedua setelah Hijriah, saat Nabi ﷺ sedang memimpin salat Zuhur (atau Ashar) menghadap Masjid al-Aqsa di Yerusalem, wahyu turun: 'Palingkanlah mukamu ke arah Masjidil Haram.' Nabi ﷺ segera berbalik ke arah Ka'bah di Mekkah di tengah salat, dan para jamaah mengikutinya. Peristiwa ini menandai penetapan akhir Ka'bah sebagai Qiblat permanen bagi seluruh umat Islam, yang melambangkan identitas dan persatuan Islam yang khas. Masjid tersebut kemudian dikenal sebagai Masjid al-Qiblatayn (Masjid Dua Qiblat) karena merupakan satu-satunya tempat di mana satu salat dilakukan menghadap dua arah yang berbeda." 
+        },
+        "era": { "en": "Prophetic Era", "ar": "العهد النبوي", "fr": "Ère Prophétique", "ur": "عہدِ نبوی", "id": "Era Kenabian" },
+        "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+        "origin": { "en": "Medina, Dar Al-Madinah Museum", "ar": "المدينة المنورة، متحف دار المدينة", "fr": "Médine, Musée Dar Al-Madinah", "ur": "مدینہ، دار المدینہ میوزیم", "id": "Madinah, Museum Dar Al-Madinah" },
+        "image": "/images/artifacts/mosque-qiblatayn.png",
+        "audioUrl": null
+    },
+    {
+        "id": "kaaba-zubayr",
+        "title": { 
+            "en": "The Building of the Holy Kaaba in the Era of Abdullah ibn al-Zubayr", 
+            "ar": "بناء الكعبة المشرفة في عهد عبدلله بن الزبير ", 
+            "fr": "La reconstruction de la Sainte Kaaba à l'époque d'Abdullah ibn al-Zubayr", 
+            "ur": "حضرت عبداللہ بن زبیر کے دور میں خانہ کعبہ کی تعمیر", 
+            "id": "Pembangunan Kembali Ka'bah di Era Abdullah bin al-Zubair" 
+        },
+        "category": "battles",
+        "description": { 
+            "en": "When Abdullah ibn al-Zubayr took charge of Mecca, he decided to rebuild the Kaaba upon the original foundations of Ibrahim (AS), fulfilling a wish once expressed by the Prophet ﷺ to Aisha (RA). He incorporated the six cubits that Quraysh had previously left out of the building. He also added two doors at ground level—one on the eastern side and another on the western side—allowing people to enter through one and exit through the other. Furthermore, he increased the height of the Kaaba to 27 cubits (approximately 13.5 meters), making it a significant architectural milestone that restored the House to its intended Prophetic form.", 
+            "ar": "حين ولي عبدالله بن الزبير أمر مكة قرر إعادة بناء الكعبة على قواعد إبراهيم عليه السلام ، تيمناً بما كان يتمناه رسول الله صلى الله عليه وسلم ، فقد سمع من خالته عائشة رضي الله عنها أن النبي صلى الله عليه وسلم قال لها : (( يا عائشة ، لولا أن قومك حديثو عهد بجاهلية لأمرت بالبيت فهدم ، فأدخلت فيه ما أخرج منه ، وألصقته بالأرض ، وجعلت له باباً شرقياً ، وباباً غربياً ، فبلغت به أساس إبراهيم )) ، فأدخل فيها ماأخرجته قريش منها (٦ أذرع وشبراً) ، وجعل لها بابين ملتصقين بالأرض ، أحدهما في الجهة الشرقية والآخر في الجهة الغربية ، وزاد في ارتفاعها ليكون ٢٧ ذراعاً أي ما يعادل ١٣.٥ م تقريباً .", 
+            "fr": "Lorsqu'Abdullah ibn al-Zubayr prit la direction de La Mecque, il décida de reconstruire la Kaaba sur les fondations originelles d'Ibrahim (AS), réalisant ainsi un souhait autrefois exprimé par le Prophète ﷺ à Aïcha (RA). Il incorpora les six coudées que les Qurayshites avaient précédemment laissées hors de l'édifice. Il ajouta également deux portes au niveau du sol — une à l'est et une à l'ouest. De plus, il augmenta la hauteur de la Kaaba à 27 coudées (environ 13,5 mètres), en faisant un jalon architectural majeur qui restaura la Maison dans sa forme prophétique prévue.", 
+            "ur": "جب حضرت عبداللہ بن زبیرؓ نے مکہ مکرمہ کا انتظام سنبھالا تو انہوں نے خانہ کعبہ کو حضرت ابراہیم علیہ السلام کی اصل بنیادوں پر دوبارہ تعمیر کرنے کا فیصلہ کیا، تاکہ نبی کریم ﷺ کی اس خواہش کو پورا کیا جا سکے جس کا تذکرہ آپ نے حضرت عائشہؓ سے کیا تھا۔ انہوں نے وہ چھ ہاتھ جگہ بھی کعبہ میں شامل کر دی جسے قریش نے تعمیر سے باہر چھوڑ دیا تھا۔ انہوں نے زمین کی سطح پر دو دروازے بنائے—ایک مشرقی جانب اور دوسرا مغربی جانب—تاکه لوگ ایک سے داخل ہوں اور دوسرے سے نکل سکیں۔ مزید برآں، انہوں نے کعبہ کی اونچائی 27 ہاتھ (تقریباً 13.5 میٹر) تک بڑھا دی، جس سے اللہ کے گھر کو اس کی اصل نبوی شکل میں بحال کر دیا گیا۔", 
+            "id": "Ketika Abdullah bin al-Zubair memimpin Mekkah, ia memutuskan untuk membangun kembali Ka'bah di atas fondasi asli Ibrahim (AS), memenuhi keinginan yang pernah diungkapkan oleh Nabi ﷺ kepada Aisyah (RA). Ia memasukkan enam hasta yang sebelumnya ditinggalkan oleh kaum Quraisy dari bangunan tersebut. Ia juga menambahkan dua pintu di tingkat tanah—satu di sisi timur dan satu lagi di sisi barat. Selain itu, ia meningkatkan tinggi Ka'bah menjadi 27 hasta (sekitar 13,5 meter), menjadikannya tonggak arsitektur penting yang mengembalikan Baitullah ke bentuk yang diinginkan Nabi." 
+        },
+        "era": { "en": "Early Islamic Era", "ar": "العصر الإسلامي المبكر", "fr": "Début de l'Ère Islamique", "ur": "ابتدائی اسلامی دور", "id": "Era Islam Awal" },
+        "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+        "origin": { "en": "Mecca, Dar Al-Madinah Museum", "ar": "مكة المكرمة، متحف دار المدينة", "fr": "La Mecque, Musée Dar Al-Madinah", "ur": "مکہ مکرمہ، دار المدینہ میوزیم", "id": "Mekkah, Museum Dar Al-Madinah" },
+        "image": "/images/artifacts/kaaba-zubayr-1.png",
+        "images": [
+            "/images/artifacts/kaaba-zubayr-1.png",
+            "/images/artifacts/kaaba-zubayr-2.png"
+        ],
+        "audioUrl": null
+    }
+]

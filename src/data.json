@@ -37,47 +37,18 @@
       "image": "/images/scrolls.png"
     }
   ],
-  "featuredArtifacts": [
-    {
-      "id": "1",
-      "title": { "en": "Artifact Title 1", "ar": "اسم التحفة 1", "fr": "Titre Artefact 1", "ur": "آرٹفیکٹ کا نام 1", "id": "Nama Artefak 1" },
-      "category": "pottery",
-      "description": {
-        "en": "Description text about the artifact goes here. This historical piece...",
-        "ar": "نص الوصف للتحفة هنا. هذه القطعة التاريخية...",
-        "fr": "Le texte de description de l'artefact va ici. Cette pièce historique...",
-        "ur": "نمونہ کی تفصیل یہاں ہے۔ یہ تاریخی ٹکڑا...",
-        "id": "Teks deskripsi tentang artefak diletakkan di sini. Potongan sejarah ini..."
-      },
-      "era": { "en": "Islamic Period", "ar": "العصر الإسلامي", "fr": "Période Islamique", "ur": "دورِ اسلامی", "id": "Periode Islam" },
-      "material": { "en": "Ceramic", "ar": "خزف", "fr": "Céramique", "ur": "سیرامک", "id": "Keramik" },
-      "origin": { "en": "Medina, Saudi Arabia", "ar": "المدينة المنورة، السعودية", "fr": "Médine, Arabie Saoudite", "ur": "مدینہ، سعودی عرب", "id": "Madinah, Arab Saudi" },
-      "image": "/images/artifact-1.png",
-      "audioUrl": "/audio/artifact-1.mp3"
-    },
-    {
-      "id": "2",
-      "title": { "en": "Artifact Title 2", "ar": "اسم التحفة 2", "fr": "Titre Artefact 2", "ur": "آرٹفیکٹ کا نام 2", "id": "Nama Artefak 2" },
-      "category": "coins",
-      "description": { "en": "Description...", "ar": "وصف...", "fr": "Description...", "ur": "تفصیل...", "id": "Deskripsi..." },
-      "era": { "en": "Prophetic Era", "ar": "العهد النبوي", "fr": "Ère Prophétique", "ur": "عہد نبوی", "id": "Era Kenabian" },
-      "material": { "en": "Silver", "ar": "فضة", "fr": "Argent", "ur": "چاندی", "id": "Perak" },
-      "origin": { "en": "Medina", "ar": "المدينة", "fr": "Médine", "ur": "مدینہ", "id": "Madinah" },
-      "image": "/images/artifact-2.png",
-      "audioUrl": null
-    }
-  ],
+  "featuredArtifacts": ["dome-of-the-rock", "arrival-model", "nabawi-abdul-majid"],
   "artifacts": [
     {
       "id": "arrival-model",
       "title": { "en": "Arrival of the Prophet", "ar": "قدوم النبي", "fr": "L'Arrivée du Prophète", "ur": "نبی کی آمد", "id": "Kedatangan Nabi" },
       "category": "battles",
       "description": { 
-        "en": "The Prophet and his companion Abu Bakr Al-Siddiq continued their journey to Medina, accompanied by his servant Amir bin Fuhayrah and their guide who led them on the path to the lower part of Mecca, then proceeded along the coast until the procession reached Thaniyat Al-Aair on the right of his mount, and the procession descended into the belly of the valley, then ascended the Harrah to descend into the depression and walk parallel to Wadi Al-Ranunah until reaching Quba.\n\nA group of the Ansar said: When we heard of the Messenger's departure from Mecca and anticipated his arrival, we used to go out after praying the morning prayer to the outskirts of our Harrah waiting for the Messenger. By God, we would not leave until the sun overpowered the shade, so if we found no shade we would enter, and that was during hot days, until the day the Messenger arrived. We sat as we used to sit until there was no shade left, we entered our homes. The Messenger arrived when we entered, and the first to see him was a Jewish man who saw what we were doing as we waited for the Messenger's arrival. He said, 'O sons of Qaylah, here is your grandfather who has come!' We went out to the Messenger of God, who was in the shade of a palm tree, accompanied by a man of similar age. Most of us had not seen the Messenger of God before, and people crowded him, not knowing the path of guidance from Abu Bakr, until the shade left the Messenger of God, so Abu Bakr stood up and shaded him with his cloak, and we recognized him at that moment.", 
-        "ar": "تابع النبي وصاحبه أبي بكر الصديق الطريق إلى المدينة بصحبة خادمه عامر بن فهيرة ودليلهما الذي سلك بهما الطريق إلى أسفل مكة ثم مضى بهما على الساحل حتى وصل الركب إلى ثنية العائر عن يمين ركوبه، وهبط الركب إلى بطن الوادي ثم اعتلى الحرة ليهبط إلى المنخفض ويسير محاذياً لـ وادي الرانوناء حتى وصل قباء.\n\nويقول جمع من الأنصار لما سمعنا بمخرج الرسول من مكة وتوكفنا قدومه كنا نخرج إذا صلينا الصبح إلى ظاهر حرتنا ننتظر الرسول يغاظ فوالله لا نبرح حتى تغلبنا الشمس على الظلال فإذا لم نجد ظلاً دخلنا وذلك في أيام حارة حتى إذا كان اليوم الذي قدم فيه الرسول جلسنا كما كنا نجلس حتى إذا لم يبق ظل دخلنا بيوتنا وقدم الرسول حين دخلنا فكان أول من رآه رجل من اليهود وقد رأى ما كنا نصنع وأنا ننتظر قدوم الرسول يا بني قيلة هذا جدكم قد جاء فخرجنا إلى رسول الله وهو في ظل نخلة ومعه في مثل سنه وأكثرنا لم يكن رأى رسول الله من قبل وركبه الناس وما يعرفونه سبل الهدى من أبي بكر حتى زال الظل عن رسول الله فقام أبو بكر فأظله بردائه فعرفناه عند ذلك.\n\nفاستُقبل بالحب والهتاف والنشيد المعروف طلع البدر علينا من ثنيات الوداع فضربت الجواري الدفوف وكان يوماً حافلاً للمدينة المنورة وأعظم أيامها ثم نزل النبي مع الأنصار إلى قباء ونزل على كلثوم بن الهدم وسعد بن خيثمة ونزل أبو بكر على خبيب بن اساف وبعد ثلاثة أيام لحق بهم سيدنا علي بن أبي طالب إلى المدينة بعد أن أدى عن رسول الله الودائع. فأقام النبي بقباء في بني عمرو بن عوف يوم الاثنين والثلاثاء والأربعاء والخميس وأسس مسجد قباء وفي يوم الجمعة غادر إلى وسط المدينة.", 
-        "fr": "Le Prophète et son compagnon Abu Bakr Al-Siddiq poursuivirent leur route vers Médine, accompagnés de son serviteur Amir bin Fuhayrah et de leur guide qui les conduisit sur le chemin vers la partie basse de la Mecque, puis ils longèrent la côte jusqu'à ce que le cortège atteigne Thaniyat Al-Aair sur la droite de sa monture, et le cortège descendit au fond de la vallée, puis escalada la Harrah pour redescendre dans la dépression et longer la vallée de Wadi Al-Ranunah jusqu'à atteindre Quba.\n\nUn groupe d'Ansar a dit : Lorsque nous avons entendu parler du départ du Messager de la Mecque et que nous attendions son arrivée, nous sortions après avoir accompli la prière de l'aube en bordure de notre Harrah pour attendre le Messager. Par Dieu, nous ne partions pas tant que le soleil ne prenait pas le dessus sur les ombres, alors si nous ne trouvions plus d'ombre, nous rentrions, et c'était par temps très chaud. Jusqu'au jour où le Messager est arrivé. Nous étions assis comme d'habitude et quand il n'y avait plus d'ombre, nous sommes rentrés chez nous. Le Messager est arrivé alors que nous étions rentrés, et le premier à le voir fut un juif qui avait vu ce que nous faisions en attendant le Messager. Il a dit : « Ô fils de Qaylah, voici votre grand-père qui est arrivé ! ». Nous sommes sortis rejoindre le Messager de Dieu, qui était à l'ombre d'un palmier avec un homme de son âge. La plupart d'entre nous n'avaient jamais vu le Messager de Dieu auparavant, et les gens se sont pressés autour de lui, ne connaissant pas le chemin de la guidance d'Abu Bakr, jusqu'à ce que l'ombre quitte le Messager de Dieu. Abu Bakr s'est alors levé et l'a protégé de son manteau, et c'est à ce moment-là que nous l'avons reconnu.", 
-        "ur": "نبی کریم اور ان کے ساتھی ابوبکر صدیق اپنے خادم عامر بن فہیرہ اور اپنے رہنما کے ساتھ مدینہ کی طرف اپنا سفر جاری رکھے ہوئے تھے جس نے انہیں مکہ کے نچلے حصے کی طرف رہنمائی کی، پھر ساحل کے ساتھ چلتے رہے یہاں تک کہ قافلہ ان کی سواری کے دائیں جانب ثنیۃ العائر تک پہنچ گیا، اور قافلہ وادی کے پیٹ میں اتر گیا، پھر حرہ پر چڑھ کر نشیب میں اترا اور وادی رانوناء کے متوازی چلتا رہا یہاں تک کہ قباء پہنچ گیا۔\n\nانصار کی ایک جماعت کا کہنا ہے: جب ہم نے مکہ سے رسول اللہ کی روانگی کے بارے میں سنا اور ان کی آمد کے منتظر ہوئے، تو ہم صبح کی نماز کے بعد اپنے حرہ کے باہر رسول اللہ کا انتظار کرنے کے لیے نکل جاتے۔ خدا کی قسم، ہم اس وقت تک نہیں نکلتے تھے جب تک کہ سورج سائے پر غالب نہ آجائے، لہذا اگر ہمیں کوئی سایہ نہ ملتا تو ہم داخل ہوجاتے، اور یہ گرم دنوں کی بات ہے۔ یہاں تک کہ جس دن رسول اللہ پہنچے، ہم اسی طرح بیٹھے جیسے ہم بیٹھا کرتے تھے، یہاں تک کہ جب کوئی سایہ باقی نہ رہا، تو ہم اپنے گھروں میں داخل ہوگئے۔ رسول اللہ اس وقت پہنچے جب ہم داخل ہوئے تھے، اور انہیں دیکھنے والا پہلا شخص ایک یہودی تھا جس نے دیکھا کہ ہم کیا کر رہے ہیں جب ہم رسول اللہ کی آمد کا انتظار کر رہے تھے۔ اس نے کہا: اے بنو قیلہ، یہ تمہارے دادا ہیں جو آ گئے ہیں! ہم رسول اللہ کی طرف نکلے، جو ایک کھجور کے درخت کے سائے میں تھے اور ان کے ساتھ اسی عمر کے ایک شخص تھے۔ ہم میں سے اکثر نے پہلے رسول اللہ کو نہیں دیکھا تھا، اور لوگ ان پر سوار ہو گئے اور ابوبکر سے ہدایت کا راستہ نہیں پہچانتے تھے، یہاں تک کہ رسول اللہ پر سے سایہ ہٹ گیا، تو ابوبکر کھڑے ہوئے اور ان پر اپنی چادر کا سایہ کیا، تو ہم نے انہیں اس وقت پہچان لیا۔", 
-        "id": "Nabi dan sahabatnya Abu Bakar As-Siddiq melanjutkan perjalanan ke Madinah, ditemani oleh pelayannya Amir bin Fuhairah dan pemandu mereka yang memimpin mereka di jalur ke bagian bawah Mekah, kemudian menyusuri pantai hingga rombongan mencapai Thaniyat Al-Aair di sebelah kanan tunggangan beliau, dan rombongan turun ke dasar lembah, kemudian mendaki Harrah untuk turun ke dataran rendah dan berjalan sejajar dengan Wadi Al-Ranunah hingga tiba di Quba.\n\nSekelompok Ansar berkata: Ketika kami mendengar tentang keberangkatan Utusan dari Mekah dan menantikan kedatangannya, kami biasa keluar setelah sholat subuh menuju pinggiran Harrah kami untuk menunggu Utusan. Demi Allah, kami tidak akan pergi sampai matahari menutupi bayangan, jadi jika kami tidak menemukan bayangan, kami akan masuk, dan itu terjadi di hari-hari yang panas. Hingga hari dimana Utusan tiba, kami duduk seperti biasanya sampai tidak ada bayangan yang tersisa, kami masuk ke rumah kami. Utusan tiba ketika kami baru saja masuk, dan orang pertama yang melihatnya adalah seorang pria Yahudi yang melihat apa yang kami lakukan saat menunggu kedatangan Utusan. Dia berkata: 'Wahai Bani Qailah, ini kakekmu yang telah datang!' Kami keluar untuk menemui Utusan Allah, yang sedang berada di bawah bayangan pohon palem, ditemani oleh seorang pria yang seumuran dengannya. Sebagian besar dari kami belum pernah melihat Utusan Allah sebelumnya, dan orang-orang berkerumun di sekitarnya, tidak mengetahui jalan petunjuk dari Abu Bakar, sampai bayangan meninggalkan Utusan Allah. Abu Bakar kemudian berdiri dan melindunginya dengan jubahnya, dan kami mengenalinya pada saat itu." 
+        "en": "The Prophet and his companion Abu Bakr Al-Siddiq continued their journey to Medina, accompanied by his servant Amir bin Fuhayrah and their guide who led them on the path to the lower part of Mecca, then proceeded along the coast until the procession reached Thaniyat Al-Aair on the right of his mount, and the procession descended into the belly of the valley, then ascended the Harrah to descend into the depression and walk parallel to Wadi Al-Ranunah until reaching Quba.",
+        "ar": "تابع النبي وصاحبه أبي بكر الصديق الطريق إلى المدينة بصحبة خادمه عامر بن فهيرة ودليلهما الذي سلك بهما الطريق إلى أسفل مكة ثم مضى بهما على الساحل حتى وصل الركب إلى ثنية العائر عن يمين ركوبه، وهبط الركب إلى بطن الوادي ثم اعتلى الحرة ليهبط إلى المنخفض ويسير محاذياً لـ وادي الرانوناء حتى وصل قباء.",
+        "fr": "Le Prophète et son compagnon Abu Bakr Al-Siddiq poursuivirent leur route vers Médine, accompagnés de son serviteur Amir bin Fuhayrah et de leur guide qui les conduisit sur le chemin vers la partie basse de la Mecque, puis ils longèrent la côte jusqu'à ce que le cortège atteigne Thaniyat Al-Aair sur la droite de sa monture, et le cortège descendit au fond de la vallée, puis escalada la Harrah pour redescendre dans la dépression et longer la vallée de Wadi Al-Ranunah jusqu'à atteindre Quba.",
+        "ur": "نبی کریم اور ان کے ساتھی ابوبکر صدیق اپنے خادم عامر بن فہیرہ اور اپنے رہنما کے ساتھ مدینہ کی طرف اپنا سفر جاری رکھے ہوئے تھے جس نے انہیں مکہ کے نچلے حصے کی طرف رہنمائی کی، پھر ساحل کے ساتھ چلتے رہے یہاں تک کہ قافلہ ان کی سواری کے دائیں جانب ثنیۃ العائر تک پہنچ گیا، اور قافلہ وادی کے پیٹ میں اتر گیا، پھر حرہ پر چڑھ کر نشیب میں اترا اور وادی رانوناء کے متوازی چلتا رہا یہاں تک کہ قباء پہنچ گیا۔",
+        "id": "Nabi dan sahabatnya Abu Bakar As-Siddiq melanjutkan perjalanan ke Madinah, ditemani oleh pelayannya Amir bin Fuhairah dan pemandu mereka yang memimpin mereka di jalur ke bagian bawah Mekah, kemudian menyusuri pantai hingga rombongan mencapai Thaniyat Al-Aair di sebelah kanan tunggangan beliau, dan rombongan turun ke dasar lembah, kemudian mendaki Harrah untuk turun ke dataran rendah dan berjalan sejajar dengan Wadi Al-Ranunah hingga tiba di Quba." 
       },
       "era": { "en": "Prophetic Era", "ar": "العهد النبوي", "fr": "Ère Prophétique", "ur": "عہد نبوی", "id": "Era Kenabian" },
       "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
@@ -96,74 +67,38 @@
       },
       "category": "battles",
       "description": { 
-        "en": "The Dome of the Rock is considered the oldest Islamic building still standing today. A common mistake regarding Al-Aqsa Mosque is the belief that the Golden Dome or the Qibli Mosque in its southern corner represents the entirety of Al-Aqsa Mosque. In reality, Al-Aqsa Mosque encompasses the entire area enclosed within the surrounding walls, including the Dome of the Rock, the Qibli Mosque, and other elements such as fountains, niches, corridors, and open squares. The Dome of the Rock is an octagonal structure built on an eight-sided base, with doors opening in the middle of each of its eight sides. The dome rests on a circular neck supported by a circular arcade carried on four corners and twelve columns. It was built during the reign of Caliph Abd al-Malik ibn Marwan; construction began in 68 AH / 687 AD and was completed in 72 AH / 691 AD.\n\nThe dome maintained its structure until the reign of Sultan Suleiman the Magnificent, who performed the first major restoration using blue Qashani tiles and decorating it with beautiful calligraphy. Originally, the building was covered in Byzantine-style mosaics. Sultan Suleiman ordered that the walls be re-clad with marble rising higher than a man's height, followed by the blue tiles. As for the colored glass windows of the Dome of the Rock, they were introduced as part of the Ottoman Empire's renovations.", 
-        "ar": "تعتبر قبة الصخرة من أقدم مبنى إسلامي حتى اليوم، ومن الأخطاء الشائعة المتعلقة بالمسجد الأقصى هي اعتبار أن الصخرة الذهبية أو الجامع القبلي في الزاوية الجنوبية منها يمثل المسجد الأقصى، بينما أن المسجد الأقصى هو كل المنطقة المحصورة داخل السور المحيط بالمسجد ويحتوي على قبة الصخرة والمسجد القبلي وبعض العناصر الأخرى كالسبل والزوايا وأروقة وساحات فضاء. وقبة الصخرة عبارة عن بناء مثمن أقيمت على بناء ثماني الأضلاع وفتحت أبوابه في وسط أضلاع البناء الثمانية. وتستند القبة على رقبة مستديرة تستند إلى رواق مستدير محمول على أربعة أركان واثني عشر عموداً. بنيت قبة الصخرة في عهد الخليفة عبد الملك بن مروان وبدأ البناء عام 68هـ / 687م واكتمل بناؤها عام 72هـ / 691م.\n\nوظلت القبة محافظة على بنائها حتى عهد السلطان سليمان القانوني الذي قام بإجراء أول مرة للبناء بالطلاء الكاشاني الأزرق وتزيينه بخطوط جميلة، وكان البناء مكسواً بالفسيفساء على الطراز البيزنطي. فأمر السلطان سليمان القانوني بإعادة كسوة الحوائط بالرخام ويرتفع أكثر من قامة الإنسان ثم بالبلاط الأزرق. أما النوافذ الزجاجية الملونة لقبة الصخرة فقد تم إدخالها على البناء ضمن تجديد الدولة العثمانية.", 
-        "fr": "Le Dôme du Rocher est considéré comme le plus ancien édifice islamique existant aujourd'hui. Une erreur courante concernant la mosquée Al-Aqsa est de croire que le dôme doré ou la mosquée Al-Qibli dans son coin sud représente l'intégralité de la mosquée Al-Aqsa. En réalité, la mosquée Al-Aqsa englobe toute la zone enclose dans les murs d'enceinte, incluant le Dôme du Rocher, la mosquée Al-Qibli et d'autres éléments tels que des fontaines, des niches, des couloirs et des esplanades. Le Dôme du Rocher est une structure octogonale construite sur une base à huit côtés, avec des portes s'ouvrant au milieu de chacun de ses huit côtés. Le dôme repose sur un tambour circulaire soutenu par une arcade circulaire portée par quatre piliers et douze colonnes. Il a été construit sous le règne du calife Abd al-Malik ibn Marwan ; la construction a commencé en 68 AH / 687 après JC et s'est achevée en 72 AH / 691 après JC.\n\nLe dôme a conservé sa structure jusqu'au règne du sultan Soliman le Magnifique, qui a effectué la première restauration majeure en utilisant des carreaux bleus de Qashani et en le décorant d'une calligraphie magnifique. À l'origine, le bâtiment était recouvert de mosaïques de style byzantin. Le sultan Soliman a ordonné que les murs soient recouverts de marbre s'élevant plus haut que la taille d'un homme, suivi par les carreaux bleus. Quant aux vitraux colorés du Dôme du Rocher, ils ont été introduits dans le cadre des rénovations de l'Empire ottoman.", 
-        "ur": "قبۃ الصخرہ کو آج تک کی قدیم ترین اسلامی عمارت سمجھا جاتا ہے۔ مسجد اقصیٰ کے بارے میں ایک عام غلطی یہ سمجھی جاتی ہے کہ سنہرا گنبد یا اس کے جنوبی کونے میں واقع جامع القبلی ہی مسجد اقصیٰ کی نمائندگی کرتا ہے، جب کہ مسجد اقصیٰ وہ پورا علاقہ ہے جو مسجد کے گرد دیوار کے اندر محصور ہے اور اس میں قبۃ الصخرہ، مسجد قبلی اور دیگر عناصر جیسے سبیل، گوشے، راہداریاں اور کھلے میدان شامل ہیں۔ قبۃ الصخرہ ایک ہشت پہلو عمارت ہے جو آٹھ رخہ بنیاد پر تعمیر کی گئی ہے اور اس کی آٹھوں جانب کے وسط میں دروازے کھلتے ہیں۔ گنبد ایک گول گردن پر قائم ہے جو ایک گول برآمدے پر ٹکی ہے جو چار ستونوں اور بارہ کالموں پر مبنی ہے۔ قبۃ الصخرہ خلیفہ عبدالملک بن مروان کے دور میں تعمیر کی گئی تھی؛ تعمیر کا آغاز 68 ہجری / 687 عیسوی میں ہوا اور اس کی تکمیل 72 ہجری / 691 عیسوی میں ہوئی۔\n\nگنبد سلطان سلیمان عالیشان کے دور تک اپنی ساخت برقرار رکھے ہوئے تھا، جنہوں نے نیلی کاشانی ٹائلوں کے ساتھ پہلی بار عمارت کی مرمت کی اور اسے خوبصورت خطاطی سے سجایا۔ عمارت بازنطینی طرز کے موزیک سے مزین تھی۔ سلطان سلیمان عالیشان نے دیواروں کو سنگ مرمر سے دوبارہ ڈھانپنے کا حکم دیا جو انسان کے قد سے زیادہ اونچی تھیں، اور پھر اس کے اوپر نیلی ٹائلیں لگائیں۔ جہاں تک قبۃ الصخرہ کے رنگین شیشے کی کھڑکیوں کا تعلق ہے، انہیں خلافت عثمانیہ کی تجدید کاری کے حصے کے طور پر عمارت میں شامل کیا گیا تھا۔", 
-        "id": "Kubah Batu (Dome of the Rock) dianggap sebagai bangunan Islam tertua yang masih berdiri hingga saat ini. Kesalahan umum mengenai Masjid Al-Aqsa adalah anggapan bahwa Kubah Emas atau Masjid Al-Qibli di sudut selatannya mewakili keseluruhan Masjid Al-Aqsa. Kenyataannya, Masjid Al-Aqsa adalah seluruh area yang terkurung di dalam tembok yang mengelilingi masjid, mencakup Kubah Batu, Masjid Al-Qibli, serta elemen lainnya seperti air mancur, ceruk (niche), koridor, dan ruang terbuka. Kubah Batu adalah struktur segi delapan yang dibangun di atas dasar delapan sisi, dengan pintu yang terbuka di tengah masing-masing dari delapan sisi bangunan tersebut. Kubah tersebut bertumpu pada leher bundar yang didukung oleh galeri melingkar yang bertumpu pada empat pilar dan dua belas kolom. Bangunan ini didirikan pada masa Khalifah Abd al-Malik bin Marwan; konstruksi dimulai pada tahun 68 H / 687 M dan selesai pada tahun 72 H / 691 M.\n\nKubah tersebut tetap mempertahankan strukturnya hingga masa Sultan Suleiman al-Qanuni, yang melakukan renovasi pertama menggunakan ubin biru Qashani dan menghiasinya dengan kaligrafi yang indah. Awalnya, bangunan ini dilapisi dengan mosaik bergaya Bizantium. Sultan Suleiman memerintahkan agar dinding dilapisi kembali dengan marmer yang tingginya melebihi tinggi manusia, diikuti oleh ubin biru. Adapun jendela kaca berwarna pada Kubah Batu diperkenalkan ke dalam bangunan sebagai bagian dari renovasi Kesultanan Utsmaniyah." 
+        "en": "The Dome of the Rock is considered the oldest Islamic building still standing today. Built during the reign of Caliph Abd al-Malik ibn Marwan; construction began in 68 AH / 687 AD and was completed in 72 AH / 691 AD. It is located within the walls of Al-Aqsa Sharif in Jerusalem.",
+        "ar": "تعتبر قبة الصخرة من أقدم المباني الإسلامية القائمة حتى اليوم. بنيت في عهد الخليفة عبد الملك بن مروان، بدأ بناؤها عام 68هـ / 687م واكتمل عام 72هـ / 691م، وتقع داخل حرم المسجد الأقصى في القدس.",
+        "fr": "Le Dôme du Rocher est considéré comme le plus ancien édifice islamique encore debout aujourd'hui. Construit sous le règne du calife Abd al-Malik ibn Marwan, sa construction a commencé en 68 AH / 687 ap. J.-C. et s'est achevée en 72 AH / 691 ap. J.-C. Il est situé dans l'enceinte d'Al-Aqsa Sharif à Jérusalem.",
+        "ur": "قبۃ الصخرہ کو آج تک کی قدیم ترین اسلامی عمارت سمجھا جاتا ہے۔ اسے خلیفہ عبدالملک بن مروان کے دور میں تعمیر کیا گیا تھا؛ تعمیر کا آغاز 68ھ / 687ء میں ہوا اور 72ھ / 691ء میں تکمیل ہوئی۔ یہ بیت المقدس میں مسجد اقصیٰ کے احاطے کے اندر واقع ہے۔",
+        "id": "Kubah Batu (Dome of the Rock) dianggap sebagai bangunan Islam tertua yang masih berdiri hingga saat ini. Didirikan pada masa Khalifah Abd al-Malik bin Marwan; konstruksi dimulai pada tahun 68 H / 687 M dan selesai pada tahun 72 H / 691 M. Terletak di dalam kompleks Al-Aqsa di Yerusalem." 
       },
-      "era": { 
-        "en": "Umayyad Era", 
-        "ar": "العصر الأموي", 
-        "fr": "Ère Omeyyade", 
-        "ur": "دورِ اموی", 
-        "id": "Era Umayyah" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Jerusalem, Palestine", 
-        "ar": "القدس، فلسطين", 
-        "fr": "Jérusalem, Palestine", 
-        "ur": "بیت المقدس، فلسطین", 
-        "id": "Yerusalem, Palestina" 
-      },
+      "era": { "en": "Umayyad Era", "ar": "العصر الأموي", "fr": "Ère Omeyyade", "ur": "دورِ اموی", "id": "Era Umayyah" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Jerusalem, Palestine", "ar": "القدس، فلسطين", "fr": "Jérusalem, Palestine", "ur": "بیت المقدس، فلسطین", "id": "Yerusalem, Palestina" },
       "image": "/images/artifacts/dome-of-the-rock.jpg",
       "audioUrl": null
     },
     {
       "id": "nabawi-abdul-majid",
       "title": { 
-        "en": "Architecture of the Prophet's Mosque under Sultan Abdul Majid I (1255-1277 AH / 1839-1860 AD)", 
-        "ar": "عمارة المسجد النبوي الشريف في عهد السلطان عبد المجيد الأول 1255-1277 هـ / 1839-1860 م", 
-        "fr": "Architecture de la Mosquée du Prophète sous le Sultan Abdul Majid I (1255-1277 AH / 1839-1860 ap. J.-C.)", 
-        "ur": "سلطان عبد المجید اول کے عہد میں مسجد نبوی کی تعمیر و توسیع (1255-1277ھ / 1839-1860ء)", 
-        "id": "Arsitektur Masjid Nabawi di bawah Sultan Abdul Majid I (1255-1277 H / 1839-1860 M)" 
+        "en": "Architecture of the Prophet's Mosque under Sultan Abdul Majid I", 
+        "ar": "عمارة المسجد النبوي الشريف في عهد السلطان عبد المجيد الأول", 
+        "fr": "Architecture de la Mosquée du Prophète sous le Sultan Abdul Majid I", 
+        "ur": "سلطان عبد المجید اول کے عہد میں مسجد نبوی کی تعمیر و توسیع", 
+        "id": "Arsitektur Masjid Nabawi di bawah Sultan Abdul Majid I" 
       },
       "category": "battles",
       "description": { 
-        "en": "The architecture of Sultan Abdul Majid I is considered the largest renovation ever conducted for the Prophet's Mosque during the Ottoman era. This architecture was characterized by its comprehensiveness, covering all parts of the mosque except for the Sacred Chamber (Al-Hujrah Al-Sharifah), the three mihrabs, the Prophetic Minbar, and the main minaret. The construction by Sultan Abdul Majid took twelve years, with work continuing between 1265 - 1277 AH (1848 - 1860 AD). Prior to this, the mosque's structure was based on the architecture of Sultan Qaitbay, the Mamluk Sultan of Egypt.", 
-        "ar": "تعتبر عمارة السلطان عبد المجيد الأول أكبر عمارة جرت للمسجد النبوي الشريف في العصر العثماني تميزت هذه العمارة بشموليتها لكافة أجزاء المسجد عدا الحجرة الشريفة والمحاريب الثلاثة والمنبر النبوي والمنارة الرئيسية. وقد استغرقت عمارة السلطان عبد المجيد اثنتي عشرة عاماً حيث استمر العمل بها بين عامي (1265 - 1277 / 1848 - 1860م). وقد كان بناء المسجد قبل ذلك على بناء السلطان قايتباي سلطان الدولة المملوكية في مصر.", 
-        "fr": "L'architecture du Sultan Abdul Majid I est considérée comme la plus grande rénovation jamais entreprise pour la Mosquée du Prophète à l'époque ottomane. Cette architecture se caractérise par son exhaustivité, couvrant toutes les parties de la mosquée, à l'exception de la Chambre Sacrée (Al-Hujrah Al-Sharifah), des trois mihrabs, du Minbar prophétique et du minaret principal. La construction par le Sultan Abdul Majid a duré douze ans, les travaux se poursuivant entre 1265 et 1277 AH (1848 - 1860 ap. J.-C.). Auparavant, la structure de la mosquée reposait sur l'architecture du Sultan Qaitbay, le sultan mamelouk d'Égypte.", 
-        "ur": "سلطان عبد المجید اول کی تعمیر کو عثمانی دور میں مسجد نبوی شریف کے لیے کی جانے والی سب سے بڑی تعمیراتی کوشش سمجھا جاتا ہے۔ یہ تعمیر اپنی جامعیت کے لحاظ سے ممتاز تھی، جس میں حجرہ شریفہ، تینوں محرابوں، منبر نبوی اور مرکزی مینار کے علاوہ مسجد کے تمام حصوں کو شامل کیا گیا تھا۔ سلطان عبد المجید کی اس تعمیر میں بارہ سال کا عرصہ لگا، جس کا کام 1265ھ سے 1277ھ (1848ء - 1860ء) کے درمیان جاری رہا۔ اس سے قبل مسجد کی عمارت مصر کے مملوک سلطان، سلطان قایتبائی کی تعمیر پر مبنی تھی۔", 
-        "id": "Arsitektur Sultan Abdul Majid I dianggap sebagai renovasi terbesar yang pernah dilakukan untuk Masjid Nabawi pada era Utsmaniyah. Arsitektur ini dicirikan oleh sifatnya yang komprehensif, mencakup seluruh bagian masjid kecuali Kamar Suci (Al-Hujrah Al-Sharifah), tiga mihrab, Mimbar Nabi, dan menara utama. Pembangunan oleh Sultan Abdul Majid memakan waktu dua belas tahun, di mana pengerjaannya berlangsung antara tahun 1265 - 1277 H (1848 - 1860 M). Sebelumnya, struktur masjid didasarkan pada arsitektur Sultan Qaitbay, Sultan Mamluk dari Mesir." 
+        "en": "The architecture of Sultan Abdul Majid I is considered the largest renovation ever conducted for the Prophet's Mosque during the Ottoman era. The construction took twelve years, with work continuing between 1265 - 1277 AH (1848 - 1860 AD).", 
+        "ar": "تعتبر عمارة السلطان عبد المجيد الأول أكبر عمارة جرت للمسجد النبوي الشريف في العصر العثماني. استمر العمل بها بين عامي (1265 - 1277 هـ / 1848 - 1860 م).", 
+        "fr": "L'architecture du Sultan Abdul Majid I est considérée comme la plus grande rénovation jamais entreprise pour la Mosquée du Prophète à l'époque ottomane. Les travaux se sont poursuivis entre 1265 et 1277 AH (1848 - 1860 ap. J.-C.).", 
+        "ur": "سلطان عبد المجید اول کی تعمیر کو عثمانی دور میں مسجد نبوی شریف کے لیے کی جانے والی سب سے بڑی تعمیراتی کوشش سمجھا جاتا ہے۔ اس کا کام 1265ھ سے 1277ھ (1848ء - 1860ء) کے درمیان جاری رہا۔", 
+        "id": "Arsitektur Sultan Abdul Majid I dianggap sebagai renovasi terbesar yang pernah dilakukan untuk Masjid Nabawi pada era Utsmaniyah. Pengerjaannya berlangsung antara tahun 1265 - 1277 H (1848 - 1860 M)." 
       },
-      "era": { 
-        "en": "Ottoman Era", 
-        "ar": "العصر العثماني", 
-        "fr": "Ère Ottomane", 
-        "ur": "عہدِ عثمانی", 
-        "id": "Era Utsmaniyah" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Medina, Dar Al-Madinah Museum", 
-        "ar": "المدينة المنورة، متحف دار المدينة", 
-        "fr": "Médine, Musée Dar Al-Madinah", 
-        "ur": "مدینہ، دار المدینہ میوزیم", 
-        "id": "Madinah, Museum Dar Al-Madinah" 
-      },
+      "era": { "en": "Ottoman Era", "ar": "العصر العثماني", "fr": "Ère Ottomane", "ur": "عہدِ عثمانی", "id": "Era Utsmaniyah" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Medina, Dar Al-Madinah Museum", "ar": "المدينة المنورة، متحف دار المدينة", "fr": "Médine, Musée Dar Al-Madinah", "ur": "مدینہ، دار المدینہ میوزیم", "id": "Madinah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/nabawi-abdul-majid.jpg",
       "audioUrl": null
     },
@@ -178,535 +113,173 @@
       },
       "category": "battles",
       "description": { 
-        "en": "The Holy Kaaba has received unprecedented care and attention during the Saudi era, starting from the reign of King Abdulaziz Al Saud, who ordered comprehensive repairs and the renewal of the Kaaba's Kiswa (cover). In 1954 (1373 AH), the Kaaba's roof was replaced with a new one made of strong teak wood, and the exterior walls and surrounding marble were restored. Under the reigns of King Fahd, King Abdullah, and King Salman, periodic maintenance has continued, including the development of sound and lighting systems and the creation of a new Kaaba door made of pure gold, reflecting the high status of the Two Holy Mosques in the hearts of the Saudi leadership.", 
-        "ar": "شهدت الكعبة المشرفة في العهد السعودي الزاهر عناية فائقة واهتماماً منقطع النظير، بدءاً من عهد الملك عبدالعزيز آل سعود -رحمه الله- الذي أمر بإصلاحات شاملة وتجديد لكسوة الكعبة المشرفة. وفي عام 1373هـ، تم استبدال سقف الكعبة المشرفة بسقف جديد من الخشب الزان القوي، كما تم ترميم الجدران الخارجية والرخام المحيط بها. وفي عهد الملك فهد بن عبدالعزيز والملك عبدالله بن عبدالعزيز والملك سلمان بن عبدالعزيز، استمرت أعمال الصيانة الدورية وتطوير النظام الصوتي والإضاءة، بالإضافة إلى صناعة باب الكعبة الجديد من الذهب الخالص، مما يعكس مكانة الحرمين الشريفين في قلوب ولاة الأمر.", 
-        "fr": "La Sainte Kaaba a reçu un soin et une attention sans précédent pendant l'ère saoudienne, commençant par le règne du roi Abdulaziz Al Saud, qui a ordonné des réparations complètes et le renouvellement de la Kiswa (couverture) de la Kaaba. En 1954 (1373 AH), le toit de la Kaaba a été remplacé par un nouveau en bois de teck massif, et les murs extérieurs ainsi que le marbre environnant ont été restaurés. Sous les règnes du roi Fahd, du roi Abdallah et du roi Salmane, l'entretien périodique s'est poursuivi, incluant le développement des systèmes de sonorisation et d'éclairage et la création d'une nouvelle porte de la Kaaba en or pur, reflétant le statut élevé des deux Saintes Mosquées dans le cœur des dirigeants saoudiens.", 
-        "ur": "سعودی عہد کے دوران خانہ کعبہ کو بے مثال دیکھ بھال اور توجہ حاصل رہی، جس کا آغاز شاہ عبدالعزیز آل سعود کے دور سے ہوا، جنہوں نے کعبہ کی جامع مرمت اور غلاف کعبہ (کسوہ) کی تبدیلی کا حکم دیا تھا۔ 1954 (1373ھ) میں کعبہ کی چھت کو مضبوط ساگون کی لکڑی سے بنی نئی چھت سے تبدیل کیا گیا، اور بیرونی دیواروں اور ارد گرد کے سنگ مرمر کو بحال کیا گیا۔ شاہ فہد، شاہ عبداللہ اور شاہ سلمان کے ادوار میں بھی وقتاً فوقتاً دیکھ بھال کا سلسلہ جاری رہا، جس میں آواز اور روشنی کے نظام کی ترقی اور خالص سونے سے بنے کعبہ کے نئے دروازے کی تیاری شامل ہے، جو سعودی قیادت کے دلوں میں حرمین شریفین کے بلند مقام کی عکاسی کرتا ہے۔", 
-        "id": "Ka'bah Suci telah menerima perawatan dan perhatian yang belum pernah terjadi sebelumnya selama era Saudi, dimulai dari masa pemerintahan Raja Abdulaziz Al Saud, yang memerintahkan perbaikan menyeluruh dan pembaruan Kiswah (penutup) Ka'bah. Pada tahun 1954 (1373 H), atap Ka'bah diganti dengan yang baru yang terbuat dari kayu jati yang kuat, serta dinding luar dan marmer di sekitarnya dipugar. Di bawah pemerintahan Raja Fahd, Raja Abdullah, dan Raja Salman, pemeliharaan berkala terus berlanjut, termasuk pengembangan sistem suara dan pencahayaan serta pembuatan pintu Ka'bah baru yang terbuat dari emas murni, mencerminkan kedudukan tinggi dari Dua Masjid Suci di hati kepemimpinan Saudi." 
+        "en": "The Holy Kaaba has received unprecedented care during the Saudi era, starting from the reign of King Abdulaziz Al Saud. In 1954 (1373 AH), the roof was replaced with a new one made of strong teak wood.", 
+        "ar": "شهدت الكعبة المشرفة في العهد السعودي عناية فائقة، بدءاً من عهد الملك عبدالعزيز آل سعود. وفي عام 1373هـ، تم استبدال سقف الكعبة بآخر من خشب الزان القوي.", 
+        "fr": "La Sainte Kaaba a reçu un soin sans précédent pendant l'ère saoudienne, commençant par le règne du roi Abdulaziz Al Saud. En 1954 (1373 AH), le toit a été remplacé par un nouveau en bois de teck massif.", 
+        "ur": "سعودی عہد کے دوران خانہ کعبہ کو بے مثال دیکھ بھال حاصل رہی، جس کا آغاز شاہ عبدالعزیز آل سعود کے دور سے ہوا۔ 1954 (1373ھ) میں کعبہ کی چھت کو مضبوط ساگون کی لکڑی سے بنی نئی چھت سے تبدیل کیا گیا۔", 
+        "id": "Ka'bah Suci telah menerima perawatan yang belum pernah terjadi sebelumnya selama era Saudi, dimulai dari masa pemerintahan Raja Abdulaziz Al Saud. Pada tahun 1954 (1373 H), atap Ka'bah diganti dengan yang baru yang terbuat dari kayu jati yang kuat." 
       },
-      "era": { 
-        "en": "Modern Saudi Era", 
-        "ar": "العهد السعودي الحديث", 
-        "fr": "Ère Saoudienne Moderne", 
-        "ur": "جدید سعودی عہد", 
-        "id": "Era Saudi Modern" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Mecca, Dar Al-Madinah Museum", 
-        "ar": "مكة المكرمة، متحف دار المدينة", 
-        "fr": "La Mecque, Musée Dar Al-Madinah", 
-        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
-        "id": "Mekkah, Museum Dar Al-Madinah" 
-      },
+      "era": { "en": "Modern Saudi Era", "ar": "العهد السعودي الحديث", "fr": "Ère Saoudienne Moderne", "ur": "جدید سعودی عہد", "id": "Era Saudi Modern" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Mecca, Dar Al-Madinah Museum", "ar": "مكة المكرمة، متحف دار المدينة", "fr": "La Mecque, Musée Dar Al-Madinah", "ur": "مکہ مکرمہ، دار المدینہ میوزیم", "id": "Mekkah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/kaaba-saudi.png",
       "audioUrl": null
     },
     {
       "id": "friday-prayer",
-      "title": { 
-        "en": "The Prophet's Arrival at Medina and the Friday Prayer in the Wadi", 
-        "ar": "نزول النبي إلى المدينة لصلاة الجمعة وسط الوادي", 
-        "fr": "L'arrivée du Prophète à Médine et la prière du vendredi dans la vallée", 
-        "ur": "مدینہ منورہ میں نبی کریمﷺ کی آمد اور وادی کے درمیان نماز جمعہ", 
-        "id": "Kedatangan Nabi di Madinah dan Salat Jumat di Tengah Lembah" 
-      },
+      "title": { "en": "The Prophet's Arrival and the Friday Prayer", "ar": "نزول النبي إلى المدينة وصلاة الجمعة", "fr": "L'arrivée du Prophète et la prière du vendredi", "ur": "نبی کریم کی آمد اور نماز جمعہ", "id": "Kedatangan Nabi dan Salat Jumat" },
       "category": "battles",
-      "description": { 
-        "en": "The Messenger of Allah (peace be upon him) left the Banu Amr bin Auf on a Friday. As the time for Friday prayer came, he was in the dwellings of Banu Salim bin Auf. He performed the prayer in the mosque located in the heart of the valley, which was later known as the Al-Jumu'ah Mosque. This occurred during his journey to Medina after the Hijra, having first stayed in Quba with the Banu Amr bin Auf for several days. As he headed toward Medina, the time for Friday prayer reached him at this site, where he led the people in the first Friday prayer in Islam. The Muslims gathered behind him and prayed with him. Then, he continued his journey until he entered Medina, where its people welcomed him with joy and celebration, and he stayed at the house of Abu Ayyub al-Ansari.", 
-        "ar": "خرج رسول الله ﷺ من بني عمرو بن عوف يوم الجمعة فأدركته صلاة الجمعة في ديار بني سالم بن عوف، فصلاها في المسجد الذي في بطن الوادي، وهو المسجد الذي عُرف بعد ذلك بمسجد الجمعة وكان ذلك في طريقه ﷺ إلى المدينة بعد الهجرة حيث نزل أولاً في قباء عند بني عمرو بن عوف، وأقام عندهم أياماً، ثم خرج متوجهاً إلى المدينة، فأدركته صلاة الجمعة في هذا الموضع، فصلى بالناس أول صلاة جمعة في الإسلام وقد اجتمع المسلمون خلف النبي ﷺ وصلوا معه، ثم واصل ﷺ مسيره حتى دخل المدينة المنورة، حيث استقبله أهلها بالترحيب والفرح، ونزل في دار أبي أيوب الأنصاري رضي الله عنه.", 
-        "fr": "Le Messager d'Allah (paix soit sur lui) a quitté les Banu Amr bin Auf un vendredi. Alors que l'heure de la prière du vendredi arrivait, il se trouvait dans les demeures des Banu Salim bin Auf. Il a accompli la prière dans la mosquée située au cœur de la vallée, qui fut plus tard connue sous le nom de Mosquée Al-Jumu'ah. Cela s'est produit lors de son voyage vers Médine après l'Hégire, après avoir d'abord séjourné à Quba avec les Banu Amr bin Auf pendant plusieurs jours. Alors qu'il se dirigeait vers Médine, l'heure de la prière du vendredi l'a atteint sur ce site, où il a dirigé les gens pour la première prière du vendredi en Islam. Les musulmans se sont rassemblés derrière lui et ont prié avec lui. Ensuite, il a continué son voyage jusqu'à son entrée à Médine, où ses habitants l'ont accueilli avec joie et célébration, et il a séjourné dans la maison d'Abou Ayyoub al-Ansari.", 
-        "ur": "رسول اللہ ﷺ جمعہ کے دن بنی عمرو بن عوف سے روانہ ہوئے۔ جب جمعہ کی نماز کا وقت ہوا تو آپ ﷺ بنی سالم بن عوف کے گھروں میں تھے۔ آپ ﷺ نے وادی کے قلب میں واقع اس مسجد میں نماز ادا کی جسے بعد میں مسجدِ جمعہ کے نام سے جانا گیا۔ یہ ہجرت کے بعد مدینہ منورہ کے سفر کے دوران ہوا، اس سے پہلے آپ ﷺ نے کئی دن تک قباء میں بنی عمرو بن عوف کے ہاں قیام کیا تھا۔ جب آپ ﷺ مدینہ کی طرف روانہ ہوئے تو اس مقام پر جمعہ کی نماز کا وقت ہو گیا، جہاں آپ ﷺ نے لوگوں کی امامت کی اور اسلام کی پہلی نمازِ جمعہ ادا کی۔ مسلمان آپ ﷺ کے پیچھے جمع ہوئے اور آپ ﷺ کے ساتھ نماز ادا کی۔ پھر آپ ﷺ نے اپنا سفر جاری رکھا یہاں تک کہ آپ ﷺ مدینہ منورہ میں داخل ہوئے، جہاں وہاں کے لوگوں نے خوشی اور جشن کے ساتھ آپ ﷺ کا استقبال کیا، اور آپ ﷺ نے حضرت ابو ایوب انصاری رضی اللہ عنہ کے گھر قیام فرمایا۔", 
-        "id": "Rasulullah ﷺ meninggalkan Bani Amr bin Auf pada hari Jumat. Ketika waktu salat Jumat tiba, beliau berada di pemukiman Bani Salim bin Auf. Beliau melaksanakan salat di masjid yang terletak di tengah lembah, yang kemudian dikenal sebagai Masjid Al-Jumu'ah. Peristiwa ini terjadi dalam perjalanannya menuju Madinah setelah Hijrah, setelah sebelumnya tinggal di Quba bersama Bani Amr bin Auf selama beberapa hari. Saat beliau menuju Madinah, waktu salat Jumat tiba di tempat ini, di mana beliau mengimami orang-orang dalam salat Jumat pertama dalam Islam. Kaum muslimin berkumpul di belakang Nabi ﷺ dan salat bersamanya. Kemudian, beliau melanjutkan perjalanannya hingga memasuki Madinah Al-Munawwarah, di mana penduduknya menyambutnya dengan kegembiraan dan suka cita, dan beliau tinggal di rumah Abu Ayyub al-Ansari radhiyallahu 'anhu." 
-      },
-      "era": { 
-        "en": "Prophetic Era", 
-        "ar": "العهد النبوي", 
-        "fr": "Ère Prophétique", 
-        "ur": "عہدِ نبوی", 
-        "id": "Era Kenabian" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Medina, Dar Al-Madinah Museum", 
-        "ar": "المدينة المنورة، متحف دار المدينة", 
-        "fr": "Médine, Musée Dar Al-Madinah", 
-        "ur": "مدینہ، دار المدینہ میوزیم", 
-        "id": "Madinah, Museum Dar Al-Madinah" 
-      },
+      "description": { "en": "The Messenger of Allah ﷺ left the Banu Amr bin Auf on a Friday. He performed the prayer in the mosque located in the heart of the valley, which was later known as the Al-Jumu'ah Mosque.", "ar": "خرج رسول الله ﷺ من بني عمرو بن عوف يوم الجمعة فأدركته صلاة الجمعة في ديار بني سالم بن عوف، فصلاها في المسجد الذي في بطن الوادي.", "fr": "Le Messager d'Allah ﷺ a quitté les Banu Amr bin Auf un vendredi. Il a accompli la prière dans la mosquée connue plus tard sous le nom de Mosquée Al-Jumu'ah.", "ur": "رسول اللہ ﷺ جمعہ کے دن بنی عمرو بن عوف سے روانہ ہوئے۔ آپ ﷺ نے وادی کے قلب میں واقع اس مسجد میں نماز ادا کی جسے بعد میں مسجدِ جمعہ کے نام سے جانا گیا۔", "id": "Rasulullah ﷺ meninggalkan Bani Amr bin Auf pada hari Jumat. Beliau melaksanakan salat di masjid yang kemudian dikenal sebagai Masjid Al-Jumu'ah." },
+      "era": { "en": "Prophetic Era", "ar": "العهد النبوي", "fr": "Ère Prophétique", "ur": "عہدِ نبوی", "id": "Era Kenabian" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Medina, Dar Al-Madinah Museum", "ar": "المدينة المنورة، متحف دار المدينة", "fr": "Médine, Musée Dar Al-Madinah", "ur": "مدینہ، دار المدینہ میوزیم", "id": "Madinah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/friday-prayer.jpg",
       "audioUrl": null
     },
     {
       "id": "revelation-hira",
-      "title": { 
-        "en": "The Text of Revelation and the Beginning of Prophethood", 
-        "ar": "نص الوحي وبداية النبوة", 
-        "fr": "Le texte de la révélation et le début de la prophétie", 
-        "ur": "وحی کا متن اور نبوت کا آغاز", 
-        "id": "Teks Wahyu dan Permulaan Kenabian" 
-      },
+      "title": { "en": "The Beginnings of Revelation - Cave Hira", "ar": "بدء الوحي - غار حراء", "fr": "Le début de la Révélation - Grotte de Hira", "ur": "نزولِ وحی کا آغاز - غار حرا", "id": "Awal Mula Wahyu - Gua Hira" },
       "category": "battles",
-      "description": { 
-        "en": "The Messenger of Allah ﷺ used to spend his time in seclusion in Cave Hira, worshiping and contemplating the heavens and the earth. When he reached forty, Allah honored him with prophethood, beginning with true dreams. While in the cave during Ramadan, Gabriel (Jibril) appeared and said: 'Read!' The Prophet ﷺ replied: 'I am not a reader.' Gabriel embraced him thrice until he was exhausted, then said: 'Read in the name of your Lord who created—created man from a clinging substance. Read, and your Lord is the most Generous, who taught by the pen—taught man that which he knew not.' Deeply moved, the Prophet ﷺ returned to his wife Khadijah, who reassured him: 'Glad tidings, by Allah, He will never disgrace you.' They visited Waraqah bin Nawfal, a scholar of the scriptures, who confirmed: 'This is the same Namus (Angel) who came to Moses. You are indeed the Prophet of this Ummah.' Reassured, the Prophet ﷺ later went out to perform Tawaf around the Kaaba.", 
-        "ar": "كان رسول الله ﷺ يقضي جل وقت في خلوته داخل غار حراء متعبداً متأملاً، وعندما بلغ الأربعين أكرمه الله تعالى بالنبوة وكانت بدايتها الرؤيا الصادقة. وبينما هو في الغار في شهر رمضان، نزل عليه جبريل عليه السلام فقال: 'اقرأ'، فقال النبي: 'ما أنا بقارئ'، فغطه جبريل ثلاثاً حتى بلغ منه الجهد، ثم قال: 'اقرأ باسم ربك الذي خلق، خلق الإنسان من علق، اقرأ وربك الأكرم، الذي علم بالقلم، علم الإنسان ما لم يعلم'. فرجع النبي ﷺ بقلب يرجف إلى زوجته خديجة رضي الله عنها، فطمأنته وقالت: 'أبشر، فوالله لا يخزيك الله أبداً'. ثم انطلقت به إلى ورقة بن نوفل، وكان يقرأ الكتب، فقال ورقة: 'هذا الناموس الذي نزل على موسى، وإنك لنبي هذه الأمة'، فاطمأن النبي ﷺ وخرج يطوف بالكعبة.", 
-        "fr": "Le Messager d'Allah ﷺ passait son temps en retraite dans la grotte de Hira, adorant et contemplant les cieux et la terre. Lorsqu'il atteignit l'âge de quarante ans, Allah l'honora de la prophétie, commençant par des rêves véridiques. Alors qu'il se trouvait dans la grotte pendant le Ramadan, Gabriel (Jibril) apparut et dit : 'Lissez !' Le Prophète ﷺ répondit : 'Je ne suis pas lecteur.' Gabriel l'embrassa trois fois jusqu'à ce qu'il soit épuisé, puis dit : 'Lis, au nom de ton Seigneur qui a créé, qui a créé l'homme d'une adhérence. Lis ! Ton Seigneur est le Très Noble, qui a enseigné par la plume, a enseigné à l'homme ce qu'il ne savait pas.' Profondément ému, le Prophète ﷺ retourna auprès de son épouse Khadijah, qui le rassura : 'Bonne nouvelle, par Allah, Il ne vous déshonorera jamais.' Ils rendirent visite à Waraqah bin Nawfal, un savant des écritures, qui confirma : 'C'est le même Namus (Ange) qui est venu à Moïse. Vous êtes en effet le Prophète de cette Ummah.' Rassuré, le Prophète ﷺ sortit plus tard pour accomplir le Tawaf autour de la Kaaba.", 
-        "ur": "رسول اللہ ﷺ اپنا زیادہ تر وقت غارِ حراء میں خلوت نشینی، عبادت اور کائنات پر غور و فکر میں گزارتے تھے۔ جب آپ ﷺ چالیس سال کے ہوئے تو اللہ تعالیٰ نے آپ ﷺ کو نبوت سے سرفراز فرمایا، جس کا آغاز سچے خوابوں سے ہوا۔ رمضان کے مہینے میں غار میں قیام کے دوران جبرائیل علیہ السلام ظاہر ہوئے اور کہا: 'پڑھو!' آپ ﷺ نے جواب دیا: 'میں پڑھا ہوا نہیں ہوں۔' جبرائیل علیہ السلام نے آپ ﷺ کو تین بار بھینچا یہاں تک کہ آپ ﷺ نڈھال ہو گئے، پھر کہا: 'پڑھو اپنے رب کے نام سے جس نے پیدا کیا، جس نے انسان کو خون کے لوتھڑے سے پیدا کیا۔ پڑھو اور تمہارا رب بڑا کریم ہے، جس نے قلم کے ذریعے علم سکھایا، انسان کو وہ سکھایا جو وہ نہیں جانتا تھا۔' آپ ﷺ لرزتے ہوئے دل کے ساتھ اپنی زوجہ حضرت خدیجہؓ کے پاس پہنچے، جنہوں نے آپ ﷺ کو تسلی دی اور کہا: 'خوشخبری ہو، اللہ کی قسم وہ آپ کو کبھی رسوا نہیں کرے گا۔' پھر وہ آپ ﷺ کو ورقہ بن نوفل کے پاس لے گئیں جنہوں نے تصدیق کی: 'یہ وہی فرشتہ ہے جو موسیٰ علیہ السلام کے پاس آیا تھا۔ بے شک آپ اس امت کے نبی ہیں۔' اس پر آپ ﷺ کو اطمینان ہوا اور آپ ﷺ خانہ کعبہ کے طواف کے لیے تشریف لے گئے۔", 
-        "id": "Rasulullah ﷺ biasa menghabiskan waktunya dengan menyendiri di Gua Hira, beribadah dan merenungkan langit dan bumi. Ketika beliau mencapai usia empat puluh tahun, Allah memuliakannya dengan kenabian, yang dimulai dengan mimpi-mimpi yang benar. Saat berada di gua selama bulan Ramadan, Jibril muncul dan berkata: 'Bacalah!' Nabi ﷺ menjawab: 'Aku tidak bisa membaca.' Jibril mendekapnya tiga kali hingga beliau kelelahan, lalu berkata: 'Bacalah dengan menyebut nama Tuhanmu yang menciptakan—menciptakan manusia dari segumpal darah. Bacalah, dan Tuhanmulah Yang Mahamulia, yang mengajar manusia dengan pena—mengajar manusia apa yang tidak diketahuinya.' Dengan hati yang gemetar, Nabi ﷺ kembali ke istrinya Khadijah, yang menenangkannya: 'Kabar gembira, demi Allah, Dia tidak akan pernah menghinakanmu.' Mereka mengunjungi Waraqah bin Nawfal, sebuah sarjana kitab suci, yang menegaskan: 'Ini adalah Namus (Malaikat) yang sama yang datang kepada Musa. Engkau memang Nabi umat ini.' Merasa tenang, Nabi ﷺ kemudian pergi untuk melakukan Tawaf di sekitar Ka'bah." 
-      },
-      "era": { 
-        "en": "Prophetic Era", 
-        "ar": "العهد النبوي", 
-        "fr": "Ère Prophétique", 
-        "ur": "عہدِ نبوی", 
-        "id": "Era Kenabian" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Medina, Dar Al-Madinah Museum", 
-        "ar": "المدينة المنورة، متحف دار المدينة", 
-        "fr": "Médine, Musée Dar Al-Madinah", 
-        "ur": "مدینہ، دار المدینہ میوزیم", 
-        "id": "Madinah, Museum Dar Al-Madinah" 
-      },
+      "description": { "en": "The Messenger of Allah ﷺ used to spend his time in seclusion in Cave Hira, worshiping and contemplating the heavens and the earth. When he reached the age of forty, Allah honored him with prophethood, which began with true dreams.", "ar": "كان رسول الله ﷺ يخلو بنفسه في غار حراء، يتعبد ويتفكر في خلق السماوات والأرض. ولما بلغ الأربعين، أكرمه الله بالنبوة، وبدأت بالرؤيا الصادقة.", "fr": "Le Messager d'Allah ﷺ passait son temps en retraite spirituelle dans la grotte de Hira. Lorsqu'il atteignit l'âge de quarante ans, Allah l'honora de la prophétie.", "ur": "رسول اللہ ﷺ غارِ حرا میں تنہائی میں وقت گزارتے، عبادت کرتے اور غور فرماتے تھے۔ جب آپ ﷺ چالیس سال کے ہوئے تو اللہ تعالیٰ نے آپ کو نبوت سے سرفراز فرمایا۔", "id": "Rasulullah ﷺ biasa menghabiskan waktunya dengan menyendiri di Gua Hira. Ketika beliau mencapai usia empat puluh tahun, Allah memuliakannya dengan kenabian." },
+      "era": { "en": "Prophetic Era", "ar": "العهد النبوي", "fr": "Ère Prophétique", "ur": "عہدِ نبوی", "id": "Era Kenabian" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Medina, Dar Al-Madinah Museum", "ar": "المدينة المنورة، متحف دار المدينة", "fr": "Médine, Musée Dar Al-Madinah", "ur": "مدینہ، دار المدینہ میوزیم", "id": "Madinah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/revelation-hira.jpg",
       "audioUrl": null
     },
     {
       "id": "year-of-elephant",
-      "title": { 
-        "en": "Abraha Al-Ashram's Campaign to Destroy the Kaaba - Year of the Elephant 570 AD", 
-        "ar": "حملة أبرهة الأشرم لهدم الكعبة المشرفة - عام الفيل 570م", 
-        "fr": "La Campagne d'Abraha Al-Ashram pour détruire la Kaaba - L'Année de l'Éléphant 570 ap. J.-C.", 
-        "ur": "ابرہہ الاشرم کا خانہ کعبہ کو گرانے کا حملہ - عام الفیل 570ء", 
-        "id": "Kampanye Abraha Al-Ashram untuk Menghancurkan Ka'bah - Tahun Gajah 570 M" 
-      },
+      "title": { "en": "Abraha Al-Ashram's Campaign (Year of the Elephant)", "ar": "حملة أبرهة الحبشي (عام الفيل)", "fr": "La campagne d'Abraha Al-Ashram (L'Année de l'Éléphant)", "ur": "ابرہہ الاشرم کی مہم (عام الفیل)", "id": "Kampanye Abraha Al-Ashram (Tahun Gajah)" },
       "category": "battles",
-      "description": { 
-        "en": "Abraha Al-Ashram, the Abyssinian ruler of Yemen, built a magnificent cathedral in Sana'a called Al-Qullays to divert Arab pilgrims from the Kaaba. When an Arab man defiled the cathedral in anger, Abraha vowed to destroy the Kaaba. He marched toward Mecca with a vast army and a great elephant named Mahmud. Abdullah bin Abdul Muttalib, the Prophet's grandfather, told Abraha, 'I am the master of my camels, and the House has a Master who will protect it.' As Abraha prepared to enter Mecca, the elephant knelt and refused to move toward the Kaaba, though it would run in other directions. Allah then sent swarms of birds (Ababil) from the sea, each carrying three stones. The stones struck Abraha's army like pellets, destroying them. This event, occurring in 570 AD, became known as the Year of the Elephant.", 
-        "ar": "بنى أبرهة الحبشي الأشرم كنيسة القليس بصنعاء ليصرف العرب إليها للحج، فقام رجل من العرب بتلويثها، فغضب أبرهة وحلف ليهدمن الكعبة. فخرج بجيش عظيم وفيل كبير اسمه محمود. وعندما وصل مكة، طلب عبد المطلب منه إبلَه، فقال أبرهة: 'ظنناك أتيت بشأن البيت'، فقال عبد المطلب: 'أنا رب إبلي، وللبيت رب يحميه'. وعندما تهيأ أبرهة لدخول مكة، برك الفيل محمود ورفض التحرك نحو الكعبة، فكلما وجهوه لجهة أخرى جرى، وإذا وجهوه للكعبة برك. فأرسل الله عليهم طيراً أبابيل تحمل حجارة من سجيل، فأهلكت الجيش، ومات أبرهة، فسمي هذا العام بعام الفيل.", 
-        "fr": "Abraha Al-Ashram, le souverain abyssin du Yémen, a construit une magnifique cathédrale à Sanaa appelée Al-Qullays pour détourner les pèlerins arabes de la Kaaba. Lorsqu'un Arabe a souillé la cathédrale par colère, Abraha a juré de détruire la Kaaba. Il marcha vers la Mecque avec une vaste armée et un grand éléphant nommé Mahmud. Abdullah bin Abdul Muttalib, le grand-père du Prophète, dit à Abraha : 'Je suis le maître de mes chameaux, et la Maison a un Maître qui la protégera.' Alors qu'Abraha se préparait à entrer dans la Mecque, l'éléphant s’est agenouillé et a refusé de s'avancer vers la Kaaba, bien qu'il courait dans d'autres directions. Allah a alors envoyé de la mer des nuées d'oiseaux (Ababil), chacun portant trois pierres. Les pierres ont frappé l'armée d'Abraha comme des granulés, les détruisant. Cet événement, survenu en 570 après JC, est devenu connu sous le nom d'Année de l'Éléphant.", 
-        "ur": "یمن کے حبشی حکمران ابرہہ الاشرم نے صنعاء میں 'القلیس' نامی ایک عظیم گرجا گھر تعمیر کیا تاکہ عربوں کو حج کے لیے خانہ کعبہ سے وہاں موڑ دے۔ جب ایک عرب شخص نے غصے میں آکر وہاں گندگی کر دی تو ابرہہ نے خانہ کعبہ کو گرانے کی قسم کھائی۔ وہ ایک بڑی فوج اور محمود نامی ایک عظیم ہاتھی کے ساتھ مکہ کی طرف روانہ ہوا۔ نبی کریمﷺ کے دادا عبدالمطلب نے ابرہہ سے کہا: 'میں تو اپنے اونٹوں کا مالک ہوں، اور اس گھر (کعبہ) کا بھی ایک مالک ہے جو اس کی حفاظت کرے گا۔' جب ابرہہ مکہ میں داخل ہونے کے لیے تیار ہوا تو ہاتھی گھٹنوں کے بل بیٹھ گیا اور کعبہ کی طرف بڑھنے سے انکار کر دیا، حالانکہ وہ دوسری سمتوں میں دوڑتا تھا۔ پھر اللہ تعالیٰ نے سمندر کی طرف سے پرندوں (ابابیل) کے غول بھیجے، ہر پرندے کے پاس تین پتھر تھے۔ ان پتھروں نے ابرہہ کی فوج کو تباہ کر دیا۔ 570 عیسوی میں پیش آنے والا یہ واقعہ 'عام الفیل' (ہاتھی والا سال) کے نام سے مشہور ہوا۔", 
-        "id": "Abraha Al-Ashram, penguasa Abyssinia di Yaman, membangun katedral megah di Sana'a yang disebut Al-Qullays untuk mengalihkan jamaah Arab dari Ka'bah. Ketika seorang pria Arab menodai katedral tersebut karena marah, Abraha bersumpah untuk menghancurkan Ka'bah. Dia berbaris menuju Mekkah dengan tentara yang besar dan seekor gajah besar bernama Mahmud. Abdullah bin Abdul Muttalib, kakek Nabi, berkata kepada Abraha, 'Aku adalah pemilik untaku, dan Rumah itu (Ka'bah) memiliki Pemilik yang akan melindunginya.' Saat Abraha bersiap memasuki Mekkah, gajah itu berlutut dan menolak bergerak menuju Ka'bah, meskipun ia akan lari ke arah lain. Allah kemudian mengirim kawanan burung (Ababil) dari laut, masing-masing membawa tiga batu. Batu-batu itu menghantam tentara Abraha dan menghancurkan mereka. Peristiwa ini, yang terjadi pada tahun 570 M, dikenal sebagai Tahun Gajah." 
-      },
-      "era": { 
-        "en": "Pre-Prophetic Era (Year of the Elephant)", 
-        "ar": "عصر ما قبل البعثة (عام الفيل)", 
-        "fr": "Ère Pré-Prophétique (L'Année de l'Éléphant)", 
-        "ur": "قبل از نبوت (عام الفیل)", 
-        "id": "Era Pra-Kenabian (Tahun Gajah)" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Mecca, Dar Al-Madinah Museum", 
-        "ar": "مكة المكرمة، متحف دار المدينة", 
-        "fr": "La Mecque, Musée Dar Al-Madinah", 
-        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
-        "id": "Mekkah, Museum Dar Al-Madinah" 
-      },
+      "description": { "en": "Abraha Al-Ashram, the Abyssinian ruler of Yemen, marched toward Mecca with a vast army and a great elephant named Mahmud to destroy the Kaaba. Allah protected the House by sending swarms of birds (Ababil) carrying stones.", "ar": "بنى أبرهة الحبشي الأشرم كنيسة القليس بصنعاء ليصرف العرب إليها، فغضب وحلف ليهدمن الكعبة. فخرج بجيش وفيل كبير، فأرسل الله عليهم طيراً أبابيل أهلكت الجيش.", "fr": "Abraha Al-Ashram, le souverain abyssin du Yémen, marcha vers la Mecque avec une vaste armée pour détruire la Kaaba. Allah a alors envoyé des nuées d'oiseaux (Ababil).", "ur": "یمن کے حبشی حکمران ابرہہ الاشرم نے خانہ کعبہ کو گرانے کی قسم کھائی۔ وہ ایک بڑی فوج اور ہاتھی کے ساتھ مکہ کی طرف روانہ ہوا۔ اللہ تعالیٰ نے پرندوں (ابابیل) کے ذریعے اس کی فوج کو تباہ کر دیا۔", "id": "Abraha Al-Ashram, penguasa Abyssinia di Yaman, berbaris menuju Mekkah dengan tentara besar untuk menghancurkan Ka'bah. Allah mengirim kawanan burung (Ababil) untuk menghancurkan mereka." },
+      "era": { "en": "Pre-Prophetic Era", "ar": "عصر ما قبل البعثة", "fr": "Ère Pré-Prophétique", "ur": "قبل از نبوت", "id": "Era Pra-Kenabian" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Mecca, Dar Al-Madinah Museum", "ar": "مكة المكرمة، متحف دار المدينة", "fr": "La Mecque, Musée Dar Al-Madinah", "ur": "مکہ مکرمہ، دار المدینہ میوزیم", "id": "Mekkah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/year-of-elephant.jpg",
       "audioUrl": null
     },
     {
       "id": "ansar-love",
-      "title": { 
-        "en": "The Ansar's Love for the Prophet - The Girls of Banu al-Najjar", 
-        "ar": "حب الأنصار للنبي", 
-        "fr": "L'amour des Ansar pour le Prophète - Les filles de Banu al-Najjar", 
-        "ur": "نبی کریم سے انصار کی محبت - بنو نجار کی بچیاں", 
-        "id": "Kecintaan Kaum Ansar kepada Nabi - Gadis-gadis Bani al-Najjar" 
-      },
+      "title": { "en": "The Ansar's Love for the Prophet - The Girls of Banu al-Najjar", "ar": "حب الأنصار للنبي", "fr": "L'amour des Ansar pour le Prophète", "ur": "نبی کریم سے انصار کی محبت", "id": "Kecintaan Kaum Ansar kepada Nabi" },
       "category": "battles",
-      "description": { 
-        "en": "The story of the girls of Banu al-Najjar who welcomed the Prophet ﷺ with joy, playing drums and singing: 'We are the girls of Banu al-Najjar, what a wonderful neighbor is Muhammad.' This profound expression of love was recorded by Imam Ibn Majah in his Sunan, Imam al-Bazzar in his Musnad, and Ibn Hisham in his Sirah.", 
-        "ar": "قصة جواري بني النجار وضرب الدفوف ونشيدهم: 'نحن جواري من بني النجار يا حبذا محمد من جار'. رواه الامام ابن ماجه في سننه، رواه الإمام البزار بمسنده، رواه ابن هشام في سيرته.", 
-        "fr": "L'histoire des filles de Banu al-Najjar qui ont accueilli le Prophète ﷺ avec joie, jouant du tambour et chantant : 'Nous sommes les filles de Banu al-Najjar, quel merveilleux voisin est Muhammad.' Cette profonde expression d'amour a été rapportée par l'Imam Ibn Majah dans ses Sunan, l'Imam al-Bazzar dans son Musnad, et Ibn Hisham dans sa Sirah.", 
-        "ur": "بنو نجار کی ان بچیوں کی کہانی جنہوں نے خوشی سے نبی کریمﷺ کا استقبال کیا، دف بجاتے ہوئے اور یہ گاتے ہوئے: 'ہم بنو نجار کی بچیاں ہیں، کیا ہی خوب پڑوسی ہیں محمد (ﷺ)۔' محبت کا یہ گہرا اظہار امام ابن ماجہ نے اپنی سنن میں، امام بزار نے اپنی مسند میں اور ابن ہشام نے اپنی سیرت میں روایت کیا ہے۔", 
-        "id": "Kisah gadis-gadis Bani al-Najjar yang menyambut Nabi ﷺ dengan gembira, memukul rebana dan bernyanyi: 'Kami adalah gadis-gadis dari Bani al-Najjar, alangkah indahnya Muhammad sebagai tetangga.' Ungkapan cinta yang mendalam ini dicatat oleh Imam Ibnu Majah dalam Sunannya, Imam al-Bazzar dalam Musnadnya, dan Ibnu Hisyam dalam Sirahnya." 
-      },
-      "era": { 
-        "en": "Prophetic Era", 
-        "ar": "العهد النبوي", 
-        "fr": "Ère Prophétique", 
-        "ur": "عہدِ نبوی", 
-        "id": "Era Kenabian" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Medina, Dar Al-Madinah Museum", 
-        "ar": "المدينة المنورة، متحف دار المدينة", 
-        "fr": "Médine, Musée Dar Al-Madinah", 
-        "ur": "مدینہ، دار المدینہ میوزیم", 
-        "id": "Madinah, Museum Dar Al-Madinah" 
-      },
+      "description": { "en": "The story of the girls of Banu al-Najjar who welcomed the Prophet ﷺ with joy, playing drums and singing: 'We are the girls of Banu al-Najjar, what a wonderful neighbor is Muhammad.'", "ar": "قصة جواري بني النجار وضرب الدفوف ونشيدهم: 'نحن جواري من بني النجار يا حبذا محمد من جار'.", "fr": "L'histoire des filles de Banu al-Najjar qui ont accueilli le Prophète ﷺ avec joie en chantant : 'Nous sommes les filles de Banu al-Najjar...'", "ur": "بنو نجار کی ان بچیاں کی کہانی جنہوں نے خوشی سے نبی کریمﷺ کا استقبال کیا، دف بجاتے ہوئے اور نعت گاتے ہوئے۔", "id": "Kisah gadis-gadis Bani al-Najjar yang menyambut Nabi ﷺ dengan gembira sambil bernyanyi: 'Kami adalah gadis-gadis dari Bani al-Najjar...'" },
+      "era": { "en": "Prophetic Era", "ar": "العهد النبوي", "fr": "Ère Prophétique", "ur": "عہدِ نبوي", "id": "Era Kenabian" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Medina, Dar Al-Madinah Museum", "ar": "المدينة المنورة، متحف دار المدينة", "fr": "Médine, Musée Dar Al-Madinah", "ur": "مدینہ، دار المدینہ میوزیم", "id": "Madinah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/ansar-love.png",
       "audioUrl": null
     },
     {
       "id": "yathrib-inhabitants",
-      "title": { 
-        "en": "The First Inhabitants of Yathrib and the Settlement of the Amalekites", 
-        "ar": "أول من سكن يثرب ونزول العماليق إلى يثرب سكناهم فيها", 
-        "fr": "Les premiers habitants de Yathrib et l'installation des Amalécites", 
-        "ur": "یثرب کے پہلے رہنے والے اور عمالقہ کی یہاں سکونت", 
-        "id": "Penduduk Pertama Yathrib dan Pemukiman Kaum Amalek" 
-      },
+      "title": { "en": "The First Inhabitants of Yathrib", "ar": "أول من سكن يثرب", "fr": "Les premiers habitants de Yathrib", "ur": "یثرب کے پہلے رہنے والے", "id": "Penduduk Pertama Yathrib" },
       "category": "battles",
-      "description": { 
-        "en": "Historians indicate that the first to inhabit Yathrib was Yathrib bin Qaniya, descendant of Shem bin Noah, after whom the place was named. The Amalekites also settled there, expanding throughout the lands from Bahrain and Oman to the Hejaz, Sham, and Egypt. In Yathrib, tribes like Bani Haf and Bani Matar settled, ruled by Arqam bin Abi al-Arqam. They were the first to cultivate the land, plant palm trees, and build forts (Atam). When Moses (peace be upon him) defeated Pharaoh, he sent an army to the Hejaz to combat the Amalekites for their tyranny. The army defeated them and killed Arqam, but spared a young man to bring before Moses. Upon returning, they found that Moses had passed away. When the Israelites refused the army entry for disobeying orders to spare none, some soldiers returned to the Hejaz and settled in Yathrib, marking the first Jewish settlement there after the Amalekites.", 
-        "ar": "يشير المؤرخون إلى أن أول من سكن يثرب هو يثرب بن قانية بن مهلائيل، وبه سمي هذا الموضع. كما نزلها العماليق وهم بنو عملاق، الذين انتشروا في البلاد من البحرين وعمان إلى الحجاز والشام ومصر. سكن يثرب منهم بنو هف وبنو مطر، وكان ملكهم الأرقم بن أبي الأرقم. وكان العماليق أول من زرع بالمدينة واتخذ بها النخيل وعمر بها الدور والآطام. وعندما أظهر الله موسى عليه السلام على فرعون، بعث بعثاً إلى العماليق في الحجاز فقاتلوهم وقتلوا ملكهم الأرقم. وعندما عاد الجيش، وجدوا أن موسى عليه السلام قد قبضه الله، فرفض بنو إسرائيل دخولهم لمخالفتهم الأمر بعدم استبقاء أحد، فعاد بعض أفراد الجيش من اليهود وسكنوا يثرب، فكانت هذه أول سكنى لليهود بها بعد العماليق.", 
-        "fr": "Les historiens indiquent que le premier à habiter Yathrib fut Yathrib bin Qaniya, descendant de Sem bin Noé, dont le lieu tire son nom. Les Amalécites s'y installèrent également, s'étendant de Bahreïn et Oman jusqu'au Hedjaz, au Cham et à l'Égypte. À Yathrib, des tribus comme les Bani Haf et les Bani Matar se sont installées, gouvernées par Arqam bin Abi al-Arqam. Ils furent les premiers à cultiver la terre, à planter des palmiers et à construire des forts (Atam). Lorsque Moïse (paix sur lui) vainquit Pharaon, il envoya une armée au Hedjaz pour combattre les Amalécites. L'armée les vainquit et tua Arqam, mais épargna un jeune homme pour le présenter à Moïse. À leur retour, ils apprirent le décès de Moïse. Les Israélites ayant refusé l'entrée à l'armée pour avoir désobéi aux ordres, certains soldats retournèrent au Hedjaz et s'installèrent à Yathrib, marquant la première colonisation juive après les Amalécites.", 
-        "ur": "مؤرخین اس بات کی نشاندہی کرتے ہیں کہ یثرب میں آباد ہونے والا پہلا شخص یثرب بن قانیہ (ابنِ سام بن نوح) تھا، جس کے نام پر یہ جگہ مشہور ہوئی۔ اس کے بعد یہاں عمالقہ آباد ہوئے، جنہوں نے بحرین، عمان، حجاز، شام اور مصر تک کے علاقوں میں اقتدار قائم کیا۔ یثرب میں ان کے قبائل بنو ہف اور بنو مطر قیام پذیر ہوئے، جن کا حکمران ارقم بن ابی الارقم تھا۔ عمالقہ نے ہی مدینہ میں پہلی بار کھیتی باڑی شروع کی، کھجوروں کے باغات لگائے اور قلعے (آطام) تعمیر کیے۔ جب اللہ تعالیٰ نے حضرت موسیٰ علیہ السلام کو فرعون پر فتح دی، تو آپ نے حجاز میں عمالقہ کی سرکشی ختم کرنے کے لیے ایک لشکر بھیجا۔ لشکر نے انہیں شکست دی اور ان کے بادشاہ ارقم کو قتل کر دیا، لیکن ایک نوجوان کو زندہ پکڑ کر موسیٰ علیہ السلام کے پاس لانے کے لیے ساتھ لے آئے۔ واپسی پر معلوم ہوا کہ موسیٰ علیہ السلام کا انتقال ہو چکا ہے۔ بنی اسرائیل نے حکم کی خلاف ورزی پر لشکر کو شہر میں داخل ہونے سے روک دیا، جس پر لشکر کے کچھ افراد واپس حجاز آگئے اور یثرب میں آباد ہو گئے، جو عمالقہ کے بعد یہاں یہودیوں کی پہلی سکونت تھی۔", 
-        "id": "Para sejarawan menunjukkan bahwa orang pertama yang mendiami Yathrib adalah Yathrib bin Qaniya bin Shem bin Nuh, yang darinya tempat ini mendapatkan namanya. Kaum Amalek juga menetap di sana, menyebar dari Bahrain dan Oman ke seluruh Hijaz hingga Syam dan Mesir. Di Yathrib, suku-suku seperti Bani Haf dan Bani Matar menetap di bawah kekuasaan Arqam bin Abi al-Arkham. Kaum Amalek adalah yang pertama bertani di Madinah, menanam pohon palem, serta membangun rumah dan benteng (Atam). Ketika Allah memenangkan Musa (as) atas Firaun, ia mengirim pasukan ke Hijaz untuk menumpas kaum Amalek yang melampaui batas. Pasukan tersebut mengalahkan mereka dan membunuh Arqam, namun menyisakan seorang pemuda untuk dibawa ke hadapan Musa. Setibanya mereka, Musa (as) telah wafat. Karena Bani Israil menolak masuknya pasukan tersebut akibat ketidakpatuhan terhadap perintah awal, sebagian dari mereka kembali ke Hijaz dan menetap di Yathrib, yang menjadi pemukiman Yahudi pertama setelah kaum Amalek." 
-      },
-      "era": { 
-        "en": "Ancient Era", 
-        "ar": "العصر القديم", 
-        "fr": "Ère Ancienne", 
-        "ur": "قدیم دور", 
-        "id": "Era Kuno" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Medina, Dar Al-Madinah Museum", 
-        "ar": "المدينة المنورة، متحف دار المدينة", 
-        "fr": "Médine, Musée Dar Al-Madinah", 
-        "ur": "مدینہ، دار المدینہ میوزیم", 
-        "id": "Madinah, Museum Dar Al-Madinah" 
-      },
+      "description": { "en": "Historians indicate that the first to inhabit Yathrib was Yathrib bin Qaniya. The Amalekites also settled there, cultivating the land and building forts (Atam).", "ar": "يشير المؤرخون إلى أن أول من سكن يثرب هو يثرب بن قانية. كما نزلها العماليق وكانوا أول من زرع بالمدينة وعمر بها الدور والآطام.", "fr": "Les historiens indiquent que le premier à habiter Yathrib fut Yathrib bin Qaniya. Les Amalécites s'y installèrent également.", "ur": "مؤرخین نشان دہی کرتے ہیں کہ یثرب میں آباد ہونے والا پہلا شخص یثرب بن قانیہ تھا۔ اس کے بعد یہاں عمالقہ آباد ہوئے۔", "id": "Para sejarawan menunjukkan bahwa orang pertama yang mendiami Yathrib adalah Yathrib bin Qaniya. Kaum Amalek juga menetap di sana." },
+      "era": { "en": "Pre-Prophetic Era", "ar": "عصر ما قبل البعثة", "fr": "Ère Pré-Prophétique", "ur": "قبل از نبوت", "id": "Era Pra-Kenabian" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Medina, Dar Al-Madinah Museum", "ar": "المدينة المنورة، متحف دار المدينة", "fr": "Médine, Musée Dar Al-Madinah", "ur": "مدینہ، دار المدینہ میوزیم", "id": "Madinah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/yathrib-inhabitants.jpg",
       "audioUrl": null
     },
     {
       "id": "kaaba-quraysh",
-      "title": { 
-        "en": "The Reconstruction of the Holy Kaaba in the Era of Quraysh", 
-        "ar": "بناء الكعبة المشرفة في عهد قريش", 
-        "fr": "La reconstruction de la Sainte Kaaba à l'époque de Quraysh", 
-        "ur": "قریش کے دور میں خانہ کعبہ کی تعمیر", 
-        "id": "Pembangunan Kembali Ka'bah di Era Quraisy" 
-      },
+      "title": { "en": "The Reconstruction of the Holy Kaaba by Quraysh", "ar": "بناء الكعبة المشرفة في عهد قريش", "fr": "La reconstruction de la Sainte Kaaba par Quraysh", "ur": "قریش کے دور میں خانہ کعبہ کی تعمیر", "id": "Pembangunan Kembali Ka'bah oleh Quraisy" },
       "category": "battles",
-      "description": { 
-        "en": "Five years before the Prophetic mission, Quraysh resolved to rebuild the Kaaba. They pledged to use only pure earnings, which limited their resources. Consequently, they reduced the length from the Hijr side by six cubits and a span (approx. 3.09m), marking it with a short wall for circumambulation. They increased its height to eighteen cubits (approx. 9.39m), added a wooden roof for the first time, and installed a wooden gutter (Mizab). They also sealed the western door and raised the eastern door above ground level to control entry. The Prophet ﷺ participated in the construction and personally placed the Black Stone.", 
-        "ar": "عزمت قريش على تجديد بناء الكعبة قبل البعثة بخمس سنوات، واشترطوا ألا يدخلوا في بنائها مالاً حراماً. فقصرت بهم النفقة الطيبة عن إكمال البناء، فأنقصوا من جهة الحِجر 3 م و9 سم، وأداروا عليه جداراً قصيراً ليطوف الناس من ورائه. وزادوا ارتفاعها إلى 9 م و39 سم، وسقفوها لأول مرة، وجعلوا لها ميزاباً من خشب، وسدوا الباب الغربي، ورفعوا الباب الشرقي عن مستوى الأرض للتحكم في الدخول. وشارك النبي ﷺ في البناء ووضع الحجر الأسود.", 
-        "fr": "Cinq ans avant la mission prophétique, Quraysh résolut de reconstruire la Kaaba. Ils s'engagèrent à n'utiliser que des gains purs, ce qui limita leurs ressources. En conséquence, ils réduisirent la longueur du côté du Hijr de six coudées et un empan (environ 3,09 m), le marquant par un muret pour la circumambulation. Ils augmentèrent sa hauteur à dix-huit coudées (environ 9,39 m), ajoutèrent pour la première fois un toit en bois et installèrent une gouttière en bois (Mizab). Ils scellèrent également la porte ouest et surélevèrent la porte est au-dessus du sol pour contrôler l'entrée. Le Prophète ﷺ participa à la construction et plaça personnellement la Pierre Noire.", 
-        "ur": "بعثت نبوی سے پانچ سال قبل قریش نے خانہ کعبہ کی از سر نو تعمیر کا فیصلہ کیا۔ انہوں نے شرط رکھی کہ اس میں صرف پاکیزہ کمائی استعمال ہوگی، جس کی وجہ سے وسائل کم پڑ گئے اور حطیم (حجر) کی جانب سے تقریباً 3.09 میٹر جگہ کم کر دی گئی۔ اس پر ایک چھوٹی دیوار بنا دی گئی تاکہ لوگ اس کے پیچھے سے طواف کریں۔ انہوں نے کعبہ کی اونچائی بڑھا کر تقریباً 9.39 میٹر کر دی، پہلی بار اس پر چھت ڈالی اور لکڑی کا پرنالہ (میزاب) لگایا۔ مغربی دروازہ بند کر دیا گیا اور مشرقی دروازہ زمین سے اونچا کر دیا گیا تاکہ داخلے کو کنٹرول کیا جا سکے۔ نبی کریمﷺ نے اس تعمیر میں حصہ لیا اور حجرہ اسود کو اپنے مبارک ہاتھوں سے نصب کیا۔", 
-        "id": "Lima tahun sebelum misi Kenabian, kaum Quraisy memutuskan untuk membangun kembali Ka'bah. Mereka berjanji hanya menggunakan penghasilan yang murni, yang membatasi sumber daya mereka. Akibatnya, mereka mengurangi panjang dari sisi Hijr sekitar 3,09m dan menandainya dengan dinding rendah untuk tawaf. Mereka menambah tingginya menjadi sekitar 9,39m, menambahkan atap kayu untuk pertama kalinya, dan memasang talang kayu (Mizab). Mereka juga menutup pintu barat dan meninggikan pintu timur di atas permukaan tanah untuk mengontrol akses masuk. Nabi ﷺ ikut serta dalam pembangunan ini dan secara pribadi meletakkan Hajar Aswad." 
-      },
-      "era": { 
-        "en": "Pre-Prophetic Era", 
-        "ar": "عصر ما قبل البعثة", 
-        "fr": "Ère Pré-Prophétique", 
-        "ur": "قبل از نبوت", 
-        "id": "Era Pra-Kenabian" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Mecca, Dar Al-Madinah Museum", 
-        "ar": "مكة المكرمة، متحف دار المدينة", 
-        "fr": "La Mecque, Musée Dar Al-Madinah", 
-        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
-        "id": "Mekkah, Museum Dar Al-Madinah" 
-      },
+      "description": { "en": "Five years before the Prophetic mission, Quraysh resolved to rebuild the Kaaba. They used pure earnings, which limited resources and led to reducing the size on the Hijr side. The Prophet ﷺ participated and placed the Black Stone.", "ar": "عزمت قريش على تجديد بناء الكعبة قبل البعثة بخمس سنوات. فقصرت بهم النفقة فأنقصوا من جهة الحِجر. وشارك النبي ﷺ في البناء ووضع الحجر الأسود.", "fr": "Cinq ans avant la mission prophétique, Quraysh résolut de reconstruire la Kaaba. Le Prophète ﷺ participa à la construction et plaça la Pierre Noire.", "ur": "بعثت نبوی سے پانچ سال قبل قریش نے خانہ کعبہ کی از سر نو تعمیر کا فیصلہ کیا۔ نبی کریمﷺ نے اس تعمیر میں حصہ لیا اور حجرہ اسود کو نصب کیا۔", "id": "Lima tahun sebelum misi Kenabian, kaum Quraisy membangun kembali Ka'bah. Nabi ﷺ ikut serta dan meletakkan Hajar Aswad." },
+      "era": { "en": "Pre-Prophetic Era", "ar": "عصر ما قبل البعثة", "fr": "Ère Pré-Prophétique", "ur": "قبل از نبوت", "id": "Era Pra-Kenabian" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Mecca, Dar Al-Madinah Museum", "ar": "مكة المكرمة، متحف دار المدينة", "fr": "La Mecque, Musée Dar Al-Madinah", "ur": "مکہ مكرمہ، دار المدینہ میوزیم", "id": "Mekkah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/kaaba-quraysh.png",
       "audioUrl": null
     },
     {
       "id": "valley-ibrahim-hill",
-      "title": { 
-        "en": "The Hill (Al-Akama) in the Valley of Ibrahim (AS)", 
-        "ar": "الأكمة في وادي إبراهيم عليه السلام", 
-        "fr": "La Colline (Al-Akama) dans la Vallée d'Ibrahim (as)", 
-        "ur": "وادی ابراہیم علیہ السلام میں ٹیلہ (الأكمة)", 
-        "id": "Bukit (Al-Akama) di Lembah Ibrahim (as)" 
-      },
+      "title": { "en": "The Hill (Al-Akama) in the Valley of Ibrahim", "ar": "الأكمة في وادي إبراهيم", "fr": "La colline (Al-Akama) dans la vallée d'Ibrahim", "ur": "وادی ابراہیم میں پہاڑی (الاکمہ)", "id": "Bukit (Al-Akama) di Lembah Ibrahim" },
       "category": "battles",
-      "description": { 
-        "en": "The holy Kaaba was destroyed by the great flood of Noah (AS) and remained as a hill in the middle of a desert valley. Permanent human settlement in Mecca began approximately 4,000 years ago, around 1950 BCE, when Prophet Ibrahim (AS) arrived with his wife Hagar and his son Ishmael (AS). At that time, Mecca was uninhabited. Arab tribes knew that a House for the Lord was atop that hill, but its specific details or form were unknown until Ibrahim (AS) was commanded to raise its foundations.", 
-        "ar": "تهدمت الكعبة المشرفة بالطوفان وظلت على هيئة أكمة في وسط الوادي. بدأ الاستيطان البشري الدائم بمكة المكرمة قبل حوالي أربعة آلاف سنة (حوالي عام 1950 ق.م)، حين قدم سيدنا إبراهيم وزوجته هاجر وابنهما إسماعيل عليه السلام. في ذلك الزمان لم يكن يسكن مكة أحد، وكان طوفان نوح قد أزال معالم البيت العتيق وكان موضعه على أكمة صغيرة في وسط الوادي الذي سمي فيما بعد بوادي إبراهيم. كانت القبائل العربية تعرف أن فوق تلك الأكمة بيت للرب يعبد، ولكن لا يعرف تفاصيله أو شكله.", 
-        "fr": "La sainte Kaaba a été détruite par le grand déluge de Noé (as) et est restée sous forme de colline au milieu d'une vallée désertique. L'établissement humain permanent à La Mecque a commencé il y a environ 4 000 ans, vers 1950 avant J.-C., lorsque le prophète Ibrahim (as) est arrivé avec sa femme Hagar et son fils Ismaël (as). À cette époque, La Mecque était inhabitée. Les tribus arabes savaient qu'une Maison pour le Seigneur se trouvait au sommet de cette colline, mais ses détails spécifiques ou sa forme étaient inconnus jusqu'à ce qu'Ibrahim (as) reçoive l'ordre d'en élever les fondations.", 
-        "ur": "خانہ کعبہ حضرت نوح علیہ السلام کے طوفان کی وجہ سے منہدم ہو گیا تھا اور ایک ریگستانی وادی کے درمیان ٹیلے کی صورت میں باقی رہ گیا تھا۔ مکہ مکرمہ میں مستقل انسانی آبادی کا آغاز تقریباً 4000 سال پہلے (تقریباً 1950 قبل مسیح میں) اس وقت ہوا جب حضرت ابراہیم علیہ السلام اپنی زوجہ ہاجرہ اور صاحبزادے حضرت اسماعیل علیہ السلام کے ساتھ یہاں تشریف لائے۔ اس وقت مکہ بالکل غیر آباد تھا۔ عرب قبائل جانتے تھے کہ اس ٹیلے کے اوپر رب کا ایک گھر ہے جہاں عبادت کی جاتی ہے، لیکن اس کی تفصیلات یا شکل و صورت سے کوئی واقف نہیں تھا جب تک کہ حضرت ابراہیمؑ کو اس کی بنیادیں بلند کرنے کا حکم نہیں ملا۔", 
-        "id": "Ka'bah dihancurkan oleh banjir besar zaman Nuh (as) dan tetap berbentuk bukit di tengah lembah gurun. Pemukiman manusia permanen di Mekkah dimulai sekitar 4.000 tahun yang lalu, sekitar tahun 1950 SM, ketika Nabi Ibrahim (as) tiba bersama istrinya Hajar dan putranya Ismael (as). Pada waktu itu, Mekkah tidak berpenghuni. Suku-suku Arab tahu bahwa sebuah Rumah bagi Tuhan berada di atas bukit itu, tetapi rincian khusus atau bentuknya tidak diketahui sampai Ibrahim (as) diperintahkan untuk meninggikan fondasinya." 
-      },
-      "era": { 
-        "en": "Ancient Era", 
-        "ar": "العصر القديم", 
-        "fr": "Ère Ancienne", 
-        "ur": "قدیم دور", 
-        "id": "Era Kuno" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Mecca, Dar Al-Madinah Museum", 
-        "ar": "مكة المكرمة، متحف دار المدينة", 
-        "fr": "La Mecque, Musée Dar Al-Madinah", 
-        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
-        "id": "Mekkah, Museum Dar Al-Madinah" 
-      },
-      "image": "/images/artifacts/valley-ibrahim-hill.png",
-      "audioUrl": null
-    },
-    {
-      "id": "kaaba-ottoman",
-      "title": { 
-        "en": "The Building of the Holy Kaaba in the Ottoman Era", 
-        "ar": "بناء الكعبة المشرفة في العهد العثماني", 
-        "fr": "La construction de la Sainte Kaaba à l'époque ottomane", 
-        "ur": "عثمانی دور میں خانہ کعبہ کی تعمیر", 
-        "id": "Pembangunan Kembali Ka'bah di Era Utsmaniyah" 
-      },
-      "category": "battles",
-      "description": { 
-        "en": "In 1639 CE (1039 AH), a massive flood entered the Grand Mosque, filling most of its courtyard and reaching halfway up the walls of the Kaaba. This caused the collapse of the northern (Shami) wall, parts of the eastern and western walls, and the roof stairs. This catastrophic event deeply moved the Muslim world. Sultan Murad Khan initiated the reconstruction in 1630-1631 CE (1040 AH), a massive project that took six and a half months to complete. Upon its restoration, the Kaaba was draped in exquisite white silk and adorned with a meticulously embroidered belt.", 
-        "ar": "تسبب سيل عظيم دخل المسجد الحرام عام 1039 هـ (1639 م) في سقوط معظم البيت المعظم، حيث ملأ السيل المسجد ووصل إلى نصف جدار الكعبة، مما أدى لسقوط الجدار الشامي وبعض الجدارين الشرقي والغربي ودرجة السطح. فقام السلطان مراد خان عام 1040 هـ (1630 م) بإعادة بناء الكعبة المشرفة، واستغرقت عمارته ستة أشهر ونصف. ثم قام بكسائها بالحرير الأبيض ووضع لها حزاماً من القصب المطرز.", 
-        "fr": "En 1639 (1039 AH), une crue massive a envahi la Grande Mosquée, remplissant la majeure partie de la cour et atteignant la moitié de la hauteur des murs de la Kaaba. Cela a provoqué l'effondrement du mur nord (Shami), de parties des murs est et ouest, ainsi que de l'escalier du toit. Cet événement catastrophique a profondément ému le monde musulman. Le sultan Murad Khan a ordonné la reconstruction en 1630-1631 (1040 AH), un projet de grande envergure qui a duré six mois et demi. Une fois restaurée, la Kaaba a été drapée de soie blanche et ornée d'une ceinture brodée.", 
-        "ur": "1639ء (1039ھ) میں مکہ مکرمہ میں آنے والے ایک عظیم سیلاب نے مسجد الحرام کو اپنی لپیٹ میں لے لیا، جس سے کعبہ کی دیواروں کے نصف تک پانی پہنچ گیا۔ اس حادثے کے نتیجے میں شمالی (شامی) دیوار، اور مشرقی و مغربی دیواروں کے کچھ حصے گر گئے۔ اس غمزدہ واقعے کے بعد سلطان مراد خان نے 1630ء (1040ھ) میں خانہ کعبہ کی از سر نو تعمیر کا حکم دیا۔ یہ تعمیراتی کام ساڑھے چھ ماہ میں مکمل ہوا۔ تعمیر کے بعد کعبہ کو سفید ریشمی غلاف پہنایا گیا اور اس پر نہایت خوبصورت زردوزی کا بیلٹ (حزام) لگایا گیا۔", 
-        "id": "Pada tahun 1639 M (1039 H), banjir besar melanda Masjidil Haram, memenuhi sebagian besar halamannya dan mencapai setengah tinggi dinding Ka'bah. Hal ini menyebabkan runtuhnya dinding utara (Syam), sebagian dinding timur dan barat, serta tangga atap. Peristiwa bencana ini sangat menggerakkan dunia Islam. Sultan Murad Khan memulai pembangunan kembali pada tahun 1630-1631 M (1040 H), sebuah proyek besar yang memakan waktu enam setengah bulan. Setelah restorasi selesai, Ka'bah diselimuti kain sutra putih yang indah dan dihiasi dengan ikat pinggang bersulam." 
-      },
-      "era": { 
-        "en": "Ottoman Era", 
-        "ar": "العهد العثماني", 
-        "fr": "Ère Ottomane", 
-        "ur": "عثمانی دور", 
-        "id": "Era Utsmaniyah" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Mecca, Dar Al-Madinah Museum", 
-        "ar": "مكة المكرمة، متحف دار المدينة", 
-        "fr": "La Mecque, Musée Dar Al-Madinah", 
-        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
-        "id": "Mekkah, Museum Dar Al-Madinah" 
-      },
-      "image": "/images/artifacts/kaaba-ottoman.png",
-      "audioUrl": null
-    },
-    {
-      "id": "al-qibli-mosque",
-      "title": { 
-        "en": "Al-Qibli Mosque in Al-Aqsa Sharif", 
-        "ar": "المسجد القبلي في الأقصى الشريف (المسجد الأقصى)", 
-        "fr": "La mosquée Al-Qibli à Al-Aqsa Sharif", 
-        "ur": "مسجد اقصیٰ شریف میں مسجد قبلی", 
-        "id": "Masjid Al-Qibli di Al-Aqsa Sharif" 
-      },
-      "category": "battles",
-      "description": { 
-        "en": "The Qibli Mosque, commonly known as Al-Aqsa Mosque, consists of a large central nave supported by marble columns extending from north to south, covered by a lead-plated gabled roof. To the south, it is capped by a grand spherical dome resting on four stone pillars and four arches, forming the base for the double-layered dome. The interior is adorned with intricate mosaics and decorations, while the exterior was once covered in gold-plated copper (similar to the Dome of the Rock) but was recently replaced with lead. Located within the walls of Al-Aqsa Sharif, it was built by Abd al-Malik ibn Marwan between 709 CE (90 AH) and 714 CE (96 AH).", 
-        "ar": "يتألف الجامع القبلي أو ما يعرف بالمسجد الأقصى من رواق أوسط كبير يقوم على أعمدة رخامية ممتدة من الشمال إلى الجنوب، تغطيه جملون مصفح بألواح الرصاص. وينتهي من الجنوب بقبة عظيمة كروية الشكل تقوم على أربعة دعامات وحجرية وأقواس، تحمل رقبة القبة المكونة من طبقتين. زينت القبة من الداخل بالزخارف والفسيفساء، ومن الخارج تمت تغطيتها بصفائح النحاس المطلية بالذهب ثم استبدلت حديثاً بالرصاص. يقع الجامع القبلي داخل رواق سور الأقصى الشريف، بناه عبد الملك بن مروان بين عامي 90 هـ (709 م) و96 هـ (714 م).", 
-        "fr": "La mosquée Al-Qibli, communément appelée mosquée Al-Aqsa, se compose d'une grande nef centrale soutenue par des colonnes de marbre s'étendant du nord au sud, couverte d'un toit en bâtière plaqué de plomb. Au sud, elle est surmontée d'un grand dôme sphérique reposant sur quatre piliers en pierre et quatre arches. L'intérieur est orné de mosaïques complexes, tandis que l'extérieur était autrefois recouvert de cuivre plaqué or (comme le Dôme du Rocher) mais a été récemment remplacé par du plomb. Situé dans l'enceinte d'Al-Aqsa Sharif, il a été construit par Abd al-Malik ibn Marwan entre 709 (90 AH) et 714 (96 AH).", 
-        "ur": "جامع قبلی، جسے عام طور پر مسجد اقصیٰ کے نام سے جانا جاتا ہے، ایک بڑے مرکزی ہال پر مشتمل ہے جو سنگ مرمر کے ستونوں پر قائم ہے جو شمال سے جنوب تک پھیلے ہوئے ہیں۔ اس کی چھت سیسے کی چادروں سے ڈھکی ہوئی ہے۔ جنوب میں ایک عظیم الشان گنبد ہے جو چار پتھریلے ستونوں اور محرابوں پر قائم ہے۔ گنبد کے اندرونی حصے کو پچی کاری اور نقش و نگار سے سجایا گیا ہے، جبکہ بیرونی حصہ پہلے سونے کے پانی چڑھے تانبے سے ڈھکا ہوا تھا (قبتہ الصخرہ کی طرح) لیکن حال ہی میں اسے سیسے سے بدل دیا گیا ہے۔ یہ مسجد اقصیٰ شریف کی حدود میں واقع ہے اور اسے عبدالملک بن مروان نے 709ء (90ھ) سے 714ء (96ھ) کے درمیان تعمیر کروایا تھا۔", 
-        "id": "Masjid Al-Qibli, yang umumnya dikenal sebagai Masjid Al-Aqsa, terdiri dari ruang utama besar yang didukung oleh pilar marmer yang membentang dari utara ke selatan, ditutupi oleh atap pelana berlapis timah. Di sisi selatan, terdapat kubah besar berbentuk bola yang berdiri di atas empat pilar batu dan empat lengkungan. Bagian interiornya dihiasi dengan mosaik dan dekorasi yang rumit, sementara bagian eksteriornya dulunya ditutupi tembaga berlapis emas (mirip dengan Kubah Batu) namun baru-baru ini diganti dengan timah. Terletak di dalam tembok Al-Aqsa Sharif, masjid ini dibangun oleh Abd al-Malik ibn Marwan antara tahun 709 M (90 H) dan 714 M (96 H)." 
-      },
-      "era": { 
-        "en": "Umayyad Era", 
-        "ar": "العصر الأموي", 
-        "fr": "Ère Omeyyade", 
-        "ur": "بنو امیہ کا دور", 
-        "id": "Era Umayyah" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Jerusalem, Dar Al-Madinah Museum", 
-        "ar": "القدس، متحف دار المدينة", 
-        "fr": "Jérusalem, Musée Dar Al-Madinah", 
-        "ur": "یروشلم، دار المدینہ میوزیم", 
-        "id": "Yerusalem, Museum Dar Al-Madinah" 
-      },
-      "image": "/images/artifacts/al-qibli-mosque.png",
-      "audioUrl": null
-    },
-    {
-      "id": "prophet-arrival",
-      "title": { 
-        "en": "The Arrival of the Prophet ﷺ", 
-        "ar": "قدوم النبي ﷺ إلى قباء", 
-        "fr": "L'Arrivée du Prophète ﷺ", 
-        "ur": "نبی کریم ﷺ کی آمد بمقامِ قباء", 
-        "id": "Kedatangan Nabi ﷺ" 
-      },
-      "category": "battles",
-      "description": { 
-        "en": "The Prophet ﷺ and his companion Abu Bakr al-Siddiq continued their journey to Medina, accompanied by Amir bin Fuhayra and their guide. They took a coastal route, eventually reaching Thaniyat al-A'ir and descending into the valley before arriving at Quba. The Ansar had been waiting daily for the Prophet's arrival in the intense heat. On the day he arrived, a Jewish man was the first to spot them and shouted to the Ansar: 'O children of Qayla, your forefather has come!' The people rushed to the Prophet ﷺ as he sat in the shade of a palm tree. Many had never seen him before and couldn't distinguish him from Abu Bakr until the shade shifted, and Abu Bakr stood up to shade the Prophet ﷺ with his cloak.", 
-        "ar": "تابع النبي ﷺ وصاحبه أبو بكر الصديق الطريق إلى المدينة سلكا طريق الساحل حتى وصلا إلى ثنية العائر، وهبط الركب إلى بطن الوادي ثم سار محاذياً لوادي الرانوناء حتى وصل قباء. وكان الأنصار يخرجون كل يوم في حر الظهيرة ينتظرون قدومه ﷺ. وفي اليوم الذي قدم فيه، كان أول من رآه رجل من اليهود فنادى: 'يا بني قيلة، هذا جدكم قد جاء!' فخرج الناس إليه وهو في ظل نخلة. ولم يكن أكثرهم قد رأى رسول الله من قبل، فما عرفوه من أبي بكر حتى زال الظل عن رسول الله ﷺ فقام أبو بكر يظله بردائه، فعرفناه عند ذلك.", 
-        "fr": "Le Prophète ﷺ et son compagnon Abou Bakr al-Siddiq ont poursuivi leur voyage vers Médine, accompagnés d'Amir bin Fouhayra et de leur guide. Ils ont emprunté une route côtière, atteignant finalement Thaniyat al-A'ir avant d'arriver à Quba. Les Ansar attendaient quotidiennement l'arrivée du Prophète sous une chaleur intense. Le jour de son arrivée, un homme juif fut le premier à les repérer et cria aux Ansar : 'Ô fils de Qayla, votre ancêtre est arrivé !' Les gens se précipitèrent vers le Prophète ﷺ alors qu'il était assis à l'ombre d'un palmier. Beaucoup ne l'avaient jamais vu auparavant et ne le distinguaient pas d'Abou Bakr jusqu'à ce que l'ombre se déplace et qu'Abou Bakr se lève pour abriter le Prophète ﷺ de son manteau.", 
-        "ur": "نبی کریم ﷺ اور آپ کے ساتھی حضرت ابوبکر الصدیقؓ نے عامر بن فہیرہ اور اپنے رہنما کے ہمراہ مدینہ کا سفر جاری رکھا۔ انہوں نے ساحلی راستہ اختیار کیا اور بالاخر ثنیۃ العائر سے ہوتے ہوئے وادی میں اترے اور قبا پہنچ گئے۔ انصار روزانہ سخت گرمی میں نبی کریم ﷺ کی آمد کا گہری بے صبری سے انتظار کرتے تھے۔ جس دن آپ ﷺ تشریف لائے، ایک یہودی شخص نے سب سے پہلے آپ کو دیکھا اور پکارا: 'اے بنو قیلہ! تمہارے بزرگ تشریف لے آئے ہیں!' لوگ تیزی سے نبی ﷺ کی طرف بڑھے جو ایک کھجور کے درخت کے سائے میں تشریف فرما تھے۔ بہت سے لوگوں نے آپ ﷺ کو پہلے کبھی نہیں دیکھا تھا اور وہ حضرت ابوبکرؓ اور آپ ﷺ میں فرق نہیں کر پا رہے تھے، یہاں تک کہ جب سایہ ہٹا اور حضرت ابوبکرؓ نے اپنی چادر سے آپ ﷺ پر سایہ کیا، تب لوگوں نے آپ ﷺ کو پہچانا۔", 
-        "id": "Nabi ﷺ dan sahabatnya Abu Bakar ash-Shiddiq melanjutkan perjalanan ke Madinah, didampingi oleh Amir bin Fuhayra dan pemandu mereka. Mereka menempuh rute pesisir, akhirnya mencapai Thaniyat al-A'ir dan turun ke lembah sebelum tiba di Quba. Kaum Ansar telah menunggu setiap hari kedatangan Nabi di tengah panas yang terik. Pada hari beliau tiba, seorang pria Yahudi adalah orang pertama yang melihat mereka dan berseru kepada Ansar: 'Wahai bani Qayla, kakek moyangmu telah datang!' Orang-orang bergegas menuju Nabi ﷺ saat beliau duduk di bawah bayang-bayang pohon palem. Banyak yang belum pernah melihat beliau sebelumnya dan tidak bisa membedakannya dari Abu Bakar sampai bayangan berpindah, dan Abu Bakar berdiri untuk menaungi Nabi ﷺ dengan jubahnya." 
-      },
-      "era": { 
-        "en": "Prophetic Era", 
-        "ar": "العهد النبوي", 
-        "fr": "Ère Prophétique", 
-        "ur": "عہدِ نبوی", 
-        "id": "Era Kenabian" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Medina, Dar Al-Madinah Museum", 
-        "ar": "المدينة المنورة، متحف دار المدينة", 
-        "fr": "Médine, Musée Dar Al-Madinah", 
-        "ur": "مدینہ، دار المدینہ میوزیم", 
-        "id": "Madinah, Museum Dar Al-Madinah" 
-      },
-      "image": "/images/artifacts/prophet-arrival.png",
-      "audioUrl": null
-    },
-    {
+      "description": { "en": "A representation of the geographical features in the Valley of Ibrahim before the urbanization of Mecca, highlighting the historical 'Akama' or hill mentioned in early historical accounts.", "ar": "تصوير للمعالم الجغرافية في وادي إبراهي�    {
       "id": "kaaba-zubayr",
-      "title": { 
-        "en": "The Building of the Holy Kaaba in the Era of Abdullah ibn al-Zubayr", 
-        "ar": "بناء الكعبة المشرفة في عهد عبدالله بن الزبير", 
-        "fr": "La reconstruction de la Sainte Kaaba à l'époque d'Abdullah ibn al-Zubayr", 
-        "ur": "حضرت عبداللہ بن زبیر کے دور میں خانہ کعبہ کی تعمیر", 
-        "id": "Pembangunan Kembali Ka'bah di Era Abdullah bin al-Zubair" 
+      "title": {
+        "en": "The Building of the Holy Kaaba in the Era of Abdullah ibn al-Zubayr",
+        "ar": "بناء الكعبة المشرفة في عهد عبدلله بن الزبير ",
+        "fr": "La reconstruction de la Sainte Kaaba à l'époque d'Abdullah ibn al-Zubayr",
+        "ur": "حضرت عبداللہ بن زبیر کے دور میں خانہ کعبہ کی تعمیر",
+        "id": "Pembangunan Kembali Ka'bah di Era Abdullah bin al-Zubair"
       },
       "category": "battles",
-      "description": { 
-        "en": "When Abdullah ibn al-Zubayr took charge of Mecca, he decided to rebuild the Kaaba upon the original foundations of Ibrahim (AS), fulfilling a wish once expressed by the Prophet ﷺ to Aisha (RA). He incorporated the six cubits that Quraysh had previously left out of the building. He also added two doors at ground level—one on the eastern side and another on the western side—allowing people to enter through one and exit through the other. Furthermore, he increased the height of the Kaaba to 27 cubits (approximately 13.5 meters), making it a significant architectural milestone that restored the House to its intended Prophetic form.", 
-        "ar": "حين ولي عبدالله بن الزبير أمر مكة قرر إعادة بناء الكعبة على قواعد إبراهيم عليه السلام، تيمناً بما كان يتمناه رسول الله صلى الله عليه وسلم، كما سمحت بذلك عائشة رضي الله عنها. فأدخل فيها ما أخرجته قريش منها (6 أذرع وشبراً)، وجعل لها بابين ملتصقين بالأرض، أحدهما في الجهة الشرقية، والآخر في الجهة الغربية، وزاد في ارتفاعها إلى (27 ذراعاً - أي 13.5 م).", 
-        "fr": "Lorsqu'Abdullah ibn al-Zubayr prit la direction de La Mecque, il décida de reconstruire la Kaaba sur les fondations originelles d'Ibrahim (AS), réalisant ainsi un souhait autrefois exprimé par le Prophète ﷺ à Aïcha (RA). Il incorpora les six coudées que les Qurayshites avaient précédemment laissées hors de l'édifice. Il ajouta également deux portes au niveau du sol — une à l'est et une à l'ouest. De plus, il augmenta la hauteur de la Kaaba à 27 coudées (environ 13,5 mètres), en faisant un jalon architectural majeur qui restaura la Maison dans sa forme prophétique prévue.", 
-        "ur": "جب حضرت عبداللہ بن زبیرؓ نے مکہ مکرمہ کا انتظام سنبھالا تو انہوں نے خانہ کعبہ کو حضرت ابراہیم علیہ السلام کی اصل بنیادوں پر دوبارہ تعمیر کرنے کا فیصلہ کیا، تاکہ نبی کریم ﷺ کی اس خواہش کو پورا کیا جا سکے جس کا تذکرہ آپ نے حضرت عائشہؓ سے کیا تھا۔ انہوں نے وہ چھ ہاتھ جگہ بھی کعبہ میں شامل کر دی جسے قریش نے تعمیر سے باہر چھوڑ دیا تھا۔ انہوں نے زمین کی سطح پر دو دروازے بنائے—ایک مشرقی جانب اور دوسرا مغربی جانب—تاکہ لوگ ایک سے داخل ہوں اور دوسرے سے نکل سکیں۔ مزید برآں، انہوں نے کعبہ کی اونچائی 27 ہاتھ (تقریباً 13.5 میٹر) تک بڑھا دی، جس سے اللہ کے گھر کو اس کی اصل نبوی شکل میں بحال کر دیا گیا۔", 
-        "id": "Ketika Abdullah bin al-Zubair memimpin Mekkah, ia memutuskan untuk membangun kembali Ka'bah di atas fondasi asli Ibrahim (AS), memenuhi keinginan yang pernah diungkapkan oleh Nabi ﷺ kepada Aisyah (RA). Ia memasukkan enam hasta yang sebelumnya ditinggalkan oleh kaum Quraisy dari bangunan tersebut. Ia juga menambahkan dua pintu di tingkat tanah—satu di sisi timur dan satu lagi di sisi barat. Selain itu, ia meningkatkan tinggi Ka'bah menjadi 27 hasta (sekitar 13,5 meter), menjadikannya tonggak arsitektur penting yang mengembalikan Baitullah ke bentuk yang diinginkan Nabi." 
+      "description": {
+        "en": "When Abdullah ibn al-Zubayr took charge of Mecca, he decided to rebuild the Kaaba upon the original foundations of Ibrahim (AS), fulfilling a wish once expressed by the Prophet ﷺ to Aisha (RA). He incorporated the six cubits that Quraysh had previously left out of the building. He also added two doors at ground level—one on the eastern side and another on the western side—allowing people to enter through one and exit through the other. Furthermore, he increased the height of the Kaaba to 27 cubits (approximately 13.5 meters), making it a significant architectural milestone that restored the House to its intended Prophetic form.",
+        "ar": "حين ولي عبدالله بن الزبير أمر مكة قرر إعادة بناء الكعبة على قواعد إبراهيم عليه السلام ، تيمناً بما كان يتمناه رسول الله صلى الله عليه وسلم ، فقد سمع من خالته عائشة رضي الله عنها أن النبي صلى الله عليه وسلم قال لها : (( يا عائشة ، لولا أن قومك حديثو عهد بجاهلية لأمرت بالبيت فهدم ، فأدخلت فيه ما أخرج منه ، وألصقته بالأرض ، وجعلت له باباً شرقياً ، وباباً غربياً ، فبلغت به أساس إبراهيم )) ، فأدخل فيها ما أخرجته قريش منها (٦ أذرع وشبراً) ، وجعل لها بابين ملتصقين بالأرض ، أحدهما في الجهة الشرقية والآخر في الجهة الغربية ، وزاد في ارتفاعها ليكون ٢٧ ذراعاً أي ما يعادل ١٣.٥ م تقريباً .",
+        "fr": "Lorsqu'Abdullah ibn al-Zubayr prit la direction de La Mecque, il décida de reconstruire la Kaaba sur les fondations originelles d'Ibrahim (AS), réalisant ainsi un souhait autrefois exprimé par le Prophète ﷺ à Aïcha (RA). Il incorpora les six coudées que les Qurayshites avaient précédemment laissées hors de l'édifice. Il ajouta également deux portes au niveau du sol — une à l'est et une à l'ouest. De plus, il augmenta la hauteur de la Kaaba à 27 coudées (environ 13,5 mètres), en faisant un jalon architectural majeur qui restaura la Maison dans sa forme prophétique prévue.",
+        "ur": "جب حضرت عبداللہ بن زبیرؓ نے مکہ مکرمہ کا انتظام سنبھالا تو انہوں نے خانہ کعبہ کو حضرت ابراہیم علیہ السلام کی اصل بنیادوں پر دوبارہ تعمیر کرنے کا فیصلہ کیا، تاکہ نبی کریم ﷺ کی اس خواہش کو پورا کیا جا سکے جس کا تذکرہ آپ نے حضرت عائشہؓ سے کیا تھا۔ انہوں نے وہ چھ ہاتھ جگہ بھی کعبہ میں شامل کر دی جسے قریش نے تعمیر سے باہر چھوڑ دیا تھا۔ انہوں نے زمین کی سطح پر دو دروازے بنائے—ایک مشرقی جانب اور دوسرا مغربی جانب—تاکہ لوگ ایک سے داخل ہوں اور دوسرے سے نکل سکیں۔ مزید برآں، انہوں نے کعبہ کی اونچائی 27 ہاتھ (تقریباً 13.5 میٹر) تک بڑھا دی، جس سے اللہ کے گھر کو اس کی اصل نبوی شکل میں بحال کر دیا گیا۔",
+        "id": "Ketika Abdullah bin al-Zubair memimpin Mekkah, ia memutuskan untuk membangun kembali Ka'bah di atas fondasi asli Ibrahim (AS), memenuhi keinginan yang pernah diungkapkan oleh Nabi ﷺ kepada Aisyah (RA). Ia memasukkan enam hasta yang sebelumnya ditinggalkan oleh kaum Quraisy dari bangunan tersebut. Ia juga menambahkan dua pintu di tingkat tanah—satu di sisi timur dan satu lagi di sisi barat. Selain itu, ia meningkatkan tinggi Ka'bah menjadi 27 hasta (sekitar 13,5 meter), menjadikannya tonggak arsitektur penting yang mengembalikan Baitullah ke bentuk yang diinginkan Nabi."
       },
-      "era": { 
-        "en": "Early Islamic Era", 
-        "ar": "العصر الإسلامي المبكر", 
-        "fr": "Début de l'Ère Islamique", 
-        "ur": "ابتدائی اسلامی دور", 
-        "id": "Era Islam Awal" 
-      },
-      "material": { 
-        "en": "Diorama Model", 
-        "ar": "مجسم ديوراما", 
-        "fr": "Modèle de Diorama", 
-        "ur": "ڈیوراما ماڈل", 
-        "id": "Model Diorama" 
-      },
-      "origin": { 
-        "en": "Mecca, Dar Al-Madinah Museum", 
-        "ar": "مكة المكرمة، متحف دار المدينة", 
-        "fr": "La Mecque, Musée Dar Al-Madinah", 
-        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
-        "id": "Mekkah, Museum Dar Al-Madinah" 
-      },
+      "era": { "en": "Early Islamic Era", "ar": "العصر الإسلامي المبكر", "fr": "Début de l'Ère Islamique", "ur": "ابتدائی اسلامی دور", "id": "Era Islam Awal" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Mecca, Dar Al-Madinah Museum", "ar": "مكة المكرمة، متحف دار المدينة", "fr": "La Mecque, Musée Dar Al-Madinah", "ur": "مکہ مکرمہ، دار المدینہ میوزیم", "id": "Mekkah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/kaaba-zubayr-1.png",
-      "images": [
-        "/images/artifacts/kaaba-zubayr-1.png",
-        "/images/artifacts/kaaba-zubayr-2.png"
-      ],
+      "images": ["/images/artifacts/kaaba-zubayr-1.png", "/images/artifacts/kaaba-zubayr-2.png"],
       "audioUrl": null
     },
     {
       "id": "quranic-writing-materials",
-      "title": { 
-        "en": "Quranic Writing Materials: Palm Fronds, Stone, and Papyrus", 
-        "ar": "جريد النخل، الحجارة، الكرانيف، ورق البردي", 
-        "fr": "Matériaux d'écriture Coraniques : Palmes de palmier, Pierres et Papyrus", 
-        "ur": "قرانی تحریری مواد: کھجور کی شاخیں، پتھر اور پیپرس", 
-        "id": "Bahan Tulisan Al-Qur'an: Pelepah Kurma, Batu, dan Papirus" 
+      "title": {
+        "en": "Quranic Writing Materials: Palm Fronds, Stone, and Papyrus",
+        "ar": "جريد النخل\nالحجارة، الكرانيف،\nورق البردي.",
+        "fr": "Matériaux d'écriture Coranique : palmes, pierre et papyrus",
+        "ur": "قرآنی تحریر کے مواد: کھجور کی شاخیں، پتھر، اور پیپرس (بردی)",
+        "id": "Bahan Tulisan Al-Qur'an: Pelepah Kurma, Batu, dan Papirus"
       },
       "category": "battles",
-      "description": { 
-        "en": "In the early days of Islam, the Quranic verses were preserved on various natural materials before the compilation of a single codex. These included palm fronds (Jarid), which were stripped of their leaves to provide a writing surface; flat whitestones (Likhaf); and leather or papyrus (Karanif). These materials served as the primary media for the companions to document and preserve the Divine Revelation as it was revealed to the Prophet ﷺ.", 
-        "ar": "جريد النخل، الحجارة، الكرانيف، ورق البردي؛ استُخدمت هذه الأدوات لكتابة الآيات القرآنية في العصر النبوي الأول، حيث كانت الوسيلة الأساسية لحفظ الوحي وتوثيقه قبل جمعه في مصحف واحد.", 
-        "fr": "Aux débuts de l'Islam, les versets coraniques étaient préservés sur divers matériaux naturels avant la compilation d'un codex unique. Ceux-ci incluaient des palmes de palmier (Jarid), qui étaient dépouillées de leurs feuilles pour offrir une surface d'écriture ; des pierres plates blanches (Likhaf) ; et du cuir ou du papyrus (Karanif). Ces matériaux servaient de support principal aux compagnons pour documenter et préserver la Révélation Divine telle qu'elle était révélée au Prophète ﷺ.", 
-        "ur": "اسلام کے ابتدائی دور میں، قرآن کریم کی آیات کو ایک مصحف میں جمع کرنے سے پہلے مختلف قدرتی اشیاء پر محفوظ کیا جاتا تھا۔ ان میں کھجور کی شاخیں (جرید) شامل تھیں جنہیں صاف کر کے لکھنے کے قابل بنایا جاتا تھا؛ صاف سفید پتھر (لخاف)؛ اور چمڑا یا پیپرس (کرانیف)۔ یہ اشیاء صحابہ کرام کے لیے وحی الہی کو دستاویزی شکل میں محفوظ کرنے کا بنیادی ذریعہ تھیں جیسے جیسے یہ نبی کریم ﷺ پر نازل ہوتی تھیں۔", 
-        "id": "Pada masa awal Islam, ayat-ayat Al-Qur'an dilestarikan di berbagai bahan alami sebelum penyusunan kodeks tunggal. Ini termasuk pelepah kurma (Jarid), yang ditiadakan daunnya untuk menyediakan permukaan tulisan; batu putih rata (Likhaf); dan kulit atau papirus (Karanif). Bahan-bahan ini berfungsi sebagai media utama bagi para sahabat untuk mendokumentasikan dan melestarikan Wahyu Ilahi saat diwahyukan kepada Nabi ﷺ." 
+      "description": {
+        "en": "During the era of the Prophet ﷺ and the early Caliphate, before the widespread use of paper, the verses of the Quran were meticulously recorded on various natural materials available in the environment. These included 'Jareed' (stripped palm fronds), 'Likhaf' (thin white stones), 'Karanif' (the wide bases of palm branches), and 'Papyrus' (early paper-like material). These materials served as the first physical vessels for the Divine Revelation, preserved by the companions under the Prophet's guidance.",
+        "ar": "جريد النخل\nالحجارة، الكرانيف،\nورق البردي،\nاستخدم لكتابه الايات\nالقرانيه",
+        "fr": "À l'époque du Prophète ﷺ et du premier Califat, avant l'utilisation répandue du papier, les versets du Coran étaient méticuleusement enregistrés sur divers matériaux naturels. Ceux-ci incluaient le 'Jareed' (palmes de palmier dépouillées), le 'Likhaf' (fines pierres blanches), le 'Karanif' (les bases larges des branches de palmier) et le 'Papyrus'.",
+        "ur": "نبی کریم ﷺ کے عہد اور ابتدائی خلافت میں، کاغذ کے بڑے پیمانے پر استعمال سے پہلے، قرآن کی آیات کو ماحول میں دستیاب مختلف قدرتی مواد پر احتیاط سے ریکارڈ کیا جاتا تھا۔ ان میں 'جرید' (کھجور کی شاخیں)، 'لخاف' (باریک سفید پتھر)، 'کرانیف' (کھجور کی شاخوں کی چوڑی بنیادیں)، اور 'پیپرس' (بردی کا کاغذ) شامل تھے۔",
+        "id": "Selama era Nabi ﷺ dan Kekhalifahan awal, sebelum penggunaan kertas secara luas, ayat-ayat Al-Qur'an dicatat dengan teliti pada berbagai bahan alami. Ini termasuk 'Jareed' (pelepah kurma yang dikupas), 'Likhaf' (batu putih tipis), 'Karanif' (pangkal pelepah kurma yang lebar), dan 'Papirus'."
       },
-      "era": { 
-        "en": "Prophetic Era", 
-        "ar": "العهد النبوي", 
-        "fr": "Ère Prophétique", 
-        "ur": "عہدِ نبوی", 
-        "id": "Era Kenabian" 
-      },
-      "material": { 
-        "en": "Ancient Writing Surfaces", 
-        "ar": "أدوات كتابة قديمة", 
-        "fr": "Anciennes Surfaces d'Écriture", 
-        "ur": "قدیم تحریری اشیاء", 
-        "id": "Permukaan Tulisan Kuno" 
-      },
-      "origin": { 
-        "en": "Medina, Dar Al-Madinah Museum", 
-        "ar": "المدينة المنورة، متحف دار المدينة", 
-        "fr": "Médine, Musée Dar Al-Madinah", 
-        "ur": "مدینہ، دار المدینہ میوزیم", 
-        "id": "Madinah, Museum Dar Al-Madinah" 
-      },
+      "era": { "en": "Prophetic Era", "ar": "العهد النبوي", "fr": "Ère Prophétique", "ur": "عہدِ نبوی", "id": "Era Kenabian" },
+      "material": { "en": "Natural Materials / Diorama", "ar": "مواد طبيعية / مجسم", "fr": "Matériaux Naturels / Diorama", "ur": "قدرتی مواد / ڈیوراما", "id": "Bahan Alami / Diorama" },
+      "origin": { "en": "Medina, Dar Al-Madinah Museum", "ar": "المدينة المنورة، متحف دار المدينة", "fr": "Médine, Musée Dar Al-Madinah", "ur": "مدینہ، دار المدینہ میوزیم", "id": "Madinah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/quran-materials-1.png",
-      "images": [
-        "/images/artifacts/quran-materials-1.png",
-        "/images/artifacts/quran-materials-2.png",
-        "/images/artifacts/quran-materials-3.png"
-      ],
+      "images": ["/images/artifacts/quran-materials-1.png", "/images/artifacts/quran-materials-2.png", "/images/artifacts/quran-materials-3.png"],
+      "audioUrl": null
+    }
+  ]ف دار المدينة", "fr": "Jérusalem, Musée Dar Al-Madinah", "ur": "یروشلم، دار المدینہ میوزیم", "id": "Yerusalem, Museum Dar Al-Madinah" },
+      "image": "/images/artifacts/al-qibli-mosque.png",
+      "audioUrl": null
+    },
+    {
+      "id": "kaaba-zubayr",
+      "title": { "en": "The Building of the Holy Kaaba in the Era of Abdullah ibn al-Zubayr", "ar": "بناء الكعبة المشرفة في عهد عبدلله بن الزبير ", "fr": "La reconstruction de la Sainte Kaaba à l'époque d'Abdullah ibn al-Zubayr", "ur": "حضرت عبداللہ بن زبیر کے دور میں خانہ کعبہ کی تعمیر", "id": "Pembangunan Kembali Ka'bah di Era Abdullah bin al-Zubair" },
+      "category": "battles",
+      "description": { "en": "Abdullah ibn al-Zubayr rebuilt the Kaaba upon the original foundations of Ibrahim (AS). He incorporated the six cubits left out by Quraysh and added two doors at ground level.", "ar": "حين ولي عبدالله بن الزبير أمر مكة قرر إعادة بناء الكعبة على قواعد إبراهيم عليه السلام. فأدخل فيها ماأخرجته قريش منها وجعل لها بابين ملتصقين بالأرض.", "fr": "Abdullah ibn al-Zubayr reconstruisit la Kaaba sur les fondations d'Ibrahim (AS), incluant les parties délaissées par Quraysh et ajoutant deux portes.", "ur": "حضرت عبداللہ بن زبیرؓ نے خانہ کعبہ کو حضرت ابراہیم علیہ السلام کی اصل بنیادوں پر دوبارہ تعمیر کیا۔ انہوں نے قریش کی چھوڑی ہوئی جگہ شامل کی اور دو دروازے بنائے۔", "id": "Abdullah bin al-Zubair membangun kembali Ka'bah di atas fondasi Ibrahim (AS), memasukkan bagian yang ditinggalkan Quraisy dan menambah dua pintu." },
+      "era": { "en": "Early Islamic Era", "ar": "العصر الإسلامي المبكر", "fr": "Début de l'Ère Islamique", "ur": "ابتدائی اسلامی دور", "id": "Era Islam Awal" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Mecca, Dar Al-Madinah Museum", "ar": "مكة المكرمة، متحف دار المدينة", "fr": "La Mecque, Musée Dar Al-Madinah", "ur": "مکه مکرمہ، دار المدینہ میوزیم", "id": "Mekkah, Museum Dar Al-Madinah" },
+      "image": "/images/artifacts/kaaba-zubayr-1.png",
+      "images": ["/images/artifacts/kaaba-zubayr-1.png", "/images/artifacts/kaaba-zubayr-2.png"],
+      "audioUrl": null
+    },
+    {
+      "id": "prophet-arrival",
+      "title": { "en": "The Arrival of the Prophet ﷺ", "ar": "قدوم النبي", "fr": "L'Arrivée du Prophète ﷺ", "ur": "نبی کریم ﷺ کی آمد", "id": "Kedatangan Nabi ﷺ" },
+      "category": "battles",
+      "description": { "en": "The Prophet ﷺ and Abu Bakr reached Medina after a journey along the coast. The Ansar welcomed him with joy as he arrived in Quba. Abu Bakr shaded him with his cloak for the people to recognize him.", "ar": "تابع النبي وصاحبه الطريق إلى المدينة حتى وصلا قباء. استقبله الأنصار بالفرح، وظلله أبو بكر ببردائه ليعرفه الناس.", "fr": "Le Prophète ﷺ et Abou Bakr sont arrivés à Médine. Les Ansar les ont accueillis avec joie à Quba.", "ur": "نبی کریم ﷺ اور حضرت ابوبکرؓ ساحلی راستے سے مدینہ پہنچے۔ انصار نے قبا میں آپ کا استقبال کیا۔", "id": "Nabi ﷺ dan Abu Bakar tiba di Madinah. Kaum Ansar menyambut beliau dengan gembira di Quba." },
+      "era": { "en": "Prophetic Era", "ar": "العهد النبوي", "fr": "Ère Prophétique", "ur": "عہدِ نبوی", "id": "Era Kenabian" },
+      "material": { "en": "Diorama Model", "ar": "مجسم ديوراما", "fr": "Modèle de Diorama", "ur": "ڈیوراما ماڈل", "id": "Model Diorama" },
+      "origin": { "en": "Medina, Dar Al-Madinah Museum", "ar": "المدينة المنورة، متحف دار المدينة", "fr": "Médine, Musée Dar Al-Madinah", "ur": "مدینہ، دار المدینہ میوزیم", "id": "Madinah, Museum Dar Al-Madinah" },
+      "image": "/images/artifacts/prophet-arrival.png",
+      "audioUrl": null
+    },
+    {
+      "id": "quranic-writing-materials",
+      "title": { "en": "Quranic Writing Materials", "ar": "جريد النخل\nالحجارة، الكرانيف،\nورق البردي.", "fr": "Matériaux d'écriture Coraniques", "ur": "قرانی تحریری مواد", "id": "Bahan Tulisan Al-Qur'an" },
+      "category": "battles",
+      "description": { "en": "In the early days of Islam, the Quranic verses were preserved on palm fronds (Jarid), flat stones (Likhaf), and papyrus (Karanif) before the compilation of a codex.", "ar": "جريد النخل والحجارة والكرانيف وورق البردي استخدمت لكتابة الآيات القرآنية في صدر الإسلام قبل جمعها في المصحف.", "fr": "Aux débuts de l'Islam, les versets coraniques étaient préservés sur des palmes de palmier et des pierres plates.", "ur": "اسلام کے ابتدائی دور میں قرآن کی آیات کو کھجور کی شاخوں اور پتھروں پر محفوظ کیا جاتا تھا۔", "id": "Pada masa awal Islam, ayat Al-Qur'an dilestarikan di pelepah kurma dan batu." },
+      "era": { "en": "Prophetic Era", "ar": "العهد النبوي", "fr": "Ère Prophétique", "ur": "عہدِ نبوی", "id": "Era Kenabian" },
+      "material": { "en": "Ancient Writing Surfaces", "ar": "أدوات كتابة قديمة", "fr": "Anciennes Surfaces d'Écriture", "ur": "قدیم تحریری اشیاء", "id": "Permukaan Tulisan Kuno" },
+      "origin": { "en": "Medina, Dar Al-Madinah Museum", "ar": "المدينة المنورة، متحف دار المدينة", "fr": "Médine, Musée Dar Al-Madinah", "ur": "مدینہ، دار المدینہ میوزیم", "id": "Madinah, Museum Dar Al-Madinah" },
+      "image": "/images/artifacts/quran-materials-1.png",
+      "images": ["/images/artifacts/quran-materials-1.png", "/images/artifacts/quran-materials-2.png", "/images/artifacts/quran-materials-3.png"],
       "audioUrl": null
     }
   ]
