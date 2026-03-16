@@ -166,6 +166,47 @@
       },
       "image": "/images/artifacts/nabawi-abdul-majid.jpg",
       "audioUrl": null
+    },
+    {
+      "id": "kaaba-saudi",
+      "title": { 
+        "en": "The Holy Kaaba in the Saudi Era", 
+        "ar": "الكعبة المشرفة في العهد السعودي", 
+        "fr": "La Sainte Kaaba à l'ère saoudienne", 
+        "ur": "سعودی عہد میں خانہ کعبہ", 
+        "id": "Ka'bah Suci di Era Saudi" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "The Holy Kaaba has received unprecedented care and attention during the Saudi era, starting from the reign of King Abdulaziz Al Saud, who ordered comprehensive repairs and the renewal of the Kaaba's Kiswa (cover). In 1954 (1373 AH), the Kaaba's roof was replaced with a new one made of strong teak wood, and the exterior walls and surrounding marble were restored. Under the reigns of King Fahd, King Abdullah, and King Salman, periodic maintenance has continued, including the development of sound and lighting systems and the creation of a new Kaaba door made of pure gold, reflecting the high status of the Two Holy Mosques in the hearts of the Saudi leadership.", 
+        "ar": "شهدت الكعبة المشرفة في العهد السعودي الزاهر عناية فائقة واهتماماً منقطع النظير، بدءاً من عهد الملك عبدالعزيز آل سعود -رحمه الله- الذي أمر بإصلاحات شاملة وتجديد لكسوة الكعبة المشرفة. وفي عام 1373هـ، تم استبدال سقف الكعبة المشرفة بسقف جديد من الخشب الزان القوي، كما تم ترميم الجدران الخارجية والرخام المحيط بها. وفي عهد الملك فهد بن عبدالعزيز والملك عبدالله بن عبدالعزيز والملك سلمان بن عبدالعزيز، استمرت أعمال الصيانة الدورية وتطوير النظام الصوتي والإضاءة، بالإضافة إلى صناعة باب الكعبة الجديد من الذهب الخالص، مما يعكس مكانة الحرمين الشريفين في قلوب ولاة الأمر.", 
+        "fr": "La Sainte Kaaba a reçu un soin et une attention sans précédent pendant l'ère saoudienne, commençant par le règne du roi Abdulaziz Al Saud, qui a ordonné des réparations complètes et le renouvellement de la Kiswa (couverture) de la Kaaba. En 1954 (1373 AH), le toit de la Kaaba a été remplacé par un nouveau en bois de teck massif, et les murs extérieurs ainsi que le marbre environnant ont été restaurés. Sous les règnes du roi Fahd, du roi Abdallah et du roi Salmane, l'entretien périodique s'est poursuivi, incluant le développement des systèmes de sonorisation et d'éclairage et la création d'une nouvelle porte de la Kaaba en or pur, reflétant le statut élevé des deux Saintes Mosquées dans le cœur des dirigeants saoudiens.", 
+        "ur": "سعودی عہد کے دوران خانہ کعبہ کو بے مثال دیکھ بھال اور توجہ حاصل رہی، جس کا آغاز شاہ عبدالعزیز آل سعود کے دور سے ہوا، جنہوں نے کعبہ کی جامع مرمت اور غلاف کعبہ (کسوہ) کی تبدیلی کا حکم دیا تھا۔ 1954 (1373ھ) میں کعبہ کی چھت کو مضبوط ساگون کی لکڑی سے بنی نئی چھت سے تبدیل کیا گیا، اور بیرونی دیواروں اور ارد گرد کے سنگ مرمر کو بحال کیا گیا۔ شاہ فہد، شاہ عبداللہ اور شاہ سلمان کے ادوار میں بھی وقتاً فوقتاً دیکھ بھال کا سلسلہ جاری رہا، جس میں آواز اور روشنی کے نظام کی ترقی اور خالص سونے سے بنے کعبہ کے نئے دروازے کی تیاری شامل ہے، جو سعودی قیادت کے دلوں میں حرمین شریفین کے بلند مقام کی عکاسی کرتا ہے۔", 
+        "id": "Ka'bah Suci telah menerima perawatan dan perhatian yang belum pernah terjadi sebelumnya selama era Saudi, dimulai dari masa pemerintahan Raja Abdulaziz Al Saud, yang memerintahkan perbaikan menyeluruh dan pembaruan Kiswah (penutup) Ka'bah. Pada tahun 1954 (1373 H), atap Ka'bah diganti dengan yang baru yang terbuat dari kayu jati yang kuat, serta dinding luar dan marmer di sekitarnya dipugar. Di bawah pemerintahan Raja Fahd, Raja Abdullah, dan Raja Salman, pemeliharaan berkala terus berlanjut, termasuk pengembangan sistem suara dan pencahayaan serta pembuatan pintu Ka'bah baru yang terbuat dari emas murni, mencerminkan kedudukan tinggi dari Dua Masjid Suci di hati kepemimpinan Saudi." 
+      },
+      "era": { 
+        "en": "Modern Saudi Era", 
+        "ar": "العهد السعودي الحديث", 
+        "fr": "Ère Saoudienne Moderne", 
+        "ur": "جدید سعودی عہد", 
+        "id": "Era Saudi Modern" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Mecca, Dar Al-Madinah Museum", 
+        "ar": "مكة المكرمة، متحف دار المدينة", 
+        "fr": "La Mecque, Musée Dar Al-Madinah", 
+        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
+        "id": "Mekkah, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/kaaba-saudi.png",
+      "audioUrl": null
     }
   ]
 }
