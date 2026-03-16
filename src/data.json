@@ -662,6 +662,52 @@
         "/images/artifacts/kaaba-zubayr-2.png"
       ],
       "audioUrl": null
+    },
+    {
+      "id": "quranic-writing-materials",
+      "title": { 
+        "en": "Quranic Writing Materials: Palm Fronds, Stone, and Papyrus", 
+        "ar": "جريد النخل، الحجارة، الكرانيف، ورق البردي", 
+        "fr": "Matériaux d'écriture Coraniques : Palmes de palmier, Pierres et Papyrus", 
+        "ur": "قرانی تحریری مواد: کھجور کی شاخیں، پتھر اور پیپرس", 
+        "id": "Bahan Tulisan Al-Qur'an: Pelepah Kurma, Batu, dan Papirus" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "In the early days of Islam, the Quranic verses were preserved on various natural materials before the compilation of a single codex. These included palm fronds (Jarid), which were stripped of their leaves to provide a writing surface; flat whitestones (Likhaf); and leather or papyrus (Karanif). These materials served as the primary media for the companions to document and preserve the Divine Revelation as it was revealed to the Prophet ﷺ.", 
+        "ar": "جريد النخل، الحجارة، الكرانيف، ورق البردي؛ استُخدمت هذه الأدوات لكتابة الآيات القرآنية في العصر النبوي الأول، حيث كانت الوسيلة الأساسية لحفظ الوحي وتوثيقه قبل جمعه في مصحف واحد.", 
+        "fr": "Aux débuts de l'Islam, les versets coraniques étaient préservés sur divers matériaux naturels avant la compilation d'un codex unique. Ceux-ci incluaient des palmes de palmier (Jarid), qui étaient dépouillées de leurs feuilles pour offrir une surface d'écriture ; des pierres plates blanches (Likhaf) ; et du cuir ou du papyrus (Karanif). Ces matériaux servaient de support principal aux compagnons pour documenter et préserver la Révélation Divine telle qu'elle était révélée au Prophète ﷺ.", 
+        "ur": "اسلام کے ابتدائی دور میں، قرآن کریم کی آیات کو ایک مصحف میں جمع کرنے سے پہلے مختلف قدرتی اشیاء پر محفوظ کیا جاتا تھا۔ ان میں کھجور کی شاخیں (جرید) شامل تھیں جنہیں صاف کر کے لکھنے کے قابل بنایا جاتا تھا؛ صاف سفید پتھر (لخاف)؛ اور چمڑا یا پیپرس (کرانیف)۔ یہ اشیاء صحابہ کرام کے لیے وحی الہی کو دستاویزی شکل میں محفوظ کرنے کا بنیادی ذریعہ تھیں جیسے جیسے یہ نبی کریم ﷺ پر نازل ہوتی تھیں۔", 
+        "id": "Pada masa awal Islam, ayat-ayat Al-Qur'an dilestarikan di berbagai bahan alami sebelum penyusunan kodeks tunggal. Ini termasuk pelepah kurma (Jarid), yang ditiadakan daunnya untuk menyediakan permukaan tulisan; batu putih rata (Likhaf); dan kulit atau papirus (Karanif). Bahan-bahan ini berfungsi sebagai media utama bagi para sahabat untuk mendokumentasikan dan melestarikan Wahyu Ilahi saat diwahyukan kepada Nabi ﷺ." 
+      },
+      "era": { 
+        "en": "Prophetic Era", 
+        "ar": "العهد النبوي", 
+        "fr": "Ère Prophétique", 
+        "ur": "عہدِ نبوی", 
+        "id": "Era Kenabian" 
+      },
+      "material": { 
+        "en": "Ancient Writing Surfaces", 
+        "ar": "أدوات كتابة قديمة", 
+        "fr": "Anciennes Surfaces d'Écriture", 
+        "ur": "قدیم تحریری اشیاء", 
+        "id": "Permukaan Tulisan Kuno" 
+      },
+      "origin": { 
+        "en": "Medina, Dar Al-Madinah Museum", 
+        "ar": "المدينة المنورة، متحف دار المدينة", 
+        "fr": "Médine, Musée Dar Al-Madinah", 
+        "ur": "مدینہ، دار المدینہ میوزیم", 
+        "id": "Madinah, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/quran-materials-1.png",
+      "images": [
+        "/images/artifacts/quran-materials-1.png",
+        "/images/artifacts/quran-materials-2.png",
+        "/images/artifacts/quran-materials-3.png"
+      ],
+      "audioUrl": null
     }
   ]
 }
