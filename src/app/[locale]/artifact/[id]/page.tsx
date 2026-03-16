@@ -65,8 +65,10 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
 
   // This state now drives EVERY piece of text on the page
   const [activeLang, setActiveLang] = useState<string>(locale);
+  const [isExpanded, setIsExpanded] = useState(false);
   
   const t = TRANSLATIONS[activeLang] || TRANSLATIONS.en;
+  const isRTL = activeLang === 'ar' || activeLang === 'ur';
 
   const langs = [
     { code: 'ar', label: 'AR' },
@@ -96,13 +98,20 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
           
           {/* IMAGE COLUMN */}
           <div className="w-full md:w-[45%] bg-slate-50 flex items-center justify-center border-b md:border-b-0 ltr:md:border-r rtl:md:border-l border-slate-200 p-8">
-            <div className="w-full h-full relative flex items-center justify-center">
+            <div className="w-full h-full relative flex items-center justify-center cursor-zoom-in group" onClick={() => setIsExpanded(true)}>
               {artifact.image ? (
-                <img
-                  src={artifact.image}
-                  alt={artifact.title[activeLang as keyof typeof artifact.title] || artifact.title.en}
-                  className="max-w-full max-h-[500px] object-contain"
-                />
+                <>
+                  <img
+                    src={artifact.image}
+                    alt={artifact.title[activeLang as keyof typeof artifact.title] || artifact.title.en}
+                    className="max-w-full max-h-[500px] object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                  />
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors flex items-center justify-center">
+                    <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/80 p-2 rounded-full shadow-lg">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-600"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                    </div>
+                  </div>
+                </>
               ) : (
                 <div className="text-slate-300 text-2xl font-light">Artifact Image</div>
               )}
@@ -186,6 +195,39 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
           </div>
         </div>
       </div>
+
+      {/* LIGHTBOX OVERLAY */}
+      {isExpanded && artifact.image && (
+        <div 
+          className="fixed inset-0 z-[100] bg-black/95 flex flex-col items-center justify-center p-4 md:p-12 animate-in fade-in duration-300"
+          onClick={() => setIsExpanded(false)}
+        >
+          <button 
+            className="absolute top-6 right-6 text-white/50 hover:text-white transition-colors p-2"
+            onClick={(e) => { e.stopPropagation(); setIsExpanded(false); }}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+          
+          <div className="relative w-full h-full flex items-center justify-center">
+            <img
+              src={artifact.image}
+              alt={artifact.title[activeLang as keyof typeof artifact.title] || artifact.title.en}
+              className="max-w-full max-h-full object-contain shadow-2xl animate-in zoom-in-95 duration-300"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+          
+          <div className="mt-6 text-center">
+             <h3 className="text-white text-xl font-medium mb-1">
+               {artifact.title[activeLang as keyof typeof artifact.title] || artifact.title.en}
+             </h3>
+             <p className="text-white/40 text-sm">
+               {isRTL ? "اضغط في أي مكان للإغلاق" : "Click anywhere to close"}
+             </p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
