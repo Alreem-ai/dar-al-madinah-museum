@@ -453,6 +453,47 @@
       },
       "image": "/images/artifacts/kaaba-quraysh.png",
       "audioUrl": null
+    },
+    {
+      "id": "valley-ibrahim-hill",
+      "title": { 
+        "en": "The Hill (Al-Akama) in the Valley of Ibrahim (AS)", 
+        "ar": "الأكمة في وادي إبراهيم عليه السلام", 
+        "fr": "La Colline (Al-Akama) dans la Vallée d'Ibrahim (as)", 
+        "ur": "وادی ابراہیم علیہ السلام میں ٹیلہ (الأكمة)", 
+        "id": "Bukit (Al-Akama) di Lembah Ibrahim (as)" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "The holy Kaaba was destroyed by the great flood of Noah (AS) and remained as a hill in the middle of a desert valley. Permanent human settlement in Mecca began approximately 4,000 years ago, around 1950 BCE, when Prophet Ibrahim (AS) arrived with his wife Hagar and his son Ishmael (AS). At that time, Mecca was uninhabited. Arab tribes knew that a House for the Lord was atop that hill, but its specific details or form were unknown until Ibrahim (AS) was commanded to raise its foundations.", 
+        "ar": "تهدمت الكعبة المشرفة بالطوفان وظلت على هيئة أكمة في وسط الوادي. بدأ الاستيطان البشري الدائم بمكة المكرمة قبل حوالي أربعة آلاف سنة (حوالي عام 1950 ق.م)، حين قدم سيدنا إبراهيم وزوجته هاجر وابنهما إسماعيل عليه السلام. في ذلك الزمان لم يكن يسكن مكة أحد، وكان طوفان نوح قد أزال معالم البيت العتيق وكان موضعه على أكمة صغيرة في وسط الوادي الذي سمي فيما بعد بوادي إبراهيم. كانت القبائل العربية تعرف أن فوق تلك الأكمة بيت للرب يعبد، ولكن لا يعرف تفاصيله أو شكله.", 
+        "fr": "La sainte Kaaba a été détruite par le grand déluge de Noé (as) et est restée sous forme de colline au milieu d'une vallée désertique. L'établissement humain permanent à La Mecque a commencé il y a environ 4 000 ans, vers 1950 avant J.-C., lorsque le prophète Ibrahim (as) est arrivé avec sa femme Hagar et son fils Ismaël (as). À cette époque, La Mecque était inhabitée. Les tribus arabes savaient qu'une Maison pour le Seigneur se trouvait au sommet de cette colline, mais ses détails spécifiques ou sa forme étaient inconnus jusqu'à ce qu'Ibrahim (as) reçoive l'ordre d'en élever les fondations.", 
+        "ur": "خانہ کعبہ حضرت نوح علیہ السلام کے طوفان کی وجہ سے منہدم ہو گیا تھا اور ایک ریگستانی وادی کے درمیان ٹیلے کی صورت میں باقی رہ گیا تھا۔ مکہ مکرمہ میں مستقل انسانی آبادی کا آغاز تقریباً 4000 سال پہلے (تقریباً 1950 قبل مسیح میں) اس وقت ہوا جب حضرت ابراہیم علیہ السلام اپنی زوجہ ہاجرہ اور صاحبزادے حضرت اسماعیل علیہ السلام کے ساتھ یہاں تشریف لائے۔ اس وقت مکہ بالکل غیر آباد تھا۔ عرب قبائل جانتے تھے کہ اس ٹیلے کے اوپر رب کا ایک گھر ہے جہاں عبادت کی جاتی ہے، لیکن اس کی تفصیلات یا شکل و صورت سے کوئی واقف نہیں تھا جب تک کہ حضرت ابراہیمؑ کو اس کی بنیادیں بلند کرنے کا حکم نہیں ملا۔", 
+        "id": "Ka'bah dihancurkan oleh banjir besar zaman Nuh (as) dan tetap berbentuk bukit di tengah lembah gurun. Pemukiman manusia permanen di Mekkah dimulai sekitar 4.000 tahun yang lalu, sekitar tahun 1950 SM, ketika Nabi Ibrahim (as) tiba bersama istrinya Hajar dan putranya Ismael (as). Pada waktu itu, Mekkah tidak berpenghuni. Suku-suku Arab tahu bahwa sebuah Rumah bagi Tuhan berada di atas bukit itu, tetapi rincian khusus atau bentuknya tidak diketahui sampai Ibrahim (as) diperintahkan untuk meninggikan fondasinya." 
+      },
+      "era": { 
+        "en": "Ancient Era", 
+        "ar": "العصر القديم", 
+        "fr": "Ère Ancienne", 
+        "ur": "قدیم دور", 
+        "id": "Era Kuno" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Mecca, Dar Al-Madinah Museum", 
+        "ar": "مكة المكرمة، متحف دار المدينة", 
+        "fr": "La Mecque, Musée Dar Al-Madinah", 
+        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
+        "id": "Mekkah, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/valley-ibrahim-hill.png",
+      "audioUrl": null
     }
   ]
 }
