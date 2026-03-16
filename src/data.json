@@ -576,6 +576,47 @@
       },
       "image": "/images/artifacts/al-qibli-mosque.png",
       "audioUrl": null
+    },
+    {
+      "id": "prophet-arrival",
+      "title": { 
+        "en": "The Arrival of the Prophet ﷺ", 
+        "ar": "قدوم النبي ﷺ إلى قباء", 
+        "fr": "L'Arrivée du Prophète ﷺ", 
+        "ur": "نبی کریم ﷺ کی آمد بمقامِ قباء", 
+        "id": "Kedatangan Nabi ﷺ" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "The Prophet ﷺ and his companion Abu Bakr al-Siddiq continued their journey to Medina, accompanied by Amir bin Fuhayra and their guide. They took a coastal route, eventually reaching Thaniyat al-A'ir and descending into the valley before arriving at Quba. The Ansar had been waiting daily for the Prophet's arrival in the intense heat. On the day he arrived, a Jewish man was the first to spot them and shouted to the Ansar: 'O children of Qayla, your forefather has come!' The people rushed to the Prophet ﷺ as he sat in the shade of a palm tree. Many had never seen him before and couldn't distinguish him from Abu Bakr until the shade shifted, and Abu Bakr stood up to shade the Prophet ﷺ with his cloak.", 
+        "ar": "تابع النبي ﷺ وصاحبه أبو بكر الصديق الطريق إلى المدينة سلكا طريق الساحل حتى وصلا إلى ثنية العائر، وهبط الركب إلى بطن الوادي ثم سار محاذياً لوادي الرانوناء حتى وصل قباء. وكان الأنصار يخرجون كل يوم في حر الظهيرة ينتظرون قدومه ﷺ. وفي اليوم الذي قدم فيه، كان أول من رآه رجل من اليهود فنادى: 'يا بني قيلة، هذا جدكم قد جاء!' فخرج الناس إليه وهو في ظل نخلة. ولم يكن أكثرهم قد رأى رسول الله من قبل، فما عرفوه من أبي بكر حتى زال الظل عن رسول الله ﷺ فقام أبو بكر يظله بردائه، فعرفناه عند ذلك.", 
+        "fr": "Le Prophète ﷺ et son compagnon Abou Bakr al-Siddiq ont poursuivi leur voyage vers Médine, accompagnés d'Amir bin Fouhayra et de leur guide. Ils ont emprunté une route côtière, atteignant finalement Thaniyat al-A'ir avant d'arriver à Quba. Les Ansar attendaient quotidiennement l'arrivée du Prophète sous une chaleur intense. Le jour de son arrivée, un homme juif fut le premier à les repérer et cria aux Ansar : 'Ô fils de Qayla, votre ancêtre est arrivé !' Les gens se précipitèrent vers le Prophète ﷺ alors qu'il était assis à l'ombre d'un palmier. Beaucoup ne l'avaient jamais vu auparavant et ne le distinguaient pas d'Abou Bakr jusqu'à ce que l'ombre se déplace et qu'Abou Bakr se lève pour abriter le Prophète ﷺ de son manteau.", 
+        "ur": "نبی کریم ﷺ اور آپ کے ساتھی حضرت ابوبکر الصدیقؓ نے عامر بن فہیرہ اور اپنے رہنما کے ہمراہ مدینہ کا سفر جاری رکھا۔ انہوں نے ساحلی راستہ اختیار کیا اور بالاخر ثنیۃ العائر سے ہوتے ہوئے وادی میں اترے اور قبا پہنچ گئے۔ انصار روزانہ سخت گرمی میں نبی کریم ﷺ کی آمد کا گہری بے صبری سے انتظار کرتے تھے۔ جس دن آپ ﷺ تشریف لائے، ایک یہودی شخص نے سب سے پہلے آپ کو دیکھا اور پکارا: 'اے بنو قیلہ! تمہارے بزرگ تشریف لے آئے ہیں!' لوگ تیزی سے نبی ﷺ کی طرف بڑھے جو ایک کھجور کے درخت کے سائے میں تشریف فرما تھے۔ بہت سے لوگوں نے آپ ﷺ کو پہلے کبھی نہیں دیکھا تھا اور وہ حضرت ابوبکرؓ اور آپ ﷺ میں فرق نہیں کر پا رہے تھے، یہاں تک کہ جب سایہ ہٹا اور حضرت ابوبکرؓ نے اپنی چادر سے آپ ﷺ پر سایہ کیا، تب لوگوں نے آپ ﷺ کو پہچانا۔", 
+        "id": "Nabi ﷺ dan sahabatnya Abu Bakar ash-Shiddiq melanjutkan perjalanan ke Madinah, didampingi oleh Amir bin Fuhayra dan pemandu mereka. Mereka menempuh rute pesisir, akhirnya mencapai Thaniyat al-A'ir dan turun ke lembah sebelum tiba di Quba. Kaum Ansar telah menunggu setiap hari kedatangan Nabi di tengah panas yang terik. Pada hari beliau tiba, seorang pria Yahudi adalah orang pertama yang melihat mereka dan berseru kepada Ansar: 'Wahai bani Qayla, kakek moyangmu telah datang!' Orang-orang bergegas menuju Nabi ﷺ saat beliau duduk di bawah bayang-bayang pohon palem. Banyak yang belum pernah melihat beliau sebelumnya dan tidak bisa membedakannya dari Abu Bakar sampai bayangan berpindah, dan Abu Bakar berdiri untuk menaungi Nabi ﷺ dengan jubahnya." 
+      },
+      "era": { 
+        "en": "Prophetic Era", 
+        "ar": "العهد النبوي", 
+        "fr": "Ère Prophétique", 
+        "ur": "عہدِ نبوی", 
+        "id": "Era Kenabian" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Medina, Dar Al-Madinah Museum", 
+        "ar": "المدينة المنورة، متحف دار المدينة", 
+        "fr": "Médine, Musée Dar Al-Madinah", 
+        "ur": "مدینہ، دار المدینہ میوزیم", 
+        "id": "Madinah, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/prophet-arrival.png",
+      "audioUrl": null
     }
   ]
 }
