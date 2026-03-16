@@ -412,6 +412,47 @@
       },
       "image": "/images/artifacts/yathrib-inhabitants.jpg",
       "audioUrl": null
+    },
+    {
+      "id": "kaaba-quraysh",
+      "title": { 
+        "en": "The Reconstruction of the Holy Kaaba in the Era of Quraysh", 
+        "ar": "بناء الكعبة المشرفة في عهد قريش", 
+        "fr": "La reconstruction de la Sainte Kaaba à l'époque de Quraysh", 
+        "ur": "قریش کے دور میں خانہ کعبہ کی تعمیر", 
+        "id": "Pembangunan Kembali Ka'bah di Era Quraisy" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "Five years before the Prophetic mission, Quraysh resolved to rebuild the Kaaba. They pledged to use only pure earnings, which limited their resources. Consequently, they reduced the length from the Hijr side by six cubits and a span (approx. 3.09m), marking it with a short wall for circumambulation. They increased its height to eighteen cubits (approx. 9.39m), added a wooden roof for the first time, and installed a wooden gutter (Mizab). They also sealed the western door and raised the eastern door above ground level to control entry. The Prophet ﷺ participated in the construction and personally placed the Black Stone.", 
+        "ar": "عزمت قريش على تجديد بناء الكعبة قبل البعثة بخمس سنوات، واشترطوا ألا يدخلوا في بنائها مالاً حراماً. فقصرت بهم النفقة الطيبة عن إكمال البناء، فأنقصوا من جهة الحِجر 3 م و9 سم، وأداروا عليه جداراً قصيراً ليطوف الناس من ورائه. وزادوا ارتفاعها إلى 9 م و39 سم، وسقفوها لأول مرة، وجعلوا لها ميزاباً من خشب، وسدوا الباب الغربي، ورفعوا الباب الشرقي عن مستوى الأرض للتحكم في الدخول. وشارك النبي ﷺ في البناء ووضع الحجر الأسود.", 
+        "fr": "Cinq ans avant la mission prophétique, Quraysh résolut de reconstruire la Kaaba. Ils s'engagèrent à n'utiliser que des gains purs, ce qui limita leurs ressources. En conséquence, ils réduisirent la longueur du côté du Hijr de six coudées et un empan (environ 3,09 m), le marquant par un muret pour la circumambulation. Ils augmentèrent sa hauteur à dix-huit coudées (environ 9,39 m), ajoutèrent pour la première fois un toit en bois et installèrent une gouttière en bois (Mizab). Ils scellèrent également la porte ouest et surélevèrent la porte est au-dessus du sol pour contrôler l'entrée. Le Prophète ﷺ participa à la construction et plaça personnellement la Pierre Noire.", 
+        "ur": "بعثت نبوی سے پانچ سال قبل قریش نے خانہ کعبہ کی از سر نو تعمیر کا فیصلہ کیا۔ انہوں نے شرط رکھی کہ اس میں صرف پاکیزہ کمائی استعمال ہوگی، جس کی وجہ سے وسائل کم پڑ گئے اور حطیم (حجر) کی جانب سے تقریباً 3.09 میٹر جگہ کم کر دی گئی۔ اس پر ایک چھوٹی دیوار بنا دی گئی تاکہ لوگ اس کے پیچھے سے طواف کریں۔ انہوں نے کعبہ کی اونچائی بڑھا کر تقریباً 9.39 میٹر کر دی، پہلی بار اس پر چھت ڈالی اور لکڑی کا پرنالہ (میزاب) لگایا۔ مغربی دروازہ بند کر دیا گیا اور مشرقی دروازہ زمین سے اونچا کر دیا گیا تاکہ داخلے کو کنٹرول کیا جا سکے۔ نبی کریمﷺ نے اس تعمیر میں حصہ لیا اور حجرہ اسود کو اپنے مبارک ہاتھوں سے نصب کیا۔", 
+        "id": "Lima tahun sebelum misi Kenabian, kaum Quraisy memutuskan untuk membangun kembali Ka'bah. Mereka berjanji hanya menggunakan penghasilan yang murni, yang membatasi sumber daya mereka. Akibatnya, mereka mengurangi panjang dari sisi Hijr sekitar 3,09m dan menandainya dengan dinding rendah untuk tawaf. Mereka menambah tingginya menjadi sekitar 9,39m, menambahkan atap kayu untuk pertama kalinya, dan memasang talang kayu (Mizab). Mereka juga menutup pintu barat dan meninggikan pintu timur di atas permukaan tanah untuk mengontrol akses masuk. Nabi ﷺ ikut serta dalam pembangunan ini dan secara pribadi meletakkan Hajar Aswad." 
+      },
+      "era": { 
+        "en": "Pre-Prophetic Era", 
+        "ar": "عصر ما قبل البعثة", 
+        "fr": "Ère Pré-Prophétique", 
+        "ur": "قبل از نبوت", 
+        "id": "Era Pra-Kenabian" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Mecca, Dar Al-Madinah Museum", 
+        "ar": "مكة المكرمة، متحف دار المدينة", 
+        "fr": "La Mecque, Musée Dar Al-Madinah", 
+        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
+        "id": "Mekkah, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/kaaba-quraysh.png",
+      "audioUrl": null
     }
   ]
 }
