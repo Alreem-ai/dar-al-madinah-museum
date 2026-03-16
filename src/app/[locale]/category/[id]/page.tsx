@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useState } from 'react';
+import { use, useState, useEffect } from 'react';
 import Link from 'next/link';
 import data from '@/data.json';
 import { ChevronRight, ChevronLeft, Play } from 'lucide-react';
@@ -70,6 +70,12 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
   const [activeLang, setActiveLang] = useState<string>(locale);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  // Reset image index when switching artifacts
+  useEffect(() => {
+    setActiveImageIndex(0);
+  }, [currentIndex]);
 
   const t = TRANSLATIONS[activeLang] || TRANSLATIONS.en;
   const isRTL = activeLang === 'ar' || activeLang === 'ur';
@@ -117,19 +123,60 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
         <div className={`border border-slate-200 rounded-sm overflow-hidden flex flex-col md:flex-row shadow-sm min-h-[500px] mb-8 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
           
           {/* IMAGE COLUMN */}
-          <div className="w-full md:w-[45%] bg-slate-50 flex items-center justify-center border-b md:border-b-0 ltr:md:border-r rtl:md:border-l border-slate-200 p-8">
-            <div className="w-full h-full relative flex items-center justify-center cursor-zoom-in group" onClick={() => setIsExpanded(true)}>
+          <div className="w-full md:w-[45%] bg-slate-50 flex flex-col items-center justify-center border-b md:border-b-0 ltr:md:border-r rtl:md:border-l border-slate-200 p-8">
+            <div className="w-full h-full relative flex items-center justify-center cursor-zoom-in group">
               {currentArtifact?.image ? (
                 <>
                   <img
-                    src={currentArtifact.image}
+                    src={(currentArtifact.images && currentArtifact.images.length > 0) 
+                         ? currentArtifact.images[activeImageIndex] 
+                         : currentArtifact.image}
                     alt={currentArtifact.title[activeLang as keyof typeof currentArtifact.title] || currentArtifact.title.en}
                     className="max-w-full max-h-[500px] object-contain transition-transform duration-300 group-hover:scale-[1.02]"
+                    onClick={() => setIsExpanded(true)}
                   />
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors flex items-center justify-center">
-                    <div className="opacity-0 group-hover:opacity-100 transition-opacity bg-white/80 p-2 rounded-full shadow-lg">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-600"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                  
+                  {/* Gallery Controls */}
+                  {currentArtifact.images && currentArtifact.images.length > 1 && (
+                    <div className="absolute inset-x-0 bottom-4 flex justify-center gap-2 z-10">
+                      {currentArtifact.images.map((_, idx) => (
+                        <button
+                          key={idx}
+                          onClick={(e) => { e.stopPropagation(); setActiveImageIndex(idx); }}
+                          className={`w-3 h-3 rounded-full transition-all ${
+                            activeImageIndex === idx ? 'bg-[#546e7a] scale-125' : 'bg-slate-300 hover:bg-slate-400'
+                          }`}
+                        />
+                      ))}
                     </div>
+                  )}
+
+                  {/* Left/Right Arrows for image gallery */}
+                  {currentArtifact.images && currentArtifact.images.length > 1 && (
+                    <>
+                      <button
+                        onClick={(e) => { 
+                          e.stopPropagation(); 
+                          setActiveImageIndex(prev => (prev > 0 ? prev - 1 : currentArtifact.images!.length - 1)); 
+                        }}
+                        className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <ChevronLeft size={20} className="text-slate-600" />
+                      </button>
+                      <button
+                        onClick={(e) => { 
+                          e.stopPropagation(); 
+                          setActiveImageIndex(prev => (prev < currentArtifact.images!.length - 1 ? prev + 1 : 0)); 
+                        }}
+                        className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity"
+                      >
+                        <ChevronRight size={20} className="text-slate-600" />
+                      </button>
+                    </>
+                  )}
+
+                  <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-white/80 p-2 rounded-full shadow-lg pointer-events-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-600"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
                   </div>
                 </>
               ) : (
@@ -239,9 +286,11 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
               <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
             
-            <div className="relative w-full h-full flex items-center justify-center">
+             <div className="relative w-full h-full flex items-center justify-center">
               <img
-                src={currentArtifact.image}
+                src={(currentArtifact.images && currentArtifact.images.length > 0) 
+                     ? currentArtifact.images[activeImageIndex] 
+                     : currentArtifact.image}
                 alt={currentArtifact.title[activeLang as keyof typeof currentArtifact.title] || currentArtifact.title.en}
                 className="max-w-full max-h-full object-contain shadow-2xl animate-in zoom-in-95 duration-300"
                 onClick={(e) => e.stopPropagation()}

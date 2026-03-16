@@ -656,7 +656,11 @@
         "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
         "id": "Mekkah, Museum Dar Al-Madinah" 
       },
-      "image": "/images/artifacts/kaaba-zubayr.png",
+      "image": "/images/artifacts/kaaba-zubayr-1.png",
+      "images": [
+        "/images/artifacts/kaaba-zubayr-1.png",
+        "/images/artifacts/kaaba-zubayr-2.png"
+      ],
       "audioUrl": null
     }
   ]
