@@ -84,6 +84,47 @@
       "origin": { "en": "Medina, Dar Al-Madinah Museum", "ar": "المدينة المنورة، متحف دار المدينة", "fr": "Médine, Musée Dar Al-Madinah", "ur": "مدینہ، دار المدینہ میوزیم", "id": "Madinah, Museum Dar Al-Madinah" },
       "image": "/images/artifacts/arrival.jpg",
       "audioUrl": null
+    },
+    {
+      "id": "dome-of-the-rock",
+      "title": { 
+        "en": "Dome of the Rock inside the Al-Aqsa Compound", 
+        "ar": "قبة الصخرة داخل حرم الأقصى", 
+        "fr": "Le Dôme du Rocher à l'intérieur de l'enceinte d'Al-Aqsa", 
+        "ur": "مسجد اقصیٰ کے احاطے کے اندر قبۃ الصخرہ", 
+        "id": "Kubah Batu di dalam Kompleks Al-Aqsa" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "The Dome of the Rock is considered the oldest Islamic building still standing today. A common mistake regarding Al-Aqsa Mosque is the belief that the Golden Dome or the Qibli Mosque in its southern corner represents the entirety of Al-Aqsa Mosque. In reality, Al-Aqsa Mosque encompasses the entire area enclosed within the surrounding walls, including the Dome of the Rock, the Qibli Mosque, and other elements such as fountains, niches, corridors, and open squares. The Dome of the Rock is an octagonal structure built on an eight-sided base, with doors opening in the middle of each of its eight sides. The dome rests on a circular neck supported by a circular arcade carried on four corners and twelve columns. It was built during the reign of Caliph Abd al-Malik ibn Marwan; construction began in 68 AH / 687 AD and was completed in 72 AH / 691 AD.\n\nThe dome maintained its structure until the reign of Sultan Suleiman the Magnificent, who performed the first major restoration using blue Qashani tiles and decorating it with beautiful calligraphy. Originally, the building was covered in Byzantine-style mosaics. Sultan Suleiman ordered that the walls be re-clad with marble rising higher than a man's height, followed by the blue tiles. As for the colored glass windows of the Dome of the Rock, they were introduced as part of the Ottoman Empire's renovations.", 
+        "ar": "تعتبر قبة الصخرة من أقدم مبنى إسلامي حتى اليوم، ومن الأخطاء الشائعة المتعلقة بالمسجد الأقصى هي اعتبار أن الصخرة الذهبية أو الجامع القبلي في الزاوية الجنوبية منها يمثل المسجد الأقصى، بينما أن المسجد الأقصى هو كل المنطقة المحصورة داخل السور المحيط بالمسجد ويحتوي على قبة الصخرة والمسجد القبلي وبعض العناصر الأخرى كالسبل والزوايا وأروقة وساحات فضاء. وقبة الصخرة عبارة عن بناء مثمن أقيمت على بناء ثماني الأضلاع وفتحت أبوابه في وسط أضلاع البناء الثمانية. وتستند القبة على رقبة مستديرة تستند إلى رواق مستدير محمول على أربعة أركان واثني عشر عموداً. بنيت قبة الصخرة في عهد الخليفة عبد الملك بن مروان وبدأ البناء عام 68هـ / 687م واكتمل بناؤها عام 72هـ / 691م.\n\nوظلت القبة محافظة على بنائها حتى عهد السلطان سليمان القانوني الذي قام بإجراء أول مرة للبناء بالطلاء الكاشاني الأزرق وتزيينه بخطوط جميلة، وكان البناء مكسواً بالفسيفساء على الطراز البيزنطي. فأمر السلطان سليمان القانوني بإعادة كسوة الحوائط بالرخام ويرتفع أكثر من قامة الإنسان ثم بالبلاط الأزرق. أما النوافذ الزجاجية الملونة لقبة الصخرة فقد تم إدخالها على البناء ضمن تجديد الدولة العثمانية.", 
+        "fr": "Le Dôme du Rocher est considéré comme le plus ancien édifice islamique existant aujourd'hui. Une erreur courante concernant la mosquée Al-Aqsa est de croire que le dôme doré ou la mosquée Al-Qibli dans son coin sud représente l'intégralité de la mosquée Al-Aqsa. En réalité, la mosquée Al-Aqsa englobe toute la zone enclose dans les murs d'enceinte, incluant le Dôme du Rocher, la mosquée Al-Qibli et d'autres éléments tels que des fontaines, des niches, des couloirs et des esplanades. Le Dôme du Rocher est une structure octogonale construite sur une base à huit côtés, avec des portes s'ouvrant au milieu de chacun de ses huit côtés. Le dôme repose sur un tambour circulaire soutenu par une arcade circulaire portée par quatre piliers et douze colonnes. Il a été construit sous le règne du calife Abd al-Malik ibn Marwan ; la construction a commencé en 68 AH / 687 après JC et s'est achevée en 72 AH / 691 après JC.\n\nLe dôme a conservé sa structure jusqu'au règne du sultan Soliman le Magnifique, qui a effectué la première restauration majeure en utilisant des carreaux bleus de Qashani et en le décorant d'une calligraphie magnifique. À l'origine, le bâtiment était recouvert de mosaïques de style byzantin. Le sultan Soliman a ordonné que les murs soient recouverts de marbre s'élevant plus haut que la taille d'un homme, suivi par les carreaux bleus. Quant aux vitraux colorés du Dôme du Rocher, ils ont été introduits dans le cadre des rénovations de l'Empire ottoman.", 
+        "ur": "قبۃ الصخرہ کو آج تک کی قدیم ترین اسلامی عمارت سمجھا جاتا ہے۔ مسجد اقصیٰ کے بارے میں ایک عام غلطی یہ سمجھی جاتی ہے کہ سنہرا گنبد یا اس کے جنوبی کونے میں واقع جامع القبلی ہی مسجد اقصیٰ کی نمائندگی کرتا ہے، جب کہ مسجد اقصیٰ وہ پورا علاقہ ہے جو مسجد کے گرد دیوار کے اندر محصور ہے اور اس میں قبۃ الصخرہ، مسجد قبلی اور دیگر عناصر جیسے سبیل، گوشے، راہداریاں اور کھلے میدان شامل ہیں۔ قبۃ الصخرہ ایک ہشت پہلو عمارت ہے جو آٹھ رخہ بنیاد پر تعمیر کی گئی ہے اور اس کی آٹھوں جانب کے وسط میں دروازے کھلتے ہیں۔ گنبد ایک گول گردن پر قائم ہے جو ایک گول برآمدے پر ٹکی ہے جو چار ستونوں اور بارہ کالموں پر مبنی ہے۔ قبۃ الصخرہ خلیفہ عبدالملک بن مروان کے دور میں تعمیر کی گئی تھی؛ تعمیر کا آغاز 68 ہجری / 687 عیسوی میں ہوا اور اس کی تکمیل 72 ہجری / 691 عیسوی میں ہوئی۔\n\nگنبد سلطان سلیمان عالیشان کے دور تک اپنی ساخت برقرار رکھے ہوئے تھا، جنہوں نے نیلی کاشانی ٹائلوں کے ساتھ پہلی بار عمارت کی مرمت کی اور اسے خوبصورت خطاطی سے سجایا۔ عمارت بازنطینی طرز کے موزیک سے مزین تھی۔ سلطان سلیمان عالیشان نے دیواروں کو سنگ مرمر سے دوبارہ ڈھانپنے کا حکم دیا جو انسان کے قد سے زیادہ اونچی تھیں، اور پھر اس کے اوپر نیلی ٹائلیں لگائیں۔ جہاں تک قبۃ الصخرہ کے رنگین شیشے کی کھڑکیوں کا تعلق ہے، انہیں خلافت عثمانیہ کی تجدید کاری کے حصے کے طور پر عمارت میں شامل کیا گیا تھا۔", 
+        "id": "Kubah Batu (Dome of the Rock) dianggap sebagai bangunan Islam tertua yang masih berdiri hingga saat ini. Kesalahan umum mengenai Masjid Al-Aqsa adalah anggapan bahwa Kubah Emas atau Masjid Al-Qibli di sudut selatannya mewakili keseluruhan Masjid Al-Aqsa. Kenyataannya, Masjid Al-Aqsa adalah seluruh area yang terkurung di dalam tembok yang mengelilingi masjid, mencakup Kubah Batu, Masjid Al-Qibli, serta elemen lainnya seperti air mancur, ceruk (niche), koridor, dan ruang terbuka. Kubah Batu adalah struktur segi delapan yang dibangun di atas dasar delapan sisi, dengan pintu yang terbuka di tengah masing-masing dari delapan sisi bangunan tersebut. Kubah tersebut bertumpu pada leher bundar yang didukung oleh galeri melingkar yang bertumpu pada empat pilar dan dua belas kolom. Bangunan ini didirikan pada masa Khalifah Abd al-Malik bin Marwan; konstruksi dimulai pada tahun 68 H / 687 M dan selesai pada tahun 72 H / 691 M.\n\nKubah tersebut tetap mempertahankan strukturnya hingga masa Sultan Suleiman al-Qanuni, yang melakukan renovasi pertama menggunakan ubin biru Qashani dan menghiasinya dengan kaligrafi yang indah. Awalnya, bangunan ini dilapisi dengan mosaik bergaya Bizantium. Sultan Suleiman memerintahkan agar dinding dilapisi kembali dengan marmer yang tingginya melebihi tinggi manusia, diikuti oleh ubin biru. Adapun jendela kaca berwarna pada Kubah Batu diperkenalkan ke dalam bangunan sebagai bagian dari renovasi Kesultanan Utsmaniyah." 
+      },
+      "era": { 
+        "en": "Umayyad Era", 
+        "ar": "العصر الأموي", 
+        "fr": "Ère Omeyyade", 
+        "ur": "دورِ اموی", 
+        "id": "Era Umayyah" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Jerusalem, Palestine", 
+        "ar": "القدس، فلسطين", 
+        "fr": "Jérusalem, Palestine", 
+        "ur": "بیت المقدس، فلسطین", 
+        "id": "Yerusalem, Palestina" 
+      },
+      "image": "/images/artifacts/dome-of-the-rock.jpg",
+      "audioUrl": null
     }
   ]
 }
