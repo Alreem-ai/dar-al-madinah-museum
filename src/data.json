@@ -330,6 +330,47 @@
       },
       "image": "/images/artifacts/year-of-elephant.jpg",
       "audioUrl": null
+    },
+    {
+      "id": "ansar-love",
+      "title": { 
+        "en": "The Ansar's Love for the Prophet - The Girls of Banu al-Najjar", 
+        "ar": "حب الأنصار للنبي", 
+        "fr": "L'amour des Ansar pour le Prophète - Les filles de Banu al-Najjar", 
+        "ur": "نبی کریم سے انصار کی محبت - بنو نجار کی بچیاں", 
+        "id": "Kecintaan Kaum Ansar kepada Nabi - Gadis-gadis Bani al-Najjar" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "The story of the girls of Banu al-Najjar who welcomed the Prophet ﷺ with joy, playing drums and singing: 'We are the girls of Banu al-Najjar, what a wonderful neighbor is Muhammad.' This profound expression of love was recorded by Imam Ibn Majah in his Sunan, Imam al-Bazzar in his Musnad, and Ibn Hisham in his Sirah.", 
+        "ar": "قصة جواري بني النجار وضرب الدفوف ونشيدهم: 'نحن جواري من بني النجار يا حبذا محمد من جار'. رواه الامام ابن ماجه في سننه، رواه الإمام البزار بمسنده، رواه ابن هشام في سيرته.", 
+        "fr": "L'histoire des filles de Banu al-Najjar qui ont accueilli le Prophète ﷺ avec joie, jouant du tambour et chantant : 'Nous sommes les filles de Banu al-Najjar, quel merveilleux voisin est Muhammad.' Cette profonde expression d'amour a été rapportée par l'Imam Ibn Majah dans ses Sunan, l'Imam al-Bazzar dans son Musnad, et Ibn Hisham dans sa Sirah.", 
+        "ur": "بنو نجار کی ان بچیوں کی کہانی جنہوں نے خوشی سے نبی کریمﷺ کا استقبال کیا، دف بجاتے ہوئے اور یہ گاتے ہوئے: 'ہم بنو نجار کی بچیاں ہیں، کیا ہی خوب پڑوسی ہیں محمد (ﷺ)۔' محبت کا یہ گہرا اظہار امام ابن ماجہ نے اپنی سنن میں، امام بزار نے اپنی مسند میں اور ابن ہشام نے اپنی سیرت میں روایت کیا ہے۔", 
+        "id": "Kisah gadis-gadis Bani al-Najjar yang menyambut Nabi ﷺ dengan gembira, memukul rebana dan bernyanyi: 'Kami adalah gadis-gadis dari Bani al-Najjar, alangkah indahnya Muhammad sebagai tetangga.' Ungkapan cinta yang mendalam ini dicatat oleh Imam Ibnu Majah dalam Sunannya, Imam al-Bazzar dalam Musnadnya, dan Ibnu Hisyam dalam Sirahnya." 
+      },
+      "era": { 
+        "en": "Prophetic Era", 
+        "ar": "العهد النبوي", 
+        "fr": "Ère Prophétique", 
+        "ur": "عہدِ نبوی", 
+        "id": "Era Kenabian" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Medina, Dar Al-Madinah Museum", 
+        "ar": "المدينة المنورة، متحف دار المدينة", 
+        "fr": "Médine, Musée Dar Al-Madinah", 
+        "ur": "مدینہ، دار المدینہ میوزیم", 
+        "id": "Madinah, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/ansar-love.png",
+      "audioUrl": null
     }
   ]
 }
