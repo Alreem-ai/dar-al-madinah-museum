@@ -535,6 +535,47 @@
       },
       "image": "/images/artifacts/kaaba-ottoman.png",
       "audioUrl": null
+    },
+    {
+      "id": "al-qibli-mosque",
+      "title": { 
+        "en": "Al-Qibli Mosque in Al-Aqsa Sharif", 
+        "ar": "المسجد القبلي في الأقصى الشريف (المسجد الأقصى)", 
+        "fr": "La mosquée Al-Qibli à Al-Aqsa Sharif", 
+        "ur": "مسجد اقصیٰ شریف میں مسجد قبلی", 
+        "id": "Masjid Al-Qibli di Al-Aqsa Sharif" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "The Qibli Mosque, commonly known as Al-Aqsa Mosque, consists of a large central nave supported by marble columns extending from north to south, covered by a lead-plated gabled roof. To the south, it is capped by a grand spherical dome resting on four stone pillars and four arches, forming the base for the double-layered dome. The interior is adorned with intricate mosaics and decorations, while the exterior was once covered in gold-plated copper (similar to the Dome of the Rock) but was recently replaced with lead. Located within the walls of Al-Aqsa Sharif, it was built by Abd al-Malik ibn Marwan between 709 CE (90 AH) and 714 CE (96 AH).", 
+        "ar": "يتألف الجامع القبلي أو ما يعرف بالمسجد الأقصى من رواق أوسط كبير يقوم على أعمدة رخامية ممتدة من الشمال إلى الجنوب، تغطيه جملون مصفح بألواح الرصاص. وينتهي من الجنوب بقبة عظيمة كروية الشكل تقوم على أربعة دعامات وحجرية وأقواس، تحمل رقبة القبة المكونة من طبقتين. زينت القبة من الداخل بالزخارف والفسيفساء، ومن الخارج تمت تغطيتها بصفائح النحاس المطلية بالذهب ثم استبدلت حديثاً بالرصاص. يقع الجامع القبلي داخل رواق سور الأقصى الشريف، بناه عبد الملك بن مروان بين عامي 90 هـ (709 م) و96 هـ (714 م).", 
+        "fr": "La mosquée Al-Qibli, communément appelée mosquée Al-Aqsa, se compose d'une grande nef centrale soutenue par des colonnes de marbre s'étendant du nord au sud, couverte d'un toit en bâtière plaqué de plomb. Au sud, elle est surmontée d'un grand dôme sphérique reposant sur quatre piliers en pierre et quatre arches. L'intérieur est orné de mosaïques complexes, tandis que l'extérieur était autrefois recouvert de cuivre plaqué or (comme le Dôme du Rocher) mais a été récemment remplacé par du plomb. Situé dans l'enceinte d'Al-Aqsa Sharif, il a été construit par Abd al-Malik ibn Marwan entre 709 (90 AH) et 714 (96 AH).", 
+        "ur": "جامع قبلی، جسے عام طور پر مسجد اقصیٰ کے نام سے جانا جاتا ہے، ایک بڑے مرکزی ہال پر مشتمل ہے جو سنگ مرمر کے ستونوں پر قائم ہے جو شمال سے جنوب تک پھیلے ہوئے ہیں۔ اس کی چھت سیسے کی چادروں سے ڈھکی ہوئی ہے۔ جنوب میں ایک عظیم الشان گنبد ہے جو چار پتھریلے ستونوں اور محرابوں پر قائم ہے۔ گنبد کے اندرونی حصے کو پچی کاری اور نقش و نگار سے سجایا گیا ہے، جبکہ بیرونی حصہ پہلے سونے کے پانی چڑھے تانبے سے ڈھکا ہوا تھا (قبتہ الصخرہ کی طرح) لیکن حال ہی میں اسے سیسے سے بدل دیا گیا ہے۔ یہ مسجد اقصیٰ شریف کی حدود میں واقع ہے اور اسے عبدالملک بن مروان نے 709ء (90ھ) سے 714ء (96ھ) کے درمیان تعمیر کروایا تھا۔", 
+        "id": "Masjid Al-Qibli, yang umumnya dikenal sebagai Masjid Al-Aqsa, terdiri dari ruang utama besar yang didukung oleh pilar marmer yang membentang dari utara ke selatan, ditutupi oleh atap pelana berlapis timah. Di sisi selatan, terdapat kubah besar berbentuk bola yang berdiri di atas empat pilar batu dan empat lengkungan. Bagian interiornya dihiasi dengan mosaik dan dekorasi yang rumit, sementara bagian eksteriornya dulunya ditutupi tembaga berlapis emas (mirip dengan Kubah Batu) namun baru-baru ini diganti dengan timah. Terletak di dalam tembok Al-Aqsa Sharif, masjid ini dibangun oleh Abd al-Malik ibn Marwan antara tahun 709 M (90 H) dan 714 M (96 H)." 
+      },
+      "era": { 
+        "en": "Umayyad Era", 
+        "ar": "العصر الأموي", 
+        "fr": "Ère Omeyyade", 
+        "ur": "بنو امیہ کا دور", 
+        "id": "Era Umayyah" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Jerusalem, Dar Al-Madinah Museum", 
+        "ar": "القدس، متحف دار المدينة", 
+        "fr": "Jérusalem, Musée Dar Al-Madinah", 
+        "ur": "یروشلم، دار المدینہ میوزیم", 
+        "id": "Yerusalem, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/al-qibli-mosque.png",
+      "audioUrl": null
     }
   ]
 }
