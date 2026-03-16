@@ -3,11 +3,60 @@
 import data from '@/data.json';
 import Link from 'next/link';
 import { use, useState } from 'react';
-import { Play } from 'lucide-react';
+import { Play, ChevronLeft, ChevronRight } from 'lucide-react';
+
+const TRANSLATIONS: Record<string, any> = {
+  ar: {
+    back: 'العودة للرئيسية',
+    era: 'العصر',
+    material: 'المادة',
+    origin: 'المنشأ',
+    audioTitle: 'الدليل الصوتي',
+    audioSub: 'استمع إلى الوصف',
+    descLang: 'لغة الوصف'
+  },
+  en: {
+    back: 'Back to Home',
+    era: 'Era',
+    material: 'Material',
+    origin: 'Origin',
+    audioTitle: 'Audio Guide',
+    audioSub: 'Listen to the audio',
+    descLang: 'Description Language'
+  },
+  fr: {
+    back: 'Retour à l\'accueil',
+    era: 'Ère',
+    material: 'Matériau',
+    origin: 'Origine',
+    audioTitle: 'Guide Audio',
+    audioSub: 'Écoutez l\'audio',
+    descLang: 'Langue de description'
+  },
+  ur: {
+    back: 'ہوم پر واپس جائیں',
+    era: 'عہد',
+    material: 'مواد',
+    origin: 'اصل',
+    audioTitle: 'آڈیو گائیڈ',
+    audioSub: 'آڈیو سنیں',
+    descLang: 'تفصیل کی زبان'
+  },
+  id: {
+    back: 'Kembali ke Beranda',
+    era: 'Era',
+    material: 'Bahan',
+    origin: 'Asal',
+    audioTitle: 'Panduan Audio',
+    audioSub: 'Dengarkan audio',
+    descLang: 'Bahasa Deskripsi'
+  }
+};
 
 export default function ArtifactPage({ params }: { params: Promise<{ locale: string, id: string }> }) {
   const { locale, id } = use(params);
   const isArabic = locale === 'ar';
+  const t = TRANSLATIONS[locale] || TRANSLATIONS.en;
 
   // Search both featuredArtifacts and artifacts arrays
   const artifact =
@@ -20,114 +69,110 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
   );
 
   const langs = [
-    { code: 'ar', label: 'العربية' },
-    { code: 'en', label: 'English' },
-    { code: 'fr', label: 'Français' },
-    { code: 'ur', label: 'اردو' },
-    { code: 'id', label: 'Indonesia' },
+    { code: 'ar', label: 'AR' },
+    { code: 'en', label: 'EN' },
+    { code: 'fr', label: 'FR' },
+    { code: 'ur', label: 'UR' },
+    { code: 'id', label: 'ID' },
   ];
 
   return (
-    <div className="bg-slate-50 min-h-screen">
-      <div className="container mx-auto px-4 py-12 max-w-6xl">
-
-        {/* Two-column flex with align-items: flex-start */}
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '3rem' }}
-             className="flex-col md:flex-row">
-
-          {/* LEFT COLUMN – sticky image */}
-          <div
-            className="w-full md:w-1/2 shrink-0"
-            style={{ position: 'sticky', top: '80px', alignSelf: 'flex-start' }}
+    <div className="bg-white min-h-screen">
+      <div className="container mx-auto px-4 py-8 max-w-5xl">
+        
+        {/* Top Navigation */}
+        <div className="flex justify-end mb-6">
+          <Link
+            href={`/${locale}`}
+            className="text-slate-500 hover:text-slate-800 text-sm flex items-center gap-1 transition-colors"
           >
-            {artifact.image ? (
-              <img
-                src={artifact.image}
-                alt={artifact.title[locale as keyof typeof artifact.title] || artifact.title.en}
-                className="w-full rounded-2xl shadow-xl object-contain"
-              />
-            ) : (
-              <div className="w-full aspect-video bg-slate-200 rounded-2xl flex items-center justify-center">
-                <span className="text-slate-400 text-sm">No Image Available</span>
-              </div>
-            )}
+            <span>{t.back}</span>
+            {isArabic ? <ChevronLeft size={16} /> : <ChevronRight size={16} />}
+          </Link>
+        </div>
+
+        {/* Main Content Box */}
+        <div className="border border-slate-200 rounded-sm overflow-hidden flex flex-col md:flex-row shadow-sm min-h-[500px]">
+          
+          {/* LEFT COLUMN: Large Image Area */}
+          <div className="w-full md:w-[45%] bg-slate-50 flex items-center justify-center border-b md:border-b-0 md:border-r border-slate-200 p-8">
+            <div className="w-full h-full relative flex items-center justify-center">
+              {artifact.image ? (
+                <img
+                  src={artifact.image}
+                  alt={artifact.title[locale as keyof typeof artifact.title] || artifact.title.en}
+                  className="max-w-full max-h-[500px] object-contain"
+                />
+              ) : (
+                <div className="text-slate-300 text-2xl font-light">Artifact Image</div>
+              )}
+            </div>
           </div>
 
-          {/* RIGHT COLUMN – natural text flow */}
-          <div className="w-full md:w-1/2 flex flex-col gap-7">
+          {/* RIGHT COLUMN: Details */}
+          <div className="w-full md:w-[55%] p-10 flex flex-col bg-white">
+            
+            {/* Title Section */}
+            <div className="mb-2">
+              <h1 className="text-3xl font-semibold text-slate-800 tracking-tight">
+                {artifact.title[locale as keyof typeof artifact.title] || artifact.title.en}
+              </h1>
+              <div className="w-full h-px bg-slate-200 mt-4 mb-6" />
+            </div>
 
-            {/* Breadcrumb */}
-            <Link
-              href={`/${locale}`}
-              className="text-slate-500 hover:text-slate-700 text-sm transition inline-flex items-center gap-1"
-            >
-              {isArabic ? '→' : '←'}
-              <span>{isArabic ? 'العودة للرئيسية' : 'Back to Home'}</span>
-            </Link>
+            {/* Description Section */}
+            <div className="mb-6">
+              <p className="text-slate-600 leading-relaxed text-[15px] whitespace-pre-line">
+                {artifact.description[descLang] || artifact.description.en}
+              </p>
+              <div className="w-full h-px bg-slate-200 mt-8 mb-8" />
+            </div>
 
-            {/* Title */}
-            <h1 className="text-4xl font-bold text-slate-900 leading-snug">
-              {artifact.title[locale as keyof typeof artifact.title] || artifact.title.en}
-            </h1>
-
-            {/* Description — full natural flow, no scroll cap */}
-            <p className="text-slate-600 leading-loose whitespace-pre-line text-base">
-              {artifact.description[descLang] || artifact.description.en}
-            </p>
-
-            {/* Metadata */}
-            <div className="border-t border-slate-200 pt-5 space-y-3 text-sm">
-              <div className="flex gap-3">
-                <span className="font-semibold text-slate-800 w-20 shrink-0">
-                  {isArabic ? 'العصر:' : 'Era:'}
-                </span>
-                <span className="text-slate-500">
+            {/* Metadata Section */}
+            <div className="space-y-2 mb-10">
+              <div className="flex text-sm">
+                <span className="text-slate-700 font-medium w-24 shrink-0">{t.era}:</span>
+                <span className="text-slate-600 italic">
                   {artifact.era[locale as keyof typeof artifact.era] || artifact.era.en}
                 </span>
               </div>
-              <div className="flex gap-3">
-                <span className="font-semibold text-slate-800 w-20 shrink-0">
-                  {isArabic ? 'المادة:' : 'Material:'}
-                </span>
-                <span className="text-slate-500">
-                  {artifact.material[locale as keyof typeof artifact.material] || artifact.material.en}
+              <div className="flex text-sm">
+                <span className="text-slate-700 font-medium w-24 shrink-0">{t.material}:</span>
+                <span className="text-slate-600">
+                   {artifact.material[locale as keyof typeof artifact.material] || artifact.material.en}
                 </span>
               </div>
-              <div className="flex gap-3">
-                <span className="font-semibold text-slate-800 w-20 shrink-0">
-                  {isArabic ? 'المنشأ:' : 'Origin:'}
-                </span>
-                <span className="text-slate-500">
-                  {artifact.origin[locale as keyof typeof artifact.origin] || artifact.origin.en}
+              <div className="flex text-sm">
+                <span className="text-slate-700 font-medium w-24 shrink-0">{t.origin}:</span>
+                <span className="text-slate-600">
+                   {artifact.origin[locale as keyof typeof artifact.origin] || artifact.origin.en}
                 </span>
               </div>
             </div>
 
-            {/* Audio Guide */}
-            <div className="border-t border-slate-200 pt-5">
-              <button className="flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-xl hover:bg-slate-700 transition text-sm font-medium">
-                <Play fill="currentColor" size={14} />
-                {isArabic ? 'الدليل الصوتي' : 'Audio Guide'}
+            {/* Audio Section */}
+            <div className="mb-10 flex flex-col items-center">
+              <button className="flex items-center justify-center gap-3 bg-[#546e7a] text-white px-10 py-3 rounded-full hover:bg-slate-700 transition w-full max-w-[280px]">
+                <Play fill="white" size={24} />
+                <span className="text-lg font-medium tracking-wide">{t.audioTitle}</span>
               </button>
-              <p className="text-xs text-slate-400 mt-2">
-                {isArabic ? 'استمع إلى الوصف' : 'Listen to the description'}
+              <p className="text-sm text-slate-500 mt-3 text-center">
+                {t.audioSub}
               </p>
+              <div className="w-full h-px bg-slate-200 mt-8" />
             </div>
 
-            {/* Language Tabs */}
-            <div className="border-t border-slate-200 pt-5">
-              <p className="text-xs font-semibold text-slate-400 uppercase tracking-widest mb-3">
-                {isArabic ? 'لغة الوصف' : 'Description Language'}
-              </p>
-              <div className="flex flex-wrap gap-2">
+            {/* Language Switcher Section */}
+            <div className="mt-auto flex justify-center">
+              <div className="inline-flex border border-slate-300 rounded overflow-hidden shadow-sm">
                 {langs.map(({ code, label }) => (
                   <button
                     key={code}
                     onClick={() => setDescLang(code as keyof typeof artifact.description)}
-                    className={`px-4 py-1.5 rounded-full text-sm font-medium border transition ${
+                    className={`px-6 py-2.5 text-sm font-semibold border-r last:border-r-0 border-slate-300 transition-colors uppercase ${
                       descLang === code
-                        ? 'bg-slate-900 text-white border-slate-900'
-                        : 'bg-white text-slate-500 border-slate-300 hover:border-slate-600'
+                        ? 'bg-slate-50 text-slate-900'
+                        : 'bg-white text-slate-400 hover:bg-slate-50 hover:text-slate-600'
                     }`}
                   >
                     {label}
