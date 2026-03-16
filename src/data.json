@@ -617,6 +617,47 @@
       },
       "image": "/images/artifacts/prophet-arrival.png",
       "audioUrl": null
+    },
+    {
+      "id": "kaaba-zubayr",
+      "title": { 
+        "en": "The Building of the Holy Kaaba in the Era of Abdullah ibn al-Zubayr", 
+        "ar": "بناء الكعبة المشرفة في عهد عبدالله بن الزبير", 
+        "fr": "La reconstruction de la Sainte Kaaba à l'époque d'Abdullah ibn al-Zubayr", 
+        "ur": "حضرت عبداللہ بن زبیر کے دور میں خانہ کعبہ کی تعمیر", 
+        "id": "Pembangunan Kembali Ka'bah di Era Abdullah bin al-Zubair" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "When Abdullah ibn al-Zubayr took charge of Mecca, he decided to rebuild the Kaaba upon the original foundations of Ibrahim (AS), fulfilling a wish once expressed by the Prophet ﷺ to Aisha (RA). He incorporated the six cubits that Quraysh had previously left out of the building. He also added two doors at ground level—one on the eastern side and another on the western side—allowing people to enter through one and exit through the other. Furthermore, he increased the height of the Kaaba to 27 cubits (approximately 13.5 meters), making it a significant architectural milestone that restored the House to its intended Prophetic form.", 
+        "ar": "حين ولي عبدالله بن الزبير أمر مكة قرر إعادة بناء الكعبة على قواعد إبراهيم عليه السلام، تيمناً بما كان يتمناه رسول الله صلى الله عليه وسلم، كما سمحت بذلك عائشة رضي الله عنها. فأدخل فيها ما أخرجته قريش منها (6 أذرع وشبراً)، وجعل لها بابين ملتصقين بالأرض، أحدهما في الجهة الشرقية، والآخر في الجهة الغربية، وزاد في ارتفاعها إلى (27 ذراعاً - أي 13.5 م).", 
+        "fr": "Lorsqu'Abdullah ibn al-Zubayr prit la direction de La Mecque, il décida de reconstruire la Kaaba sur les fondations originelles d'Ibrahim (AS), réalisant ainsi un souhait autrefois exprimé par le Prophète ﷺ à Aïcha (RA). Il incorpora les six coudées que les Qurayshites avaient précédemment laissées hors de l'édifice. Il ajouta également deux portes au niveau du sol — une à l'est et une à l'ouest. De plus, il augmenta la hauteur de la Kaaba à 27 coudées (environ 13,5 mètres), en faisant un jalon architectural majeur qui restaura la Maison dans sa forme prophétique prévue.", 
+        "ur": "جب حضرت عبداللہ بن زبیرؓ نے مکہ مکرمہ کا انتظام سنبھالا تو انہوں نے خانہ کعبہ کو حضرت ابراہیم علیہ السلام کی اصل بنیادوں پر دوبارہ تعمیر کرنے کا فیصلہ کیا، تاکہ نبی کریم ﷺ کی اس خواہش کو پورا کیا جا سکے جس کا تذکرہ آپ نے حضرت عائشہؓ سے کیا تھا۔ انہوں نے وہ چھ ہاتھ جگہ بھی کعبہ میں شامل کر دی جسے قریش نے تعمیر سے باہر چھوڑ دیا تھا۔ انہوں نے زمین کی سطح پر دو دروازے بنائے—ایک مشرقی جانب اور دوسرا مغربی جانب—تاکہ لوگ ایک سے داخل ہوں اور دوسرے سے نکل سکیں۔ مزید برآں، انہوں نے کعبہ کی اونچائی 27 ہاتھ (تقریباً 13.5 میٹر) تک بڑھا دی، جس سے اللہ کے گھر کو اس کی اصل نبوی شکل میں بحال کر دیا گیا۔", 
+        "id": "Ketika Abdullah bin al-Zubair memimpin Mekkah, ia memutuskan untuk membangun kembali Ka'bah di atas fondasi asli Ibrahim (AS), memenuhi keinginan yang pernah diungkapkan oleh Nabi ﷺ kepada Aisyah (RA). Ia memasukkan enam hasta yang sebelumnya ditinggalkan oleh kaum Quraisy dari bangunan tersebut. Ia juga menambahkan dua pintu di tingkat tanah—satu di sisi timur dan satu lagi di sisi barat. Selain itu, ia meningkatkan tinggi Ka'bah menjadi 27 hasta (sekitar 13,5 meter), menjadikannya tonggak arsitektur penting yang mengembalikan Baitullah ke bentuk yang diinginkan Nabi." 
+      },
+      "era": { 
+        "en": "Early Islamic Era", 
+        "ar": "العصر الإسلامي المبكر", 
+        "fr": "Début de l'Ère Islamique", 
+        "ur": "ابتدائی اسلامی دور", 
+        "id": "Era Islam Awal" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Mecca, Dar Al-Madinah Museum", 
+        "ar": "مكة المكرمة، متحف دار المدينة", 
+        "fr": "La Mecque, Musée Dar Al-Madinah", 
+        "ur": "مکہ مکرمہ، دار المدینہ میوزیم", 
+        "id": "Mekkah, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/kaaba-zubayr.png",
+      "audioUrl": null
     }
   ]
 }
