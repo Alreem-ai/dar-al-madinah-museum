@@ -260,10 +260,10 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
         )}
 
         {/* Pagination Footer (Match original but clean) */}
-        <div className="bg-[#546e7a] text-white p-6 rounded-sm flex items-center justify-between shadow-md">
+        <div className={`bg-[#546e7a] text-white p-6 rounded-sm flex items-center justify-between shadow-md mb-12 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
             <button 
-                onClick={isRTL ? goNext : goPrev} 
-                disabled={isRTL ? currentIndex >= totalItems - 1 : currentIndex <= 0}
+                onClick={goPrev} 
+                disabled={currentIndex <= 0}
                 className="flex items-center gap-2 px-6 py-2 rounded hover:bg-[#455a64] disabled:opacity-30 transition-colors font-medium"
             >
                 {isRTL ? <ChevronRight size={20} /> : <ChevronLeft size={20} />}
@@ -277,8 +277,8 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
             </div>
 
             <button 
-                onClick={isRTL ? goPrev : goNext} 
-                disabled={isRTL ? currentIndex <= 0 : currentIndex >= totalItems - 1}
+                onClick={goNext} 
+                disabled={currentIndex >= totalItems - 1}
                 className="flex items-center gap-2 px-6 py-2 rounded hover:bg-[#455a64] disabled:opacity-30 transition-colors font-medium"
             >
                 {t.next}

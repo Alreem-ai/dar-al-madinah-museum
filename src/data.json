@@ -125,6 +125,47 @@
       },
       "image": "/images/artifacts/dome-of-the-rock.jpg",
       "audioUrl": null
+    },
+    {
+      "id": "nabawi-abdul-majid",
+      "title": { 
+        "en": "Architecture of the Prophet's Mosque under Sultan Abdul Majid I (1255-1277 AH / 1839-1860 AD)", 
+        "ar": "عمارة المسجد النبوي الشريف في عهد السلطان عبد المجيد الأول 1255-1277 هـ / 1839-1860 م", 
+        "fr": "Architecture de la Mosquée du Prophète sous le Sultan Abdul Majid I (1255-1277 AH / 1839-1860 ap. J.-C.)", 
+        "ur": "سلطان عبد المجید اول کے عہد میں مسجد نبوی کی تعمیر و توسیع (1255-1277ھ / 1839-1860ء)", 
+        "id": "Arsitektur Masjid Nabawi di bawah Sultan Abdul Majid I (1255-1277 H / 1839-1860 M)" 
+      },
+      "category": "battles",
+      "description": { 
+        "en": "The architecture of Sultan Abdul Majid I is considered the largest renovation ever conducted for the Prophet's Mosque during the Ottoman era. This architecture was characterized by its comprehensiveness, covering all parts of the mosque except for the Sacred Chamber (Al-Hujrah Al-Sharifah), the three mihrabs, the Prophetic Minbar, and the main minaret. The construction by Sultan Abdul Majid took twelve years, with work continuing between 1265 - 1277 AH (1848 - 1860 AD). Prior to this, the mosque's structure was based on the architecture of Sultan Qaitbay, the Mamluk Sultan of Egypt.", 
+        "ar": "تعتبر عمارة السلطان عبد المجيد الأول أكبر عمارة جرت للمسجد النبوي الشريف في العصر العثماني تميزت هذه العمارة بشموليتها لكافة أجزاء المسجد عدا الحجرة الشريفة والمحاريب الثلاثة والمنبر النبوي والمنارة الرئيسية. وقد استغرقت عمارة السلطان عبد المجيد اثنتي عشرة عاماً حيث استمر العمل بها بين عامي (1265 - 1277 / 1848 - 1860م). وقد كان بناء المسجد قبل ذلك على بناء السلطان قايتباي سلطان الدولة المملوكية في مصر.", 
+        "fr": "L'architecture du Sultan Abdul Majid I est considérée comme la plus grande rénovation jamais entreprise pour la Mosquée du Prophète à l'époque ottomane. Cette architecture se caractérise par son exhaustivité, couvrant toutes les parties de la mosquée, à l'exception de la Chambre Sacrée (Al-Hujrah Al-Sharifah), des trois mihrabs, du Minbar prophétique et du minaret principal. La construction par le Sultan Abdul Majid a duré douze ans, les travaux se poursuivant entre 1265 et 1277 AH (1848 - 1860 ap. J.-C.). Auparavant, la structure de la mosquée reposait sur l'architecture du Sultan Qaitbay, le sultan mamelouk d'Égypte.", 
+        "ur": "سلطان عبد المجید اول کی تعمیر کو عثمانی دور میں مسجد نبوی شریف کے لیے کی جانے والی سب سے بڑی تعمیراتی کوشش سمجھا جاتا ہے۔ یہ تعمیر اپنی جامعیت کے لحاظ سے ممتاز تھی، جس میں حجرہ شریفہ، تینوں محرابوں، منبر نبوی اور مرکزی مینار کے علاوہ مسجد کے تمام حصوں کو شامل کیا گیا تھا۔ سلطان عبد المجید کی اس تعمیر میں بارہ سال کا عرصہ لگا، جس کا کام 1265ھ سے 1277ھ (1848ء - 1860ء) کے درمیان جاری رہا۔ اس سے قبل مسجد کی عمارت مصر کے مملوک سلطان، سلطان قایتبائی کی تعمیر پر مبنی تھی۔", 
+        "id": "Arsitektur Sultan Abdul Majid I dianggap sebagai renovasi terbesar yang pernah dilakukan untuk Masjid Nabawi pada era Utsmaniyah. Arsitektur ini dicirikan oleh sifatnya yang komprehensif, mencakup seluruh bagian masjid kecuali Kamar Suci (Al-Hujrah Al-Sharifah), tiga mihrab, Mimbar Nabi, dan menara utama. Pembangunan oleh Sultan Abdul Majid memakan waktu dua belas tahun, di mana pengerjaannya berlangsung antara tahun 1265 - 1277 H (1848 - 1860 M). Sebelumnya, struktur masjid didasarkan pada arsitektur Sultan Qaitbay, Sultan Mamluk dari Mesir." 
+      },
+      "era": { 
+        "en": "Ottoman Era", 
+        "ar": "العصر العثماني", 
+        "fr": "Ère Ottomane", 
+        "ur": "عہدِ عثمانی", 
+        "id": "Era Utsmaniyah" 
+      },
+      "material": { 
+        "en": "Diorama Model", 
+        "ar": "مجسم ديوراما", 
+        "fr": "Modèle de Diorama", 
+        "ur": "ڈیوراما ماڈل", 
+        "id": "Model Diorama" 
+      },
+      "origin": { 
+        "en": "Medina, Dar Al-Madinah Museum", 
+        "ar": "المدينة المنورة، متحف دار المدينة", 
+        "fr": "Médine, Musée Dar Al-Madinah", 
+        "ur": "مدینہ، دار المدینہ میوزیم", 
+        "id": "Madinah, Museum Dar Al-Madinah" 
+      },
+      "image": "/images/artifacts/nabawi-abdul-majid.jpg",
+      "audioUrl": null
     }
   ]
 }
