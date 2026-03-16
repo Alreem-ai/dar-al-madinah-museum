@@ -69,18 +69,11 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
               {currentArtifact ? (
                 // State: Populated Database Item
                 currentArtifact.image ? (
-                  <Link href={`/${locale}/artifact/${currentArtifact.id}`} className="block relative group">
-                    <img 
-                      src={currentArtifact.image} 
-                      alt={currentArtifact.title.en} 
-                      className="max-h-[70vh] w-full object-contain drop-shadow-md rounded-lg mx-auto"
-                    />
-                    <div className="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg flex items-center justify-center">
-                       <span className="bg-white/90 text-slate-900 px-6 py-2 rounded-full font-medium shadow-sm">
-                         {isArabic ? 'عرض التفاصيل' : 'View Details'}
-                       </span>
-                    </div>
-                  </Link>
+                  <img 
+                    src={currentArtifact.image} 
+                    alt={currentArtifact.title.en} 
+                    className="max-h-[70vh] w-full object-contain drop-shadow-md rounded-lg mx-auto"
+                  />
                 ) : (
                    <span className="text-slate-400 font-medium">No Image Available</span>
                 )
