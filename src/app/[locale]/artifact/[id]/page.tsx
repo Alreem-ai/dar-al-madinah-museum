@@ -56,7 +56,6 @@ const TRANSLATIONS: Record<string, any> = {
 export default function ArtifactPage({ params }: { params: Promise<{ locale: string, id: string }> }) {
   const { locale, id } = use(params);
   const isArabic = locale === 'ar';
-  const t = TRANSLATIONS[locale] || TRANSLATIONS.en;
 
   // Search both featuredArtifacts and artifacts arrays
   const artifact =
@@ -64,9 +63,10 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
     (data as any).artifacts?.find((a: any) => a.id === id) ||
     data.featuredArtifacts[0];
 
-  const [descLang, setDescLang] = useState<keyof typeof artifact.description>(
-    locale as keyof typeof artifact.description
-  );
+  // This state now drives EVERY piece of text on the page
+  const [activeLang, setActiveLang] = useState<string>(locale);
+  
+  const t = TRANSLATIONS[activeLang] || TRANSLATIONS.en;
 
   const langs = [
     { code: 'ar', label: 'AR' },
@@ -87,20 +87,20 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
             className="text-slate-500 hover:text-slate-800 text-sm flex items-center gap-1 transition-colors"
           >
             <span>{t.back}</span>
-            {isArabic ? <ChevronLeft size={16} /> : <ChevronRight size={16} />}
+            {activeLang === 'ar' || activeLang === 'ur' ? <ChevronLeft size={16} /> : <ChevronRight size={16} />}
           </Link>
         </div>
 
         {/* Main Content Box */}
-        <div className="border border-slate-200 rounded-sm overflow-hidden flex flex-col md:flex-row shadow-sm min-h-[500px]">
+        <div className={`border border-slate-200 rounded-sm overflow-hidden flex flex-col md:flex-row shadow-sm min-h-[500px] ${activeLang === 'ar' || activeLang === 'ur' ? 'rtl' : 'ltr'}`} dir={activeLang === 'ar' || activeLang === 'ur' ? 'rtl' : 'ltr'}>
           
-          {/* LEFT COLUMN: Large Image Area */}
-          <div className="w-full md:w-[45%] bg-slate-50 flex items-center justify-center border-b md:border-b-0 md:border-r border-slate-200 p-8">
+          {/* IMAGE COLUMN */}
+          <div className="w-full md:w-[45%] bg-slate-50 flex items-center justify-center border-b md:border-b-0 ltr:md:border-r rtl:md:border-l border-slate-200 p-8">
             <div className="w-full h-full relative flex items-center justify-center">
               {artifact.image ? (
                 <img
                   src={artifact.image}
-                  alt={artifact.title[locale as keyof typeof artifact.title] || artifact.title.en}
+                  alt={artifact.title[activeLang as keyof typeof artifact.title] || artifact.title.en}
                   className="max-w-full max-h-[500px] object-contain"
                 />
               ) : (
@@ -109,43 +109,45 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
             </div>
           </div>
 
-          {/* RIGHT COLUMN: Details */}
+          {/* DETAILS COLUMN */}
           <div className="w-full md:w-[55%] p-10 flex flex-col bg-white">
             
             {/* Title Section */}
             <div className="mb-2">
               <h1 className="text-3xl font-semibold text-slate-800 tracking-tight">
-                {artifact.title[locale as keyof typeof artifact.title] || artifact.title.en}
+                {artifact.title[activeLang as keyof typeof artifact.title] || artifact.title.en}
               </h1>
               <div className="w-full h-px bg-slate-200 mt-4 mb-6" />
             </div>
 
-            {/* Description Section */}
-            <div className="mb-6">
-              <p className="text-slate-600 leading-relaxed text-[15px] whitespace-pre-line">
-                {artifact.description[descLang] || artifact.description.en}
-              </p>
-              <div className="w-full h-px bg-slate-200 mt-8 mb-8" />
+            {/* Description Section with Scrollbar */}
+            <div className="mb-6 flex-grow flex flex-col overflow-hidden">
+              <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-slate-200 hover:scrollbar-thumb-slate-300 transition-colors max-h-[250px] mb-4">
+                <p className="text-slate-600 leading-relaxed text-[15px] whitespace-pre-line">
+                  {artifact.description[activeLang as keyof typeof artifact.description] || artifact.description.en}
+                </p>
+              </div>
+              <div className="w-full h-px bg-slate-200 mt-auto" />
             </div>
 
             {/* Metadata Section */}
-            <div className="space-y-2 mb-10">
+            <div className="space-y-2 mb-10 pt-4">
               <div className="flex text-sm">
                 <span className="text-slate-700 font-medium w-24 shrink-0">{t.era}:</span>
                 <span className="text-slate-600 italic">
-                  {artifact.era[locale as keyof typeof artifact.era] || artifact.era.en}
+                  {artifact.era[activeLang as keyof typeof artifact.era] || artifact.era.en}
                 </span>
               </div>
               <div className="flex text-sm">
                 <span className="text-slate-700 font-medium w-24 shrink-0">{t.material}:</span>
                 <span className="text-slate-600">
-                   {artifact.material[locale as keyof typeof artifact.material] || artifact.material.en}
+                   {artifact.material[activeLang as keyof typeof artifact.material] || artifact.material.en}
                 </span>
               </div>
               <div className="flex text-sm">
                 <span className="text-slate-700 font-medium w-24 shrink-0">{t.origin}:</span>
                 <span className="text-slate-600">
-                   {artifact.origin[locale as keyof typeof artifact.origin] || artifact.origin.en}
+                   {artifact.origin[activeLang as keyof typeof artifact.origin] || artifact.origin.en}
                 </span>
               </div>
             </div>
@@ -168,9 +170,9 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
                 {langs.map(({ code, label }) => (
                   <button
                     key={code}
-                    onClick={() => setDescLang(code as keyof typeof artifact.description)}
+                    onClick={() => setActiveLang(code)}
                     className={`px-6 py-2.5 text-sm font-semibold border-r last:border-r-0 border-slate-300 transition-colors uppercase ${
-                      descLang === code
+                      activeLang === code
                         ? 'bg-slate-50 text-slate-900'
                         : 'bg-white text-slate-400 hover:bg-slate-50 hover:text-slate-600'
                     }`}
