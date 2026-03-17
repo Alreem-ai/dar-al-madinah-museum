@@ -1,0 +1,17 @@
+<anonymous_script>:1
+        "id": "Rasulullah ﷺ meninggalkan Bani Amr bin Auf pada hari Jumat. Ketika waktu salat Jumat tiba, beliau berada di pemukiman Bani Salim bin Auf. Beliau melaksanakan salat di masjid yang terletak di tengah lembah, yang kemudian dikenal sebagai Masjid Al-Jumu'ah. Peristiwa ini terjadi dalam perjalanannya menuju Madinah setelah Hijrah, setelah sebelumnya tinggal di Quba bersama Bani Amr bin Auf selama several hari. Saat beliau menuju Madinah, waktu salat Jumat tiba di tempat ini, di mana beliau mengimami orang-orang dalam salat Jumat pertama dalam Islam. Kaum muslimin berkumpul di belakang Nabi ﷺ dan salat bersamanya. Kemudian, beliau melanjutkan perjalanannya hingga memasuki Madinah Al-Munawwarah, di mana penduduknya menyambutnya dengan kegembiraan dan suka cita, dan beliau tinggal di rumah Abu Ayyub al-Ansari radhiyallahu 'anhu." 
+            ^
+
+SyntaxError: Unexpected non-whitespace character after JSON at position 12 (line 1 column 13)
+    at JSON.parse (<anonymous>)
+    at loadChunk (C:\Users\WinDows\.gemini\antigravity\scratch\dar-al-madinah-museum\src\restore_clean.js:45:17)
+    at Object.<anonymous> (C:\Users\WinDows\.gemini\antigravity\scratch\dar-al-madinah-museum\src\restore_clean.js:48:22)
+    at Module._compile (node:internal/modules/cjs/loader:1812:14)
+    at Object..js (node:internal/modules/cjs/loader:1943:10)
+    at Module.load (node:internal/modules/cjs/loader:1533:32)
+    at Module._load (node:internal/modules/cjs/loader:1335:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.14.0

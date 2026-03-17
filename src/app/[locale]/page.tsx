@@ -66,23 +66,24 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {Array.from({ length: 6 }).map((_, i) => {
-              const artifact = data.featuredArtifacts[i] || data.featuredArtifacts[0];
+            {data.featuredArtifacts.map((artifactId, i) => {
+              const artifact = data.artifacts.find(a => a.id === artifactId);
+              if (!artifact) return null;
               return (
                 <Link 
-                  key={i} 
-                  href={`/${locale}/artifact/${artifact?.id || 1}`}
+                  key={artifactId} 
+                  href={`/${locale}/artifact/${artifact.id}`}
                   className="museum-card flex flex-col items-center p-4 text-center group cursor-pointer hover:shadow-md transition"
                 >
                   <div className="w-full aspect-square bg-slate-100 rounded mb-4 flex items-center justify-center group-hover:bg-slate-200 transition overflow-hidden">
-                    {artifact?.image ? (
+                    {artifact.image ? (
                       <img src={artifact.image} alt={artifact.title.en} className="w-full h-full object-cover" />
                     ) : (
                       <span className="text-slate-300 text-xs">Image</span>
                     )}
                   </div>
                   <h4 className="font-semibold text-slate-800 text-sm mb-3 group-hover:text-gold-600 transition">
-                    {artifact ? (artifact.title[locale] || artifact.title.en) : `Artifact ${i+1}`}
+                    {artifact.title[locale] || artifact.title.en}
                   </h4>
                   <span className="w-full py-1.5 bg-slate-500 text-white text-xs rounded group-hover:bg-slate-600 transition mt-auto">
                     {isArabic ? 'المزيد' : 'Learn More'}
