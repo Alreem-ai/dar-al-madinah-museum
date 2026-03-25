@@ -71,6 +71,7 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [searchValue, setSearchValue] = useState('');
 
   // Reset image index when switching artifacts
   useEffect(() => {
@@ -86,7 +87,7 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
   }
   
   const categoryArtifacts = data.artifacts.filter(a => a.category === id);
-  const totalItems = category.count || 35;
+  const totalItems = categoryArtifacts.length;
   const currentArtifact = categoryArtifacts[currentIndex];
 
   const goNext = () => { if (currentIndex < totalItems - 1) setCurrentIndex(prev => prev + 1); };
@@ -309,7 +310,7 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
         )}
 
         {/* Pagination Footer (Match original but clean) */}
-        <div className={`bg-[#546e7a] text-white p-6 rounded-sm flex items-center justify-between shadow-md mb-12 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
+        <div className={`bg-[#546e7a] text-white p-6 rounded-sm flex items-center justify-between shadow-md mb-6 ${isRTL ? 'rtl' : 'ltr'}`} dir={isRTL ? 'rtl' : 'ltr'}>
             <button 
                 onClick={goPrev} 
                 disabled={currentIndex <= 0}
@@ -320,7 +321,7 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
             </button>
 
             <div className="flex items-center gap-4 text-slate-200 font-mono">
-                <span className="font-bold text-white text-2xl">{currentIndex + 1}</span>
+                <span className="font-bold text-white text-2xl">{totalItems > 0 ? currentIndex + 1 : 0}</span>
                 <span className="text-slate-400 text-xl">/</span>
                 <span className="text-xl">{totalItems}</span>
             </div>
@@ -333,6 +334,35 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
                 {t.next}
                 {isRTL ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
             </button>
+        </div>
+
+        {/* Model Search Bar */}
+        <div className="flex justify-center mb-12" dir={isRTL ? 'rtl' : 'ltr'}>
+           <form 
+             onSubmit={(e) => { 
+                e.preventDefault(); 
+                const target = parseInt(searchValue, 10);
+                if(target > 0 && target <= totalItems) {
+                   setCurrentIndex(target - 1);
+                   setSearchValue('');
+                }
+             }} 
+             className="flex items-center gap-3 bg-white px-5 py-3 rounded-full shadow-sm border border-slate-200 w-full max-w-[300px] transition-shadow hover:shadow-md focus-within:ring-2 focus-within:ring-[#546e7a]/20 focus-within:border-[#546e7a]"
+           >
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-slate-400 shrink-0"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+             <input 
+               type="number" 
+               min={1} 
+               max={totalItems}
+               placeholder={isRTL ? 'انتقل إلى المجسم رقم...' : 'Go to model number...'}
+               value={searchValue}
+               onChange={(e) => setSearchValue(e.target.value)}
+               className="bg-transparent border-none outline-none w-full text-slate-700 font-medium placeholder:text-slate-300 placeholder:font-normal"
+             />
+             <button type="submit" disabled={!searchValue} className="text-[#546e7a] hover:text-slate-900 transition-colors disabled:opacity-30">
+               {isRTL ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
+             </button>
+           </form>
         </div>
 
       </div>

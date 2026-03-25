@@ -27,8 +27,9 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             </p>
             
             {/* Image Placeholder */}
-            <div className="w-full h-64 bg-slate-100 flex items-center justify-center rounded">
-              <span className="text-slate-400">Image</span>
+            <div className="w-full h-64 bg-slate-100 flex items-center justify-center rounded overflow-hidden relative">
+              <span className="text-slate-400 absolute z-0">Image</span>
+              <img src="/images/museum-logo-sign.png" alt="Museum Exhibit" className="w-full h-full object-cover relative z-10" />
             </div>
           </div>
           
@@ -44,7 +45,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 <Phone className="text-slate-400 mt-1" size={20} />
                 <div>
                   <h4 className="font-semibold text-slate-800">{isArabic ? 'تواصل معنا' : 'Get in Touch'}</h4>
-                  <p className="text-sm text-slate-600 mt-1">+966 5X XXX XXXX</p>
+                  <p className="text-sm text-slate-600 mt-1">{/* +966 5X XXX XXXX */} <span dir="ltr" className="inline-block">053 477 9997</span></p>
                 </div>
               </div>
               
@@ -66,7 +67,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 <MapPin className="text-slate-400 mt-1" size={20} />
                 <div>
                   <h4 className="font-semibold text-slate-800">{isArabic ? 'موقعنا' : 'Location Map'}</h4>
-                  <a href="https://maps.app.goo.gl/AS88ixWjvBm1JpV37" target="_blank" rel="noopener noreferrer" className="text-sm text-gold-600 hover:underline flex items-center gap-1 mt-1">
+                  <a href="https://www.google.com/maps/place/%D9%85%D8%AA%D8%AD%D9%81+%D8%AF%D8%A7%D8%B1+%D8%A7%D9%84%D9%85%D8%AF%D9%8A%D9%86%D8%A9%E2%80%AD/@24.477348,39.687873,16z/data=!4m15!1m8!3m7!1s0x15bd95ce0ebf7e81:0x8cc71c20e7cd1913!2z2YXYqtit2YEg2K_Yp9ixINin2YTZhdiv2YrZhtip!8m2!3d24.477161!4d39.6878556!10e1!16s%2Fg%2F11h3l3q73y!3m5!1s0x15bd95ce0ebf7e81:0x8cc71c20e7cd1913!8m2!3d24.477161!4d39.6878556!16s%2Fg%2F11h3l3q73y!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDMyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-sm text-gold-600 hover:underline flex items-center gap-1 mt-1">
                     {isArabic ? 'عرض على خرائط جوجل' : 'View on Google Maps'}
                     <ExternalLink size={12} />
                   </a>

@@ -20,14 +20,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
               ? 'استكشف الإرث الحضاري الإسلامي وتاريخ المدينة المنورة عبر عصورها المختلفة' 
               : 'Explore the Islamic cultural heritage and the history of Medina through its different eras'}
           </p>
-          <button className="bg-slate-500 text-white px-8 py-3 rounded-full hover:bg-slate-600 transition shadow-sm font-medium">
+          <Link href={`/${locale}#categories`} className="bg-slate-500 text-white px-8 py-3 rounded-full hover:bg-slate-600 transition shadow-sm font-medium inline-block">
             {isArabic ? 'استكشف الآن' : 'Explore Now'}
-          </button>
+          </Link>
         </div>
       </section>
 
       {/* Categories Grid */}
-      <section className="py-16 container mx-auto px-4">
+      <section id="categories" className="py-16 container mx-auto px-4">
         <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
           {isArabic ? 'استكشف المزيد' : 'Explore More'}
         </h2>
@@ -47,7 +47,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                   {category.title[locale] || category.title.en}
                 </h3>
                 <span className="text-sm text-slate-500 mb-4">
-                  {category.count} {isArabic ? 'عنصر' : 'Items'}
+                  {data.artifacts.filter(a => a.category === category.id).length} {isArabic ? 'عنصر' : 'Items'}
                 </span>
                 <span className="mt-auto px-4 py-1.5 bg-slate-500 text-white text-sm rounded group-hover:bg-slate-600 transition">
                   {isArabic ? 'المزيد' : 'Learn More'}
@@ -65,15 +65,15 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
             {isArabic ? 'مقتنيات مختارة' : 'Featured Artifacts'}
           </h2>
           
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {data.featuredArtifacts.map((artifactId, i) => {
+          <div className="flex overflow-x-auto gap-6 pb-8 snap-x custom-scrollbar">
+            {[...data.featuredArtifacts, ...data.artifacts.filter(a => !data.featuredArtifacts.includes(a.id)).sort(() => 0.5 - Math.random()).slice(0, 12).map(a => a.id)].map((artifactId, i) => {
               const artifact = data.artifacts.find(a => a.id === artifactId);
               if (!artifact) return null;
               return (
                 <Link 
-                  key={artifactId} 
+                  key={artifactId + i} 
                   href={`/${locale}/artifact/${artifact.id}`}
-                  className="museum-card flex flex-col items-center p-4 text-center group cursor-pointer hover:shadow-md transition"
+                  className="museum-card flex flex-col items-center p-4 text-center group cursor-pointer hover:shadow-md transition min-w-[220px] max-w-[220px] snap-center border border-slate-200 bg-white"
                 >
                   <div className="w-full aspect-square bg-slate-100 rounded mb-4 flex items-center justify-center group-hover:bg-slate-200 transition overflow-hidden">
                     {artifact.image ? (
@@ -82,8 +82,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                       <span className="text-slate-300 text-xs">Image</span>
                     )}
                   </div>
-                  <h4 className="font-semibold text-slate-800 text-sm mb-3 group-hover:text-gold-600 transition">
-                    {artifact.title[locale] || artifact.title.en}
+                  <h4 className="font-semibold text-slate-800 text-sm mb-3 group-hover:text-gold-600 transition line-clamp-2">
+                    {artifact.title[locale as keyof typeof artifact.title] || artifact.title.en}
                   </h4>
                   <span className="w-full py-1.5 bg-slate-500 text-white text-xs rounded group-hover:bg-slate-600 transition mt-auto">
                     {isArabic ? 'المزيد' : 'Learn More'}

@@ -48,7 +48,7 @@ export default function Navbar({ locale }: { locale: string }) {
 
   const navLinks = [
     { href: `/${locale}`, label: locale === 'ar' ? 'الرئيسية' : 'Home' },
-    { href: `/${locale}/categories`, label: locale === 'ar' ? 'المقتنيات' : 'Artifacts' },
+    { href: `/${locale}#categories`, label: locale === 'ar' ? 'المقتنيات' : 'Artifacts' },
     { href: `/${locale}/about`, label: locale === 'ar' ? 'من نحن' : 'About Us' },
   ];
 
@@ -59,8 +59,9 @@ export default function Navbar({ locale }: { locale: string }) {
           
           {/* Logo Section */}
           <Link href={`/${locale}`} className="flex items-center gap-3">
-            <div className="w-10 h-10 bg-gold-500 rounded flex items-center justify-center text-white font-bold">
-              M
+            <div className="w-10 h-10 rounded flex items-center justify-center text-white font-bold overflow-hidden relative">
+              <span className="absolute z-0 opacity-0">{/* M */}</span>
+              <img src="/images/museum-logo-sign.png" alt="Museum Logo" className="w-full h-full object-cover relative z-10" />
             </div>
             <div className="flex flex-col">
               <span className="font-bold text-lg text-slate-900">متحف دار المدينة</span>

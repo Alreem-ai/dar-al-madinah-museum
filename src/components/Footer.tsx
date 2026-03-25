@@ -6,7 +6,7 @@ export default function Footer({ locale }: { locale: string }) {
   return (
     <footer className="bg-slate-50 border-t border-slate-200 py-6 mt-12">
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-        <div className="flex gap-4">
+        <div className="flex gap-4 invisible">
           <Link href={`/${locale}/links`} className="hover:text-gold-600">
             {isArabic ? 'روابط سريعة' : 'Quick Links'}
           </Link>
