@@ -110,7 +110,7 @@ export default function Navbar({ locale }: { locale: string }) {
               </div>
             )}
 
-            <button className="p-2 text-slate-500 hover:text-slate-900 transition">
+            <button className="p-2 text-slate-500 hover:text-slate-900 transition hidden">
               <Search size={20} />
             </button>
           </div>
