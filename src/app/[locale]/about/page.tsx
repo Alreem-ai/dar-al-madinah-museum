@@ -73,9 +73,9 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             </div>
             
             {/* Image Placeholder */}
-            <div className="w-full h-64 bg-slate-100 flex items-center justify-center rounded overflow-hidden relative">
+            <div className="w-full h-64 bg-slate-100 flex items-center justify-center rounded overflow-hidden relative p-4">
               <span className="text-slate-400 absolute z-0">Image</span>
-              <img src="/images/museum-logo-sign.png" alt="Museum Exhibit" className="w-full h-full object-cover relative z-10" />
+              <img src="/images/official-museum-logo.png" alt="Dar Al-Madinah Museum Logo" className="w-full h-full object-contain relative z-10" />
             </div>
           </div>
           

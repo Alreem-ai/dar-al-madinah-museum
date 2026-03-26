@@ -76,14 +76,13 @@ export default function Navbar({ locale }: { locale: string }) {
         <div className="flex justify-between items-center h-20">
           
           {/* Logo Section */}
-          <Link href={`/${locale}`} className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded flex items-center justify-center text-white font-bold overflow-hidden relative">
-              <span className="absolute z-0 opacity-0">{/* M */}</span>
-              <img src="/images/museum-logo-sign.png" alt="Museum Logo" className="w-full h-full object-cover relative z-10" />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-lg text-slate-900">متحف دار المدينة</span>
-              <span className="text-xs text-slate-500">Dar Al-Madinah Museum</span>
+          <Link href={`/${locale}`} className="flex items-center">
+            <div className="h-12 w-48 relative overflow-hidden">
+              <img 
+                src="/images/official-museum-logo.png" 
+                alt="Dar Al-Madinah Museum" 
+                className="w-full h-full object-contain" 
+              />
             </div>
           </Link>
 
