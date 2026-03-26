@@ -21,7 +21,13 @@ export default function Footer({ locale }: { locale: string }) {
         </div>
         
         <div>
-          &copy; {new Date().getFullYear()} {isArabic ? 'متحف دار المدينة. جميع الحقوق محفوظة.' : 'Dar Al-Madinah Museum. All rights reserved.'}
+          &copy; {new Date().getFullYear()} {
+            locale === 'ar' ? 'متحف دار المدينة. جميع الحقوق محفوظة.' : 
+            locale === 'fr' ? 'Musée Dar Al-Madinah. Tous droits réservés.' :
+            locale === 'ur' ? 'دار المدینہ میوزیم۔ جملہ حقوق محفوظ ہیں۔' :
+            locale === 'id' ? 'Museum Dar Al-Madinah. Seluruh hak cipta dilindungi.' :
+            'Dar Al-Madinah Museum. All rights reserved.'
+          }
         </div>
       </div>
     </footer>

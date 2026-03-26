@@ -47,9 +47,27 @@ export default function Navbar({ locale }: { locale: string }) {
   };
 
   const navLinks = [
-    { href: `/${locale}`, label: locale === 'ar' ? 'الرئيسية' : 'Home' },
-    { href: `/${locale}#categories`, label: locale === 'ar' ? 'المقتنيات' : 'Artifacts' },
-    { href: `/${locale}/about`, label: locale === 'ar' ? 'من نحن' : 'About Us' },
+    { href: `/${locale}`, label: 
+      locale === 'ar' ? 'الرئيسية' : 
+      locale === 'fr' ? 'Accueil' : 
+      locale === 'ur' ? 'ہوم' : 
+      locale === 'id' ? 'Beranda' : 
+      'Home' 
+    },
+    { href: `/${locale}#categories`, label: 
+      locale === 'ar' ? 'المقتنيات' : 
+      locale === 'fr' ? 'Artefacts' : 
+      locale === 'ur' ? 'نوادرات' : 
+      locale === 'id' ? 'Artefak' : 
+      'Artifacts' 
+    },
+    { href: `/${locale}/about`, label: 
+      locale === 'ar' ? 'من نحن' : 
+      locale === 'fr' ? 'À Propos' : 
+      locale === 'ur' ? 'ہمارے بارے میں' : 
+      locale === 'id' ? 'Tentang Kami' : 
+      'About Us' 
+    },
   ];
 
   return (
@@ -139,7 +157,7 @@ export default function Navbar({ locale }: { locale: string }) {
               ))}
               <div className="pt-4 border-t border-slate-100">
                 <span className="text-sm font-semibold text-slate-500 mb-2 block p-2">
-                  {locale === 'ar' ? 'تغيير اللغة' : 'Change Language'}
+                  {locale === 'ar' ? 'تغيير اللغة' : locale === 'fr' ? 'Changer de langue' : locale === 'ur' ? 'زبان تبدیل کریں' : locale === 'id' ? 'Ubah Bahasa' : 'Change Language'}
                 </span>
                 <div className="grid grid-cols-2 gap-2">
                   {LANGUAGES.map((lang) => (
