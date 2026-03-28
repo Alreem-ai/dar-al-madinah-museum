@@ -101,7 +101,7 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
     const raw = art.audioUrl;
     if (!raw) return null;
     if (typeof raw === 'string') return raw;
-    return raw[activeLang] || raw.en || raw.ar || null;
+    return (raw as Record<string, string>)[activeLang] || raw.en || raw.ar || null;
   };
 
   const handleAudioBtn = async () => {
