@@ -2,8 +2,8 @@
 
 import data from '@/data.json';
 import Link from 'next/link';
-import { use, useState } from 'react';
-import { Play, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Play, Pause, ChevronLeft, ChevronRight, Volume2, VolumeX } from 'lucide-react';
+import { use, useState, useRef, useEffect } from 'react';
 
 const TRANSLATIONS: Record<string, any> = {
   ar: {
@@ -63,6 +63,47 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
   const [activeLang, setActiveLang] = useState<string>(locale);
   const [isExpanded, setIsExpanded] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  // Audio player state
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [isMuted, setIsMuted] = useState(false);
+
+  const togglePlay = () => {
+    if (!audioRef.current) return;
+    if (isPlaying) { audioRef.current.pause(); }
+    else { audioRef.current.play(); }
+    setIsPlaying(!isPlaying);
+  };
+
+  const toggleMute = () => {
+    if (!audioRef.current) return;
+    audioRef.current.muted = !isMuted;
+    setIsMuted(!isMuted);
+  };
+
+  const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!audioRef.current) return;
+    const val = Number(e.target.value);
+    audioRef.current.currentTime = val;
+    setCurrentTime(val);
+  };
+
+  const formatTime = (s: number) => {
+    if (!isFinite(s)) return '0:00';
+    const m = Math.floor(s / 60);
+    const sec = Math.floor(s % 60);
+    return `${m}:${sec.toString().padStart(2, '0')}`;
+  };
+
+  useEffect(() => {
+    setIsPlaying(false);
+    setCurrentTime(0);
+    setDuration(0);
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0; }
+  }, [activeLang]);
   
   const t = TRANSLATIONS[activeLang] || TRANSLATIONS.en;
   const isRTL = activeLang === 'ar' || activeLang === 'ur';
@@ -186,13 +227,63 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
             </div>
 
             <div className="mb-10 flex flex-col items-center">
-              <button className="flex items-center justify-center gap-3 bg-[#546e7a] text-white px-10 py-3 rounded-full hover:bg-slate-700 transition w-full max-w-[280px]">
-                <Play fill="white" size={24} />
-                <span className="text-lg font-medium tracking-wide">{t.audioTitle}</span>
-              </button>
-              <p className="text-sm text-slate-500 mt-3 text-center">
-                {t.audioSub}
-              </p>
+              {/* Show custom audio player for Arabic with audioUrl */}
+              {activeLang === 'ar' && (artifact as any).audioUrl ? (
+                <div className="w-full max-w-[360px] flex flex-col items-center gap-3">
+                  {/* Hidden native audio element */}
+                  <audio
+                    ref={audioRef}
+                    src={(artifact as any).audioUrl}
+                    onTimeUpdate={() => setCurrentTime(audioRef.current?.currentTime || 0)}
+                    onLoadedMetadata={() => setDuration(audioRef.current?.duration || 0)}
+                    onEnded={() => setIsPlaying(false)}
+                    preload="metadata"
+                  />
+
+                  {/* Play/Pause Button */}
+                  <button
+                    onClick={togglePlay}
+                    className="flex items-center justify-center gap-3 bg-[#546e7a] text-white px-10 py-3 rounded-full hover:bg-slate-700 transition w-full"
+                  >
+                    {isPlaying
+                      ? <Pause fill="white" size={22} />
+                      : <Play fill="white" size={22} />}
+                    <span className="text-lg font-medium tracking-wide">{t.audioTitle}</span>
+                  </button>
+
+                  {/* Progress Bar + Time + Mute */}
+                  <div className="w-full flex items-center gap-2 bg-slate-100 rounded-full px-4 py-2 shadow-inner">
+                    <span className="text-xs text-slate-500 w-10 text-right tabular-nums shrink-0">{formatTime(currentTime)}</span>
+                    <input
+                      type="range"
+                      min={0}
+                      max={duration || 0}
+                      step={0.1}
+                      value={currentTime}
+                      onChange={handleSeek}
+                      className="flex-1 accent-[#546e7a] h-1 rounded-full cursor-pointer"
+                      style={{ direction: 'ltr' }}
+                    />
+                    <span className="text-xs text-slate-500 w-10 tabular-nums shrink-0">{formatTime(duration)}</span>
+                    <button onClick={toggleMute} className="text-slate-500 hover:text-slate-800 transition shrink-0">
+                      {isMuted ? <VolumeX size={16} /> : <Volume2 size={16} />}
+                    </button>
+                  </div>
+
+                  <p className="text-sm text-slate-500 text-center">{t.audioSub}</p>
+                </div>
+              ) : (
+                /* Original button for non-Arabic or no audio */
+                <>
+                  <button className="flex items-center justify-center gap-3 bg-[#546e7a] text-white px-10 py-3 rounded-full hover:bg-slate-700 transition w-full max-w-[280px]">
+                    <Play fill="white" size={24} />
+                    <span className="text-lg font-medium tracking-wide">{t.audioTitle}</span>
+                  </button>
+                  <p className="text-sm text-slate-500 mt-3 text-center">
+                    {t.audioSub}
+                  </p>
+                </>
+              )}
               <div className="w-full h-px bg-slate-200 mt-8" />
             </div>
 
