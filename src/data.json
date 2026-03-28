@@ -117,7 +117,13 @@
                 "id": "Madinah, Museum Dar Al-Madinah"
             },
             "image": "/images/artifacts/arrival.jpg",
-            "audioUrl": "/audio/model-1-qudoom-al-nabi.mp3"
+            "audioUrl": {
+                "ar": "/prohpets_arrival.mp3",
+                "en": "/english_prophets_arrival.mp3",
+                "fr": "/French_prophets_arrival.mp3",
+                "ur": "/Urdu_prophets_arrival.mp3",
+                "id": "/Indo_prophets_arrival.mp3"
+            }
         },
         {
             "id": "dome-of-the-rock",

@@ -78,37 +78,62 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
     setActiveImageIndex(0);
   }, [currentIndex]);
 
-  // Audio player state
-  const audioRef = useRef<HTMLAudioElement>(null);
+  // Audio player — plain ref stores the Audio instance (no DOM element needed)
+  const playerRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [audioDuration, setAudioDuration] = useState(0);
   const [isMuted, setIsMuted] = useState(false);
 
-  // Reset audio when switching artifact
+  // Destroy audio when switching artifact or language
   useEffect(() => {
+    const p = playerRef.current;
+    if (p) { p.pause(); playerRef.current = null; }
     setIsPlaying(false);
     setCurrentTime(0);
     setAudioDuration(0);
-    if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0; }
   }, [currentIndex, activeLang]);
 
-  const togglePlay = () => {
-    if (!audioRef.current) return;
-    if (isPlaying) { audioRef.current.pause(); } else { audioRef.current.play(); }
-    setIsPlaying(!isPlaying);
+  const getAudioUrl = () => {
+    const arts = data.artifacts.filter((a: any) => a.category === id);
+    return (arts[currentIndex] as any)?.audioUrl as string | undefined;
+  };
+
+  const handleAudioBtn = async () => {
+    if (activeLang !== 'ar') return;
+    const url = getAudioUrl();
+    if (!url) return;
+
+    // Create player on first press
+    if (!playerRef.current) {
+      const p = new Audio(url);
+      p.addEventListener('timeupdate',    () => setCurrentTime(p.currentTime));
+      p.addEventListener('loadedmetadata',() => setAudioDuration(p.duration));
+      p.addEventListener('ended',         () => setIsPlaying(false));
+      playerRef.current = p;
+    }
+
+    const p = playerRef.current;
+    if (p.paused) {
+      p.play().then(() => setIsPlaying(true)).catch(() => setIsPlaying(false));
+    } else {
+      p.pause();
+      setIsPlaying(false);
+    }
   };
 
   const toggleMute = () => {
-    if (!audioRef.current) return;
-    audioRef.current.muted = !isMuted;
+    const p = playerRef.current;
+    if (!p) return;
+    p.muted = !isMuted;
     setIsMuted(!isMuted);
   };
 
   const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!audioRef.current) return;
+    const p = playerRef.current;
+    if (!p) return;
     const val = Number(e.target.value);
-    audioRef.current.currentTime = val;
+    p.currentTime = val;
     setCurrentTime(val);
   };
 
@@ -285,19 +310,9 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
             <div className="mb-10 flex flex-col items-center">
               {activeLang === 'ar' && currentArtifact && (currentArtifact as any).audioUrl ? (
                 <div className="w-full max-w-[360px] flex flex-col items-center gap-3">
-                  {/* Hidden native audio element */}
-                  <audio
-                    ref={audioRef}
-                    src={(currentArtifact as any).audioUrl}
-                    onTimeUpdate={() => setCurrentTime(audioRef.current?.currentTime || 0)}
-                    onLoadedMetadata={() => setAudioDuration(audioRef.current?.duration || 0)}
-                    onEnded={() => setIsPlaying(false)}
-                    preload="metadata"
-                  />
-
                   {/* Play/Pause Button */}
                   <button
-                    onClick={togglePlay}
+                    onClick={handleAudioBtn}
                     className="flex items-center justify-center gap-3 bg-[#546e7a] text-white px-10 py-3 rounded-full hover:bg-slate-700 transition w-full"
                   >
                     {isPlaying ? <Pause fill="white" size={22} /> : <Play fill="white" size={22} />}

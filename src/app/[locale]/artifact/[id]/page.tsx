@@ -71,23 +71,65 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
   const [duration, setDuration] = useState(0);
   const [isMuted, setIsMuted] = useState(false);
 
-  const togglePlay = () => {
-    if (!audioRef.current) return;
-    if (isPlaying) { audioRef.current.pause(); }
-    else { audioRef.current.play(); }
-    setIsPlaying(!isPlaying);
+  const audioUrl = (() => {
+    const raw = (artifact as any).audioUrl;
+    if (!raw) return null;
+    if (typeof raw === 'string') return raw;
+    return raw[activeLang] || raw.en || raw.ar || null;
+  })();
+
+  useEffect(() => {
+    const el = audioRef.current;
+    if (!el) return;
+    el.pause();
+    setIsPlaying(false);
+    setCurrentTime(0);
+    setDuration(0);
+    if (audioUrl) {
+      el.src = audioUrl;
+      el.load();
+    } else {
+      el.removeAttribute('src');
+      el.load();
+    }
+  }, [artifact, activeLang, audioUrl]);
+
+  const togglePlay = async () => {
+    const el = audioRef.current;
+    if (!el || !audioUrl) return;
+    if (isPlaying) {
+      el.pause();
+      setIsPlaying(false);
+      return;
+    }
+
+    // Always ensure the selected source is loaded before play
+    const resolvedUrl = new URL(audioUrl, window.location.origin).href;
+    if (el.src !== resolvedUrl) {
+      el.src = audioUrl;
+      el.load();
+    }
+
+    try {
+      await el.play();
+      setIsPlaying(true);
+    } catch {
+      setIsPlaying(false);
+    }
   };
 
   const toggleMute = () => {
-    if (!audioRef.current) return;
-    audioRef.current.muted = !isMuted;
+    const el = audioRef.current;
+    if (!el) return;
+    el.muted = !isMuted;
     setIsMuted(!isMuted);
   };
 
   const handleSeek = (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (!audioRef.current) return;
+    const el = audioRef.current;
+    if (!el) return;
     const val = Number(e.target.value);
-    audioRef.current.currentTime = val;
+    el.currentTime = val;
     setCurrentTime(val);
   };
 
@@ -97,13 +139,6 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
     const sec = Math.floor(s % 60);
     return `${m}:${sec.toString().padStart(2, '0')}`;
   };
-
-  useEffect(() => {
-    setIsPlaying(false);
-    setCurrentTime(0);
-    setDuration(0);
-    if (audioRef.current) { audioRef.current.pause(); audioRef.current.currentTime = 0; }
-  }, [activeLang]);
   
   const t = TRANSLATIONS[activeLang] || TRANSLATIONS.en;
   const isRTL = activeLang === 'ar' || activeLang === 'ur';
@@ -118,6 +153,14 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
 
   return (
     <div className="bg-white min-h-screen">
+      <audio
+        ref={audioRef}
+        onTimeUpdate={() => setCurrentTime(audioRef.current?.currentTime || 0)}
+        onLoadedMetadata={() => setDuration(audioRef.current?.duration || 0)}
+        onEnded={() => setIsPlaying(false)}
+        onError={() => setIsPlaying(false)}
+        style={{ display: 'none' }}
+      />
       <div className="container mx-auto px-4 py-8 max-w-5xl">
         
         {/* Top Navigation */}
@@ -227,20 +270,10 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
             </div>
 
             <div className="mb-10 flex flex-col items-center">
-              {/* Show custom audio player for Arabic with audioUrl */}
-              {activeLang === 'ar' && (artifact as any).audioUrl ? (
+              {/* Show custom audio player if audioUrl exists */}
+              {audioUrl ? (
                 <div className="w-full max-w-[360px] flex flex-col items-center gap-3">
-                  {/* Hidden native audio element */}
-                  <audio
-                    ref={audioRef}
-                    src={(artifact as any).audioUrl}
-                    onTimeUpdate={() => setCurrentTime(audioRef.current?.currentTime || 0)}
-                    onLoadedMetadata={() => setDuration(audioRef.current?.duration || 0)}
-                    onEnded={() => setIsPlaying(false)}
-                    preload="metadata"
-                  />
-
-                  {/* Play/Pause Button */}
+                  {/* Play/Pause Button   */}
                   <button
                     onClick={togglePlay}
                     className="flex items-center justify-center gap-3 bg-[#546e7a] text-white px-10 py-3 rounded-full hover:bg-slate-700 transition w-full"
@@ -273,7 +306,7 @@ export default function ArtifactPage({ params }: { params: Promise<{ locale: str
                   <p className="text-sm text-slate-500 text-center">{t.audioSub}</p>
                 </div>
               ) : (
-                /* Original button for non-Arabic or no audio */
+                /* Original button for no audio */
                 <>
                   <button className="flex items-center justify-center gap-3 bg-[#546e7a] text-white px-10 py-3 rounded-full hover:bg-slate-700 transition w-full max-w-[280px]">
                     <Play fill="white" size={24} />
