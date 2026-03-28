@@ -96,11 +96,15 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
 
   const getAudioUrl = () => {
     const arts = data.artifacts.filter((a: any) => a.category === id);
-    return (arts[currentIndex] as any)?.audioUrl as string | undefined;
+    const art = arts[currentIndex];
+    if (!art) return null;
+    const raw = art.audioUrl;
+    if (!raw) return null;
+    if (typeof raw === 'string') return raw;
+    return raw[activeLang] || raw.en || raw.ar || null;
   };
 
   const handleAudioBtn = async () => {
-    if (activeLang !== 'ar') return;
     const url = getAudioUrl();
     if (!url) return;
 
@@ -308,7 +312,7 @@ export default function CategoryPage({ params }: { params: Promise<{ locale: str
 
             {/* Audio Section */}
             <div className="mb-10 flex flex-col items-center">
-              {activeLang === 'ar' && currentArtifact && (currentArtifact as any).audioUrl ? (
+              {currentArtifact && getAudioUrl() ? (
                 <div className="w-full max-w-[360px] flex flex-col items-center gap-3">
                   {/* Play/Pause Button */}
                   <button
