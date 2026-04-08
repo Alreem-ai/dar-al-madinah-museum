@@ -25,50 +25,107 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
           </Link>
         </div>
 
-        {/* New: Project Team Introduction */}
-        <div className="container mx-auto px-4 relative z-10 max-w-3xl text-center" dir="rtl">
+        {/* Project Team Introduction — fully translated */}
+        {(() => {
+          const isRTL = locale === 'ar' || locale === 'ur';
 
-          {/* Section Title */}
-          <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-4">
-            نبذة عن فريق المشروع
-          </h1>
+          const content = {
+            ar: {
+              title: 'نبذة عن فريق المشروع',
+              intro: 'نحن طالبات قسم المعلومات ومصادر التعلم بجامعة طيبة',
+              college: '[كلية الآداب والعلوم الإنسانية]',
+              supervisor: 'تحت إشراف الدكتورة / رحاب سويفي',
+              goal: 'يهدف مشروعنا إلى تنفيذ خطة تحول رقمي متكاملة لمتحف دار المدينة، لتحديث طرق عرض التراث المحلي وتحسين وصول الجمهور إلى مقتنيات المتحف وخدماته.',
+              section2: 'مضمون المشروع وأهميته',
+              body: 'يركز المشروع على رقمنة مقتنيات المتحف وتصميم نظام معلوماتي تفاعلي يشمل: فهرسة رقمية للمجموعات، إنشاء قاعدة بيانات قابلة للبحث، وتصميم واجهة مستخدم لموقع إلكتروني يتيح للزوار استكشاف المقتنيات والقصص التاريخية المرتبطة بها.',
+            },
+            en: {
+              title: 'About the Project Team',
+              intro: 'We are students of the Department of Information and Learning Resources at Taibah University',
+              college: '[College of Arts and Humanities]',
+              supervisor: 'Under the supervision of Dr. Rehab Suwaifi',
+              goal: 'Our project aims to implement a comprehensive digital transformation plan for Dar Al-Madinah Museum, modernizing the ways local heritage is presented and improving public access to the museum\'s collections and services.',
+              section2: 'Project Content & Significance',
+              body: 'The project focuses on digitizing the museum\'s collections and designing an interactive information system that includes: digital cataloging of collections, creating a searchable database, and designing a user interface for a website that allows visitors to explore artifacts and the historical stories associated with them.',
+            },
+            fr: {
+              title: 'À Propos de l\'Équipe du Projet',
+              intro: 'Nous sommes des étudiantes du Département des Sciences de l\'Information et des Ressources d\'Apprentissage de l\'Université de Taibah',
+              college: '[Faculté des Arts et des Sciences Humaines]',
+              supervisor: 'Sous la supervision de Dr. Rehab Suwaifi',
+              goal: 'Notre projet vise à mettre en œuvre un plan de transformation numérique intégré pour le Musée Dar Al-Madinah, en modernisant les méthodes de présentation du patrimoine local et en améliorant l\'accès du public aux collections et services du musée.',
+              section2: 'Contenu du Projet et son Importance',
+              body: 'Le projet se concentre sur la numérisation des collections du musée et la conception d\'un système d\'information interactif comprenant : un catalogage numérique des collections, la création d\'une base de données consultable, et la conception d\'une interface utilisateur pour un site web permettant aux visiteurs d\'explorer les artefacts et les histoires historiques qui y sont associées.',
+            },
+            ur: {
+              title: 'پروجیکٹ ٹیم کا تعارف',
+              intro: 'ہم طیبہ یونیورسٹی میں انفارمیشن اینڈ لرننگ ریسورسز ڈیپارٹمنٹ کی طالبات ہیں',
+              college: '[کالج آف آرٹس اینڈ ہیومینٹیز]',
+              supervisor: 'ڈاکٹر رحاب سویفی کی نگرانی میں',
+              goal: 'ہمارے پروجیکٹ کا مقصد دار المدینہ میوزیم کے لیے ایک جامع ڈیجیٹل تبدیلی کا منصوبہ نافذ کرنا ہے، تاکہ مقامی ورثے کی پیشکش کے طریقوں کو جدید بنایا جائے اور عوام کی میوزیم کے مجموعوں اور خدمات تک رسائی کو بہتر بنایا جائے۔',
+              section2: 'پروجیکٹ کا مواد اور اہمیت',
+              body: 'یہ پروجیکٹ میوزیم کے مجموعوں کی ڈیجیٹائزیشن اور ایک انٹرایکٹو انفارمیشن سسٹم ڈیزائن کرنے پر مرکوز ہے جس میں شامل ہیں: مجموعوں کی ڈیجیٹل فہرست سازی، قابلِ تلاش ڈیٹا بیس کی تشکیل، اور ایک ویب سائٹ کے لیے یوزر انٹرفیس ڈیزائن کرنا جو زائرین کو نوادرات اور ان سے وابستہ تاریخی کہانیاں دریافت کرنے کی اجازت دے۔',
+            },
+            id: {
+              title: 'Tentang Tim Proyek',
+              intro: 'Kami adalah mahasiswi Departemen Informasi dan Sumber Daya Pembelajaran di Universitas Taibah',
+              college: '[Fakultas Seni dan Humaniora]',
+              supervisor: 'Di bawah bimbingan Dr. Rehab Suwaifi',
+              goal: 'Proyek kami bertujuan untuk mengimplementasikan rencana transformasi digital yang komprehensif untuk Museum Dar Al-Madinah, memodernisasi cara penyajian warisan lokal dan meningkatkan akses publik terhadap koleksi dan layanan museum.',
+              section2: 'Konten Proyek dan Signifikansinya',
+              body: 'Proyek ini berfokus pada digitalisasi koleksi museum dan perancangan sistem informasi interaktif yang mencakup: katalogisasi digital koleksi, pembuatan basis data yang dapat dicari, dan perancangan antarmuka pengguna untuk situs web yang memungkinkan pengunjung menjelajahi artefak dan kisah sejarah yang terkait dengannya.',
+            },
+          };
 
-          {/* Team paragraph */}
-          <div className="text-slate-700 leading-loose text-base md:text-lg space-y-3 text-right">
-            <p>
-              نحن طالبات قسم المعلومات ومصادر التعلم بجامعة طيبة
-              <br />
-              <span className="font-semibold text-slate-800">[كلية الآداب والعلوم الإنسانية]</span>
-            </p>
-            <p>
-              تحت إشراف الدكتورة /&nbsp;<span className="font-semibold text-slate-800">رحاب سويفي</span>
-            </p>
-            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-              يهدف مشروعنا إلى تنفيذ خطة تحول رقمي متكاملة لمتحف دار المدينة، لتحديث طرق عرض التراث المحلي وتحسين وصول الجمهور إلى مقتنيات المتحف وخدماته.
-            </p>
-          </div>
+          const c = content[locale as keyof typeof content] || content.en;
 
-          {/* Divider */}
-          <div className="w-24 h-0.5 bg-slate-300 mx-auto my-6" />
+          return (
+            <div
+              className="container mx-auto px-4 relative z-10 max-w-3xl text-center"
+              dir={isRTL ? 'rtl' : 'ltr'}
+            >
+              {/* Section Title */}
+              <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-4">
+                {c.title}
+              </h1>
 
-          {/* Section Title 2 */}
-          <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-4 text-right">
-            مضمون المشروع وأهميته
-          </h2>
-          <p className="text-slate-600 text-sm md:text-base leading-relaxed text-right">
-            يركز المشروع على رقمنة مقتنيات المتحف وتصميم نظام معلوماتي تفاعلي يشمل: فهرسة رقمية للمجموعات، إنشاء قاعدة بيانات قابلة للبحث، وتصميم واجهة مستخدم لموقع إلكتروني يتيح للزوار استكشاف المقتنيات والقصص التاريخية المرتبطة بها.
-          </p>
+              {/* Team paragraph */}
+              <div className={`text-slate-700 leading-loose text-base md:text-lg space-y-3 ${isRTL ? 'text-right' : 'text-left'}`}>
+                <p>
+                  {c.intro}
+                  <br />
+                  <span className="font-semibold text-slate-800">{c.college}</span>
+                </p>
+                <p>
+                  <span className="font-semibold text-slate-800">{c.supervisor}</span>
+                </p>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+                  {c.goal}
+                </p>
+              </div>
 
-          {/* Museum Official Logo — below the passage */}
-          <div className="mt-10 flex justify-center">
-            <img
-              src="/images/official-museum-logo.png"
-              alt="متحف دار المدينة"
-              className="h-24 md:h-32 object-contain"
-            />
-          </div>
+              {/* Divider */}
+              <div className="w-24 h-0.5 bg-slate-300 mx-auto my-6" />
 
-        </div>
+              {/* Section Title 2 */}
+              <h2 className={`text-xl md:text-2xl font-bold text-slate-900 mb-4 ${isRTL ? 'text-right' : 'text-left'}`}>
+                {c.section2}
+              </h2>
+              <p className={`text-slate-600 text-sm md:text-base leading-relaxed ${isRTL ? 'text-right' : 'text-left'}`}>
+                {c.body}
+              </p>
+
+              {/* Museum Official Logo */}
+              <div className="mt-10 flex justify-center">
+                <img
+                  src="/images/official-museum-logo.png"
+                  alt="Dar Al-Madinah Museum"
+                  className="h-24 md:h-32 object-contain"
+                />
+              </div>
+            </div>
+          );
+        })()}
       </section>
 
       {/* Categories Grid */}
