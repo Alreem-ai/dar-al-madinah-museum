@@ -10,19 +10,64 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     <div className="bg-background">
       {/* Hero Section */}
       <section className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
-        {/* Subtle background pattern could go here */}
-        <div className="container mx-auto px-4 relative z-10 text-center">
+        {/* Original welcome message — kept hidden, not deleted */}
+        <div className="hidden">
           <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
             {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
           </h1>
           <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-8">
-            {isArabic 
-              ? 'استكشف الإرث الحضاري الإسلامي وتاريخ المدينة المنورة عبر عصورها المختلفة' 
+            {isArabic
+              ? 'استكشف الإرث الحضاري الإسلامي وتاريخ المدينة المنورة عبر عصورها المختلفة'
               : 'Explore the Islamic cultural heritage and the history of Medina through its different eras'}
           </p>
           <Link href={`/${locale}#categories`} className="bg-slate-500 text-white px-8 py-3 rounded-full hover:bg-slate-600 transition shadow-sm font-medium inline-block">
             {isArabic ? 'استكشف الآن' : 'Explore Now'}
           </Link>
+        </div>
+
+        {/* New: Project Team Introduction */}
+        <div className="container mx-auto px-4 relative z-10 max-w-3xl text-center" dir="rtl">
+
+          {/* Section Title */}
+          <h1 className="text-2xl md:text-3xl font-bold text-slate-900 mb-6 border-b border-slate-200 pb-4">
+            نبذة عن فريق المشروع
+          </h1>
+
+          {/* Team paragraph */}
+          <div className="text-slate-700 leading-loose text-base md:text-lg space-y-3 text-right">
+            <p>
+              نحن طالبات قسم المعلومات ومصادر التعلم بجامعة طيبة
+              <br />
+              <span className="font-semibold text-slate-800">[كلية الآداب والعلوم الإنسانية]</span>
+            </p>
+            <p>
+              تحت إشراف الدكتورة /&nbsp;<span className="font-semibold text-slate-800">رحاب سويفي</span>
+            </p>
+            <p className="text-slate-600 text-sm md:text-base leading-relaxed">
+              يهدف مشروعنا إلى تنفيذ خطة تحول رقمي متكاملة لمتحف دار المدينة، لتحديث طرق عرض التراث المحلي وتحسين وصول الجمهور إلى مقتنيات المتحف وخدماته.
+            </p>
+          </div>
+
+          {/* Divider */}
+          <div className="w-24 h-0.5 bg-slate-300 mx-auto my-6" />
+
+          {/* Section Title 2 */}
+          <h2 className="text-xl md:text-2xl font-bold text-slate-900 mb-4 text-right">
+            مضمون المشروع وأهميته
+          </h2>
+          <p className="text-slate-600 text-sm md:text-base leading-relaxed text-right">
+            يركز المشروع على رقمنة مقتنيات المتحف وتصميم نظام معلوماتي تفاعلي يشمل: فهرسة رقمية للمجموعات، إنشاء قاعدة بيانات قابلة للبحث، وتصميم واجهة مستخدم لموقع إلكتروني يتيح للزوار استكشاف المقتنيات والقصص التاريخية المرتبطة بها.
+          </p>
+
+          {/* Museum Official Logo — below the passage */}
+          <div className="mt-10 flex justify-center">
+            <img
+              src="/images/official-museum-logo.png"
+              alt="متحف دار المدينة"
+              className="h-24 md:h-32 object-contain"
+            />
+          </div>
+
         </div>
       </section>
 
