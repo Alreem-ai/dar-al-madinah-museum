@@ -34,8 +34,8 @@
     background-image: url('/images/official-museum-logo.png');
     background-repeat: repeat;
     background-position: top left;
-    background-size: 150px; /* Branded pattern size */
-    opacity: 0.06; /* Subtle but visible throughout */
+    background-size: 280px; /* Larger as per image */
+    opacity: 0.12; /* More visible as per image */
     z-index: -1;
     pointer-events: none;
   }

@@ -9,27 +9,19 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <div className="bg-background">
       {/* Hero Section */}
-      <section className="bg-slate-50 border-b border-slate-200 py-16 relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-            {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
+          <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tight text-[#064e3b]">
+            {isArabic ? 'متحف دار المدينة' : 'Dar Al-Madinah Museum'}
           </h1>
-          <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-8">
+          <p className="text-xl md:text-2xl text-slate-800 font-bold max-w-3xl mx-auto mb-10 leading-relaxed">
             {isArabic
               ? 'استكشف الإرث الحضاري الإسلامي وتاريخ المدينة المنورة عبر عصورها المختلفة'
               : 'Explore the Islamic cultural heritage and the history of Medina through its different eras'}
           </p>
-          <Link href={`/${locale}#categories`} className="bg-slate-500 text-white px-8 py-3 rounded-full hover:bg-slate-600 transition shadow-sm font-medium inline-block mb-10">
+          <Link href={`/${locale}#categories`} className="bg-[#2d436a] text-white px-12 py-4 rounded-full hover:bg-slate-800 transition shadow-xl font-bold text-lg inline-block">
             {isArabic ? 'استكشف الآن' : 'Explore Now'}
           </Link>
-          
-          <div className="flex justify-center mt-4">
-            <img 
-              src="/images/official-museum-logo.png" 
-              alt="Dar Al-Madinah Museum" 
-              className="h-20 md:h-24 object-contain opacity-90"
-            />
-          </div>
         </div>
       </section>
 
