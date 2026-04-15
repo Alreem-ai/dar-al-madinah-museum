@@ -41,10 +41,10 @@ export default async function RootLayout({
         <div 
           className="fixed inset-0 pointer-events-none z-[-1]" 
           style={{ 
-            backgroundImage: "url('/images/official-museum-logo.png')", 
+            backgroundImage: "url('/images/logo-watermark-tile.png')", 
             backgroundRepeat: "repeat", 
-            backgroundSize: "250px",
-            opacity: 0.15
+            backgroundSize: "500px",
+            opacity: 1
           }}
         />
         <Navbar locale={locale} />
