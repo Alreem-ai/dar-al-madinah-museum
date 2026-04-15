@@ -44,7 +44,7 @@ export default async function RootLayout({
             backgroundImage: "url('/images/official-museum-logo.png')", 
             backgroundRepeat: "repeat", 
             backgroundSize: "250px",
-            opacity: 0.05
+            opacity: 0.15
           }}
         />
         <Navbar locale={locale} />
