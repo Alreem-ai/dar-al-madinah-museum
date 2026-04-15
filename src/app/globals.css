@@ -20,6 +20,25 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    position: relative;
+    min-h-screen;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/official-museum-logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 30%; /* Subtle size */
+    opacity: 0.05; /* Very faint watermark */
+    z-index: -1;
+    pointer-events: none;
   }
 }
 
