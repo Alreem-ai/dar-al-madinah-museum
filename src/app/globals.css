@@ -24,13 +24,20 @@
     min-height: 100vh;
   }
 
-  /* Make sections semi-transparent to show the logo pattern from the layout background */
-  section, .bg-slate-50, footer {
-    background-color: rgba(248, 250, 252, 0.4) !important;
+  /* Header and footer stay solid white */
+  nav, footer {
+    background-color: #ffffff !important;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Page content sections are semi-transparent to show the logo watermark */
+  section, .bg-slate-50 {
+    background-color: rgba(248, 250, 252, 0.5) !important;
   }
   
-  .bg-white, .museum-card, nav {
-    background-color: rgba(255, 255, 255, 0.5) !important;
+  .bg-white, .museum-card {
+    background-color: rgba(255, 255, 255, 0.6) !important;
   }
 }
 
