@@ -21,7 +21,7 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
     position: relative;
-    min-h-screen;
+    min-height: 100vh;
   }
 
   body::before {
