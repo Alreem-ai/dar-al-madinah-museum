@@ -36,7 +36,17 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} dir={dir}>
-      <body className={`${geistSans.variable} ${geistMono.variable} flex flex-col min-h-screen`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} flex flex-col min-h-screen relative`}>
+        {/* Global Repeating Logo Background Pattern */}
+        <div 
+          className="fixed inset-0 pointer-events-none z-[-1]" 
+          style={{ 
+            backgroundImage: "url('/images/official-museum-logo.png')", 
+            backgroundRepeat: "repeat", 
+            backgroundSize: "280px",
+            opacity: 0.12
+          }}
+        />
         <Navbar locale={locale} />
         <main className="flex-grow">
           {children}

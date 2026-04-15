@@ -24,29 +24,13 @@
     min-height: 100vh;
   }
 
-  body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/images/official-museum-logo.png');
-    background-repeat: repeat;
-    background-position: top left;
-    background-size: 280px; /* Larger as per image */
-    opacity: 0.12; /* More visible as per image */
-    z-index: -1;
-    pointer-events: none;
-  }
-
-  /* Make sections semi-transparent to show the logo pattern */
-  section, .bg-slate-50 {
-    background-color: rgba(248, 250, 252, 0.8) !important;
+  /* Make sections semi-transparent to show the logo pattern from the layout background */
+  section, .bg-slate-50, footer {
+    background-color: rgba(248, 250, 252, 0.7) !important;
   }
   
-  .bg-white, .museum-card {
-    background-color: rgba(255, 255, 255, 0.85) !important;
+  .bg-white, .museum-card, nav {
+    background-color: rgba(255, 255, 255, 0.75) !important;
   }
 }
 
