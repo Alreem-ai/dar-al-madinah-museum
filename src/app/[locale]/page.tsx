@@ -11,26 +11,30 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* 1. Header Hero Banner (Dark Style) */}
-      <section className="relative h-[400px] w-full bg-slate-900 overflow-hidden flex flex-col justify-center items-center">
+      {/* 1. Header Hero Banner (Dark Style with Filter) */}
+      <section className="relative h-[450px] w-full bg-slate-900 overflow-hidden flex flex-col justify-center items-center">
+        {/* Background Overlay Filter */}
+        <div className="absolute inset-0 bg-black/50 z-[1]" />
+        
         {/* Logo centered in the dark banner */}
         <div className="relative z-10 w-full max-w-2xl px-4 flex justify-center">
           <img 
             src="/images/official-museum-logo.png" 
             alt="Dar Al-Madinah Museum" 
-            className="h-40 md:h-60 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-transform duration-700 hover:scale-[1.02]" 
+            className="h-48 md:h-72 w-auto object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] transition-transform duration-700 hover:scale-[1.02]" 
           />
         </div>
-        {/* Subtle Background pattern/gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 pointer-events-none" />
+        
+        {/* Radial Gradient for depth */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.6)_100%)] z-[2] pointer-events-none" />
       </section>
 
-      {/* 2. Welcome Content & Search (Style: Text Underneath the Picture) */}
-      <section className="relative w-full bg-white pb-32 border-b border-slate-100 -mt-10 z-20">
+      {/* 2. Welcome Content & Search (Style: Reveal on Scroll) */}
+      <section className="relative w-full bg-white pb-32 border-b border-slate-100 -mt-1 z-20">
         <div className="container mx-auto px-4">
           
-          {/* Welcome Text Section */}
-          <div className="text-center mb-16 pt-20">
+          {/* Welcome Text Section - Start appearing sooner */}
+          <div className="text-center mb-16 pt-24 md:pt-32">
             <ScrollReveal>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
                 {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
