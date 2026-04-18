@@ -122,43 +122,8 @@ export default function HeroSearch({ locale }: { locale: string }) {
           </div>
 
           {/* Filters & Action Button Row */}
-          <div className="flex flex-col md:flex-row gap-4 justify-between items-start md:items-center">
+          <div className="flex flex-col md:flex-row gap-4 justify-end items-start md:items-center">
             
-            <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
-              {/* Keywords Dropdown */}
-              <div className="relative w-full sm:w-48">
-                <select 
-                  value={keyword}
-                  onChange={(e) => setKeyword(e.target.value)}
-                  className="w-full appearance-none bg-white border border-slate-300 text-slate-700 py-2.5 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400"
-                >
-                  <option value="">{currT.keywords}</option>
-                  <option value="history">{locale === 'ar' ? 'التاريخ' : 'History'}</option>
-                  <option value="art">{locale === 'ar' ? 'الفنون' : 'Arts'}</option>
-                  <option value="manuscripts">{locale === 'ar' ? 'المخطوطات' : 'Manuscripts'}</option>
-                </select>
-                <div className={`absolute top-1/2 -translate-y-1/2 ${isRTL ? 'left-3' : 'right-3'} pointer-events-none text-slate-500`}>
-                  <ChevronDown size={16} />
-                </div>
-              </div>
-
-              {/* All Sources Dropdown */}
-              <div className="relative w-full sm:w-48">
-                <select 
-                  value={source}
-                  onChange={(e) => setSource(e.target.value)}
-                  className="w-full appearance-none bg-white border border-slate-300 text-slate-700 py-2.5 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400"
-                >
-                  <option value="">{currT.allSources}</option>
-                  <option value="museum">{locale === 'ar' ? 'محتوى المتحف' : 'Museum Content'}</option>
-                  <option value="external">{locale === 'ar' ? 'المصادر الخارجية' : 'External Sources'}</option>
-                </select>
-                <div className={`absolute top-1/2 -translate-y-1/2 ${isRTL ? 'left-3' : 'right-3'} pointer-events-none text-slate-500`}>
-                  <ChevronDown size={16} />
-                </div>
-              </div>
-            </div>
-
             {/* Submit Button */}
             <button className="w-full md:w-auto bg-[#8b2c2c] hover:bg-[#702020] text-white px-8 py-2.5 rounded-md font-medium transition shadow-sm flex items-center justify-center gap-2">
               <Search size={18} />
