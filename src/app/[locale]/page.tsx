@@ -1,6 +1,8 @@
 import data from '@/data.json';
 import Link from 'next/link';
 
+import HeroSearch from '@/components/HeroSearch';
+
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const resolvedParams = await params;
   const locale = resolvedParams.locale as keyof typeof data.categories[0]['title'];
@@ -8,22 +10,33 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* Hero Section */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10 text-center">
-          <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tight text-[#064e3b]">
-            {isArabic ? 'متحف دار المدينة' : 'Dar Al-Madinah Museum'}
+      {/* 1. Header/Hero Banner (صورة) */}
+      <section className="relative h-[300px] md:h-[400px] w-full bg-slate-900 overflow-hidden">
+        {/* Background Image (using one of our museum photos or a generic pattern for now) */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
+          style={{ backgroundImage: "url('/images/official-museum-logo.png')", backgroundSize: 'contain', backgroundPosition: 'center', backgroundColor: '#0f172a' }}
+        />
+        {/* Overlay to ensure contrast */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+        
+        {/* Optional Welcome Text inside the banner */}
+        <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-10 text-center pt-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-md">
+            {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
           </h1>
-          <p className="text-xl md:text-2xl text-slate-800 font-bold max-w-3xl mx-auto mb-10 leading-relaxed">
+          <p className="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto drop-shadow-md">
             {isArabic
-              ? 'استكشف الإرث الحضاري الإسلامي وتاريخ المدينة المنورة عبر عصورها المختلفة'
-              : 'Explore the Islamic cultural heritage and the history of Medina through its different eras'}
+              ? 'بوابة المعرفة وعالم الحضارة الإسلامية'
+              : 'The Gateway of Knowledge and the World of Islamic Civilization'}
           </p>
-          <Link href={`/${locale}#categories`} className="bg-[#2d436a] text-white px-12 py-4 rounded-full hover:bg-slate-800 transition shadow-xl font-bold text-lg inline-block">
-            {isArabic ? 'استكشف الآن' : 'Explore Now'}
-          </Link>
         </div>
       </section>
+
+      {/* 2. Information & Search (Middle) */}
+      <div className="container mx-auto px-4 mb-16">
+        <HeroSearch locale={locale} />
+      </div>
 
       {/* Categories Grid */}
       <section id="categories" className="py-16 container mx-auto px-4">
