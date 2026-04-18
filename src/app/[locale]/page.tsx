@@ -11,38 +11,45 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* Container 1: Welcome Text (Above Fold) */}
-      <section className="relative w-full bg-slate-50 min-h-[60vh] flex flex-col justify-center items-center overflow-hidden pt-20">
-        <div className="w-full container mx-auto px-4 relative z-10 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
-            {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
-          </h1>
-          <p className="text-xl md:text-3xl text-slate-600 max-w-4xl mx-auto font-medium leading-relaxed mt-6">
-            {isArabic
-              ? 'بوابة المعرفة وعالم الحضارة الإسلامية'
-              : 'The Gateway of Knowledge and the World of Islamic Civilization'}
-          </p>
+      {/* 1. Header Hero Banner (Dark Style) */}
+      <section className="relative h-[400px] w-full bg-slate-900 overflow-hidden flex flex-col justify-center items-center">
+        {/* Logo centered in the dark banner */}
+        <div className="relative z-10 w-full max-w-2xl px-4 flex justify-center">
+          <img 
+            src="/images/official-museum-logo.png" 
+            alt="Dar Al-Madinah Museum" 
+            className="h-40 md:h-60 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-transform duration-700 hover:scale-[1.02]" 
+          />
         </div>
+        {/* Subtle Background pattern/gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/60 pointer-events-none" />
       </section>
 
-      {/* Container 2: Logo and Search Box (Revealed on Scroll) */}
-      <section className="relative w-full bg-slate-50 pb-32 border-b border-slate-200" style={{ paddingTop: '30vh' }}>
-        <div className="w-full max-w-4xl mx-auto px-4 flex flex-col items-center gap-20 relative z-10">
-          <ScrollReveal>
-            <div className="flex justify-center">
-              <img 
-                src="/images/official-museum-logo.png" 
-                alt="Dar Al-Madinah Museum" 
-                className="w-full h-auto max-h-[300px] md:max-h-[450px] object-contain drop-shadow-sm hover:scale-[1.03] transition-transform duration-[1500ms] ease-out" 
-              />
-            </div>
-          </ScrollReveal>
+      {/* 2. Welcome Content & Search (Style: Text Underneath the Picture) */}
+      <section className="relative w-full bg-white pb-32 border-b border-slate-100 -mt-10 z-20">
+        <div className="container mx-auto px-4">
+          
+          {/* Welcome Text Section */}
+          <div className="text-center mb-16 pt-20">
+            <ScrollReveal>
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
+                {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
+              </h1>
+              <p className="text-xl md:text-3xl text-slate-600 max-w-4xl mx-auto font-medium leading-relaxed">
+                {isArabic
+                  ? 'بوابة المعرفة وعالم الحضارة الإسلامية'
+                  : 'The Gateway of Knowledge and the World of Islamic Civilization'}
+              </p>
+            </ScrollReveal>
+          </div>
 
-          <ScrollReveal>
-            <div className="w-full">
+          {/* Search Box - Now positioned clearly below the text */}
+          <div className="max-w-4xl mx-auto">
+            <ScrollReveal>
               <HeroSearch locale={locale} />
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          </div>
+          
         </div>
       </section>
 
