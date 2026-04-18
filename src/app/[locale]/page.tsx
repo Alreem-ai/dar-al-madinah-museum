@@ -11,21 +11,23 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <div className="bg-background">
       {/* 1. Header/Hero Banner (صورة) */}
-      <section className="relative h-[300px] md:h-[400px] w-full bg-slate-900 overflow-hidden">
-        {/* Background Image (using one of our museum photos or a generic pattern for now) */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
-          style={{ backgroundImage: "url('/images/official-museum-logo.png')", backgroundSize: 'contain', backgroundPosition: 'center', backgroundColor: '#0f172a' }}
-        />
-        {/* Overlay to ensure contrast */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+      <section className="relative w-full bg-slate-50 pt-16 pb-20 md:pt-20 md:pb-24 border-b border-slate-200 overflow-hidden flex flex-col items-center">
         
-        {/* Optional Welcome Text inside the banner */}
-        <div className="container mx-auto px-4 h-full flex flex-col justify-center relative z-10 text-center pt-8">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-md">
+        {/* Top Element: Enormous Logo/Image */}
+        <div className="w-full max-w-3xl px-4 flex justify-center mb-10 relative z-10">
+          <img 
+            src="/images/official-museum-logo.png" 
+            alt="Dar Al-Madinah Museum" 
+            className="w-full h-auto max-h-[250px] md:max-h-[350px] object-contain drop-shadow-sm hover:scale-105 transition-transform duration-700" 
+          />
+        </div>
+        
+        {/* Secondary Element: Welcome Text Underneath */}
+        <div className="container mx-auto px-4 relative z-10 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
             {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
           </h1>
-          <p className="text-lg md:text-xl text-slate-200 max-w-2xl mx-auto drop-shadow-md">
+          <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
             {isArabic
               ? 'بوابة المعرفة وعالم الحضارة الإسلامية'
               : 'The Gateway of Knowledge and the World of Islamic Civilization'}
