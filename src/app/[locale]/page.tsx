@@ -11,37 +11,41 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* 1. Header/Hero Banner (صورة) */}
-      <section className="relative w-full bg-slate-50 border-b border-slate-200 overflow-hidden flex flex-col items-center">
-        
-        {/* Top Element: Enormous Logo/Image (Visible Above Fold) */}
-        <div className="w-full min-h-[75vh] px-4 flex flex-col justify-center items-center relative z-10">
+      {/* Container 1: Hero Logo (Above Fold) */}
+      <section className="relative w-full bg-slate-50 min-h-screen flex flex-col justify-center items-center overflow-hidden">
+        <div className="w-full max-w-3xl px-4 flex justify-center relative z-10">
           <img 
             src="/images/official-museum-logo.png" 
             alt="Dar Al-Madinah Museum" 
-            className="w-full h-auto max-h-[300px] md:max-h-[450px] object-contain drop-shadow-sm hover:scale-105 transition-transform duration-700" 
+            className="w-full h-auto max-h-[300px] md:max-h-[450px] object-contain drop-shadow-sm hover:scale-[1.03] transition-transform duration-[1500ms] ease-out" 
           />
         </div>
+      </section>
+
+      {/* Container 2: Content & Search (Below Fold with Massive Spacer) */}
+      <section className="relative w-full bg-slate-50 pb-24 border-b border-slate-200" style={{ paddingTop: '60vh' }}>
         
-        {/* Secondary Element: Welcome Text Underneath (Scroll Revealed) */}
-        <div className="w-full container mx-auto px-4 relative z-10 text-center pb-24 pt-10">
+        {/* Welcome Text */}
+        <div className="w-full container mx-auto px-4 relative z-10 text-center mb-16">
           <ScrollReveal>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
               {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
             </h1>
-            <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
+            <p className="text-xl md:text-3xl text-slate-600 max-w-4xl mx-auto font-medium leading-relaxed mt-6">
               {isArabic
                 ? 'بوابة المعرفة وعالم الحضارة الإسلامية'
                 : 'The Gateway of Knowledge and the World of Islamic Civilization'}
             </p>
           </ScrollReveal>
         </div>
-      </section>
 
-      {/* 2. Information & Search (Middle) */}
-      <div className="container mx-auto px-4 mb-16">
-        <HeroSearch locale={locale} />
-      </div>
+        {/* Hero Search */}
+        <div className="container mx-auto px-4">
+          <ScrollReveal>
+            <HeroSearch locale={locale} />
+          </ScrollReveal>
+        </div>
+      </section>
 
       {/* Categories Grid */}
       <section id="categories" className="py-16 container mx-auto px-4">
