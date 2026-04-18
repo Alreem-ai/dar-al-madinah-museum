@@ -11,22 +11,20 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* 1. Header Hero Banner (Dark Style with Filter) */}
-      <section className="relative h-[450px] w-full bg-slate-900 overflow-hidden flex flex-col justify-center items-center">
-        {/* Background Overlay Filter */}
-        <div className="absolute inset-0 bg-black/50 z-[1]" />
+      {/* 1. Header Hero Banner (Image fit to frame with Filter) */}
+      <section className="relative h-[450px] md:h-[600px] w-full bg-slate-900 overflow-hidden">
+        {/* Background Image: Fit to Frame */}
+        <img 
+          src="/images/official-museum-logo.png" 
+          alt="Dar Al-Madinah Museum Banner" 
+          className="absolute inset-0 w-full h-full object-cover opacity-90 transition-transform duration-[2000ms] hover:scale-105" 
+        />
+
+        {/* Background Overlay Filter: Capacity of 2 (20%) */}
+        <div className="absolute inset-0 bg-black/20 z-[1] pointer-events-none" />
         
-        {/* Logo centered in the dark banner */}
-        <div className="relative z-10 w-full max-w-2xl px-4 flex justify-center">
-          <img 
-            src="/images/official-museum-logo.png" 
-            alt="Dar Al-Madinah Museum" 
-            className="h-48 md:h-72 w-auto object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] transition-transform duration-700 hover:scale-[1.02]" 
-          />
-        </div>
-        
-        {/* Radial Gradient for depth */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(0,0,0,0.6)_100%)] z-[2] pointer-events-none" />
+        {/* Gradient for bottom fade-out */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-[2] pointer-events-none" />
       </section>
 
       {/* 2. Welcome Content & Search (Style: Reveal on Scroll) */}
