@@ -11,31 +11,28 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* 1. Header Hero Banner (Solid Dark Style) */}
-      <section className="relative h-[45vh] w-full bg-[#0a0a0a] flex flex-col justify-center items-center overflow-hidden border-b border-white/5">
+      {/* 1. Header Hero Banner (Solid Black Style with 20% Filter) */}
+      <section className="relative h-[450px] w-full bg-black flex flex-col justify-center items-center overflow-hidden">
         
-        {/* Background dark transparent layer for depth */}
-        <div className="absolute inset-0 bg-black/40 z-[1] pointer-events-none" />
-
-        {/* Logo centered in the deep charcoal section */}
-        <div className="relative z-10 w-full max-w-2xl px-8 flex justify-center">
+        {/* Logo centered in the pure black section */}
+        <div className="relative z-[1] w-full px-8 flex justify-center">
           <img 
             src="/images/official-museum-logo.png" 
             alt="Dar Al-Madinah Museum" 
-            className="h-32 md:h-48 w-auto object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.1)] transition-transform duration-700 hover:scale-[1.03]" 
+            className="h-32 md:h-48 w-auto object-contain transition-transform duration-700 hover:scale-[1.03]" 
           />
         </div>
         
-        {/* Subtle radial shine to maintain premium look */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.03)_0%,_transparent_70%)] z-[2] pointer-events-none" />
+        {/* Background dark transparent layer (Opacity 0.2 / 20%) over the image */}
+        <div className="absolute inset-0 bg-black/20 z-[2] pointer-events-none" />
       </section>
 
-      {/* 2. Welcome Content & Search (Style: Reveal on Scroll) */}
-      <section className="relative w-full bg-white pb-32 border-b border-slate-100 -mt-1 z-20">
+      {/* 2. Welcome Content & Search (Style: Reveal on Scroll with 400px Margin) */}
+      <section className="relative w-full bg-white pb-32 border-b border-slate-100 z-20">
         <div className="container mx-auto px-4">
           
-          {/* Welcome Text Section - Start appearing sooner */}
-          <div className="text-center mb-16 pt-24 md:pt-32">
+          {/* Welcome Text Section - 400px vertical margin before text */}
+          <div className="text-center mb-16 pt-[400px]">
             <ScrollReveal>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
                 {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
