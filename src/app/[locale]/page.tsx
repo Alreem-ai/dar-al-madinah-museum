@@ -85,19 +85,19 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
                 <Link 
                   key={artifactId + i} 
                   href={`/${locale}/artifact/${artifact.id}`}
-                  className="museum-card flex flex-col items-center p-4 text-center group cursor-pointer hover:shadow-md transition min-w-[220px] max-w-[220px] snap-center border border-slate-200 bg-white"
+                  className="museum-card flex flex-col items-center p-5 text-center group cursor-pointer hover:shadow-lg transition min-w-[280px] max-w-[280px] snap-center border border-slate-200 bg-white rounded-xl"
                 >
-                  <div className="w-full aspect-square bg-slate-100 rounded mb-4 flex items-center justify-center group-hover:bg-slate-200 transition overflow-hidden">
+                  <div className="w-full aspect-square bg-slate-100 rounded-lg mb-5 flex items-center justify-center group-hover:bg-slate-200 transition overflow-hidden shadow-inner">
                     {artifact.image ? (
-                      <img src={artifact.image} alt={artifact.title.en} className="w-full h-full object-cover" />
+                      <img src={artifact.image} alt={artifact.title.en} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
                     ) : (
-                      <span className="text-slate-300 text-xs">Image</span>
+                      <span className="text-slate-400 text-sm">No Image</span>
                     )}
                   </div>
-                  <h4 className="font-semibold text-slate-800 text-sm mb-3 group-hover:text-gold-600 transition line-clamp-2">
+                  <h4 className="font-bold text-slate-800 text-lg mb-4 group-hover:text-gold-600 transition line-clamp-2 leading-relaxed">
                     {artifact.title[locale as keyof typeof artifact.title] || artifact.title.en}
                   </h4>
-                  <span className="w-full py-1.5 bg-slate-500 text-white text-xs rounded group-hover:bg-slate-600 transition mt-auto">
+                  <span className="w-full py-2.5 bg-slate-600 text-white text-sm font-medium rounded-md group-hover:bg-slate-700 transition mt-auto shadow-sm">
                     {isArabic ? 'المزيد' : 'Learn More'}
                   </span>
                 </Link>
