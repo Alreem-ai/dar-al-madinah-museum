@@ -11,23 +11,23 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* 1. Header Hero Banner (Centered & Clear for all devices) */}
-      <section className="relative h-[350px] md:h-[500px] w-full bg-slate-900 overflow-hidden flex flex-col justify-center items-center">
+      {/* 1. Header Hero Banner (Solid Dark Style) */}
+      <section className="relative h-[45vh] w-full bg-[#0a0a0a] flex flex-col justify-center items-center overflow-hidden border-b border-white/5">
         
-        {/* Background Overlay Filter (20%) */}
-        <div className="absolute inset-0 bg-black/20 z-[1] pointer-events-none" />
-        
-        {/* Logo: Smaller and contained to remain clear */}
-        <div className="relative z-10 w-full max-w-4xl px-8 flex justify-center">
+        {/* Background dark transparent layer for depth */}
+        <div className="absolute inset-0 bg-black/40 z-[1] pointer-events-none" />
+
+        {/* Logo centered in the deep charcoal section */}
+        <div className="relative z-10 w-full max-w-2xl px-8 flex justify-center">
           <img 
             src="/images/official-museum-logo.png" 
-            alt="Dar Al-Madinah Museum Logo" 
-            className="w-full h-auto max-h-[180px] md:max-h-[300px] object-contain drop-shadow-lg transition-all duration-700 hover:scale-105" 
+            alt="Dar Al-Madinah Museum" 
+            className="h-32 md:h-48 w-auto object-contain drop-shadow-[0_0_20px_rgba(255,255,255,0.1)] transition-transform duration-700 hover:scale-[1.03]" 
           />
         </div>
-
-        {/* Gradient for bottom depth */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-[2] pointer-events-none" />
+        
+        {/* Subtle radial shine to maintain premium look */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.03)_0%,_transparent_70%)] z-[2] pointer-events-none" />
       </section>
 
       {/* 2. Welcome Content & Search (Style: Reveal on Scroll) */}
