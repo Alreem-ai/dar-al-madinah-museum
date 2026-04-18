@@ -11,20 +11,23 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* 1. Header Hero Banner (Image fit to frame with Filter) */}
-      <section className="relative h-[450px] md:h-[600px] w-full bg-slate-900 overflow-hidden">
-        {/* Background Image: Fit to Frame */}
-        <img 
-          src="/images/official-museum-logo.png" 
-          alt="Dar Al-Madinah Museum Banner" 
-          className="absolute inset-0 w-full h-full object-cover opacity-90 transition-transform duration-[2000ms] hover:scale-105" 
-        />
-
-        {/* Background Overlay Filter: Capacity of 2 (20%) */}
+      {/* 1. Header Hero Banner (Centered & Clear for all devices) */}
+      <section className="relative h-[350px] md:h-[500px] w-full bg-slate-900 overflow-hidden flex flex-col justify-center items-center">
+        
+        {/* Background Overlay Filter (20%) */}
         <div className="absolute inset-0 bg-black/20 z-[1] pointer-events-none" />
         
-        {/* Gradient for bottom fade-out */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent z-[2] pointer-events-none" />
+        {/* Logo: Smaller and contained to remain clear */}
+        <div className="relative z-10 w-full max-w-4xl px-8 flex justify-center">
+          <img 
+            src="/images/official-museum-logo.png" 
+            alt="Dar Al-Madinah Museum Logo" 
+            className="w-full h-auto max-h-[180px] md:max-h-[300px] object-contain drop-shadow-lg transition-all duration-700 hover:scale-105" 
+          />
+        </div>
+
+        {/* Gradient for bottom depth */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent z-[2] pointer-events-none" />
       </section>
 
       {/* 2. Welcome Content & Search (Style: Reveal on Scroll) */}
