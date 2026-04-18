@@ -14,7 +14,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <section className="relative w-full bg-slate-50 pt-16 pb-20 md:pt-20 md:pb-24 border-b border-slate-200 overflow-hidden flex flex-col items-center">
         
         {/* Top Element: Enormous Logo/Image */}
-        <div className="w-full max-w-3xl px-4 flex justify-center mb-10 relative z-10">
+        <div className="w-full max-w-3xl px-4 flex justify-center mb-16 md:mb-20 relative z-10">
           <img 
             src="/images/official-museum-logo.png" 
             alt="Dar Al-Madinah Museum" 
@@ -23,7 +23,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         </div>
         
         {/* Secondary Element: Welcome Text Underneath */}
-        <div className="container mx-auto px-4 relative z-10 text-center">
+        <div className="container mx-auto px-4 relative z-10 text-center mt-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
             {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
           </h1>
