@@ -11,19 +11,17 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* 1. Header Hero Banner (Solid Black Style with 20% Filter) */}
-      <section className="relative h-[450px] w-full bg-black flex flex-col justify-center items-center overflow-hidden">
+      {/* 1. Header Hero Banner (Edge-to-Edge Image with 20% Filter) */}
+      <section className="relative h-[450px] w-full bg-black overflow-hidden">
         
-        {/* Logo centered in the pure black section */}
-        <div className="relative z-[1] w-full px-8 flex justify-center">
-          <img 
-            src="/images/official-museum-logo.png" 
-            alt="Dar Al-Madinah Museum" 
-            className="h-32 md:h-48 w-auto object-contain transition-transform duration-700 hover:scale-[1.03]" 
-          />
-        </div>
+        {/* Picture fit to frame */}
+        <img 
+          src="/images/official-museum-logo.png" 
+          alt="Dar Al-Madinah Museum Banner" 
+          className="absolute inset-0 w-full h-full object-cover z-[1] transition-transform duration-[2000ms] hover:scale-105" 
+        />
         
-        {/* Background dark transparent layer (Opacity 0.2 / 20%) over the image */}
+        {/* Black transparent filter over the picture (Capacity of 2 / 20%) */}
         <div className="absolute inset-0 bg-black/20 z-[2] pointer-events-none" />
       </section>
 
