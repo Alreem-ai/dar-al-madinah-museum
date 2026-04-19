@@ -11,14 +11,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* 1. Header Hero Banner (Edge-to-Edge Image with 20% Filter) */}
-      <section className="relative h-[450px] w-full bg-black overflow-hidden">
+      {/* 1. Header Hero Banner (Picture touches top/bottom, dark filter 20%) */}
+      <section className="relative h-[450px] w-full bg-black flex justify-center items-center overflow-hidden">
         
-        {/* Picture fit to frame */}
+        {/* Picture fit to height (top and bottom touching) */}
         <img 
           src="/images/official-museum-logo.png" 
           alt="Dar Al-Madinah Museum Banner" 
-          className="absolute inset-0 w-full h-full object-cover z-[1] transition-transform duration-[2000ms] hover:scale-105" 
+          className="h-full w-auto object-contain z-[1] transition-transform duration-[2000ms] hover:scale-[1.03]" 
         />
         
         {/* Black transparent filter over the picture (Capacity of 2 / 20%) */}
