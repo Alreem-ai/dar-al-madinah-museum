@@ -11,45 +11,40 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <div className="bg-background">
-      {/* 1. Header Hero Banner (Picture touches top/bottom, dark filter 20%) */}
-      <section className="relative h-[450px] w-full bg-black flex justify-center items-center overflow-hidden">
+      {/* 1. Header Hero Banner (Text Over Image) */}
+      <section className="relative h-[450px] w-full bg-[#050510] flex justify-center items-center overflow-hidden">
         
         {/* Picture fit to height (top and bottom touching) */}
         <img 
           src="/images/official-museum-logo.png" 
           alt="Dar Al-Madinah Museum Banner" 
-          className="h-full w-auto object-contain z-[1] transition-transform duration-[2000ms] hover:scale-[1.03]" 
+          className="h-full w-auto object-contain z-[1]" 
         />
         
         {/* Black transparent filter over the picture (Capacity of 2 / 20%) */}
-        <div className="absolute inset-0 bg-black/20 z-[2] pointer-events-none" />
+        <div className="absolute inset-0 bg-black/40 z-[2] pointer-events-none" />
+
+        {/* Welcome Text Section (OVERLAID ON TOP) */}
+        <div className="absolute inset-0 z-[10] flex flex-col justify-center items-center text-center px-4">
+          <ScrollReveal>
+             <h1 className="text-3xl md:text-5xl lg:text-5xl font-bold text-white mb-4 tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+               {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
+             </h1>
+             <p className="text-lg md:text-xl text-slate-100 max-w-4xl mx-auto font-medium leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
+               {isArabic
+                 ? 'بوابة المعرفة وعالم الحضارة الإسلامية'
+                 : 'The Gateway of Knowledge and the World of Islamic Civilization'}
+             </p>
+          </ScrollReveal>
+        </div>
       </section>
 
-      {/* 2. Welcome Content & Search (Style: Reveal on Scroll) */}
+      {/* 2. Welcome Content & Search */}
       <section className="relative w-full bg-white pb-32 border-b border-slate-100 z-20">
-        <div className="container mx-auto px-4">
-          
-          {/* Welcome Text Section */}
-          <div className="text-center mb-16 pt-16 md:pt-24">
-            <ScrollReveal>
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
-                {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
-              </h1>
-              <p className="text-xl md:text-3xl text-slate-600 max-w-4xl mx-auto font-medium leading-relaxed">
-                {isArabic
-                  ? 'بوابة المعرفة وعالم الحضارة الإسلامية'
-                  : 'The Gateway of Knowledge and the World of Islamic Civilization'}
-              </p>
-            </ScrollReveal>
-          </div>
-
-          {/* Search Box - Now positioned clearly below the text */}
-          <div className="max-w-4xl mx-auto">
-            <ScrollReveal>
-              <HeroSearch locale={locale} />
-            </ScrollReveal>
-          </div>
-          
+        <div className="container mx-auto px-4 relative z-30 pt-2">
+          <ScrollReveal>
+            <HeroSearch locale={locale} />
+          </ScrollReveal>
         </div>
       </section>
 
