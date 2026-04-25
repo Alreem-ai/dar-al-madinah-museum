@@ -15,8 +15,8 @@ export default function HeroSearch({ locale }: { locale: string }) {
   // Translations
   const t = {
     ar: {
-      about: 'نبذة عن الموقع',
-      aboutDesc: 'استكشف الإرث الحضاري الإسلامي وتاريخ المدينة المنورة عبر عصورها المختلفة من خلال قاعدتنا المعرفية الشاملة.',
+      about: 'معارض تُخاطب الروح',
+      aboutDesc: 'يضم Dar Al Madinah Museum أكثر من 2000 قطعة أثرية، تشمل صورًا نادرة، ونماذج مصغّرة، وقطعًا أثرية تُعيد إحياء الماضي بروح حيّة، تُجسّد التراث الحضاري الإسلامي.',
       searchPlaceholder: 'أدخل كلمات البحث هنا...',
       keywords: 'الكلمات الدلالية',
       allSources: 'جميع المصادر',
