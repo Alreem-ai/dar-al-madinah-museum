@@ -89,7 +89,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
           {/* Contact Us Column */}
           <div className="md:w-1/2 p-8 lg:p-12 bg-slate-50">
             <h2 className="text-2xl font-bold text-slate-900 mb-6 pb-4 border-b border-slate-200">
-              {locale === 'ar' ? 'اتصل بنا' : 
+              {locale === 'ar' ? 'تواصل معنا' : 
                locale === 'fr' ? 'Contactez-nous' :
                locale === 'ur' ? 'رابطہ کریں' :
                locale === 'id' ? 'Hubungi Kami' :
@@ -97,18 +97,25 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
             </h2>
             
             <div className="space-y-6">
-              {/* Get in touch */}
+              {/* Official Website */}
               <div className="flex items-start gap-4 pb-4 border-b border-slate-200">
-                <Phone className="text-slate-400 mt-1" size={20} />
+                <ExternalLink className="text-slate-400 mt-1" size={20} />
                 <div>
                   <h4 className="font-semibold text-slate-800">
-                    {locale === 'ar' ? 'تواصل معنا' : 
-                     locale === 'fr' ? 'Restez en Contact' :
-                     locale === 'ur' ? 'رابطہ کریں' :
-                     locale === 'id' ? 'Hubungi' :
-                     'Get in Touch'}
+                    {locale === 'ar' ? 'الموقع الرسمي' : 
+                     locale === 'fr' ? 'Site Officiel' :
+                     locale === 'ur' ? 'سرکاری ویب سائٹ' :
+                     locale === 'id' ? 'Situs Resmi' :
+                     'Official Website'}
                   </h4>
-                  <p className="text-sm text-slate-600 mt-1">{/* +966 5X XXX XXXX */} <span dir="ltr" className="inline-block">053 477 9997</span></p>
+                  <a 
+                    href="https://dar-almadinah.com/about-us-dar-al-madinah-museum/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-sm text-gold-600 hover:underline break-all"
+                  >
+                    dar-almadinah.com
+                  </a>
                 </div>
               </div>
               
