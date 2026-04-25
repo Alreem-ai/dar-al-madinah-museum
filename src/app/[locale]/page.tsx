@@ -25,12 +25,12 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
         <div className="absolute inset-0 bg-black/20 z-[2] pointer-events-none" />
       </section>
 
-      {/* 2. Welcome Content & Search (Style: Reveal on Scroll with 400px Margin) */}
+      {/* 2. Welcome Content & Search (Style: Reveal on Scroll) */}
       <section className="relative w-full bg-white pb-32 border-b border-slate-100 z-20">
         <div className="container mx-auto px-4">
           
-          {/* Welcome Text Section - 400px vertical margin before text */}
-          <div className="text-center mb-16 pt-[400px]">
+          {/* Welcome Text Section */}
+          <div className="text-center mb-16 pt-16 md:pt-24">
             <ScrollReveal>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
                 {isArabic ? 'مرحباً بكم في متحف دار المدينة' : 'Welcome to Dar Al-Madinah Museum'}
