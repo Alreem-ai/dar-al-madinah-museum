@@ -119,24 +119,7 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
                 </div>
               </div>
               
-              {/* Contact Form Placeholder */}
-              <div className="pb-4 border-b border-slate-200">
-                <h4 className="font-semibold text-slate-800 mb-3">
-                  {locale === 'ar' ? 'نموذج التواصل' : 
-                   locale === 'fr' ? 'Formulaire de Contact' :
-                   locale === 'ur' ? 'رابطہ فارم' :
-                   locale === 'id' ? 'Formulir Kontak' :
-                   'Contact Form'}
-                </h4>
-                <div className="space-y-3">
-                  <input type="text" placeholder={locale === 'ar' ? 'الاسم' : locale === 'fr' ? 'Nom' : locale === 'ur' ? 'نام' : locale === 'id' ? 'Nama' : 'Name'} className="w-full text-sm p-2 border border-slate-300 rounded" />
-                  <input type="email" placeholder={locale === 'ar' ? 'البريد الإلكتروني' : locale === 'fr' ? 'Email' : locale === 'ur' ? 'ای میل' : locale === 'id' ? 'Email' : 'Email'} className="w-full text-sm p-2 border border-slate-300 rounded" />
-                  <textarea placeholder={locale === 'ar' ? 'رسالتك' : locale === 'fr' ? 'Votre Message' : locale === 'ur' ? 'آپ کا پیغام' : locale === 'id' ? 'Pesan Anda' : 'Message'} className="w-full text-sm p-2 border border-slate-300 rounded h-20"></textarea>
-                  <button className="bg-slate-600 text-white px-4 py-2 rounded text-sm hover:bg-slate-700 transition">
-                    {locale === 'ar' ? 'إرسال' : locale === 'fr' ? 'Envoyer' : locale === 'ur' ? 'جمع کرائیں' : locale === 'id' ? 'Kirim' : 'Submit'}
-                  </button>
-                </div>
-              </div>
+
 
               {/* Location Map */}
               <div className="flex items-start gap-4 pb-4 border-b border-slate-200">
